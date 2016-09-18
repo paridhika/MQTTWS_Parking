@@ -5,6 +5,9 @@
 The HiveMQ server stores the map for parking lot and has the information of all the empty and occupied parking positions in the parking area. Parking Model consists of sensor attached to every parking slot. These sensors run Paho MQTT websocket client to send their status to the server. Also every new car arriving runs a smack client as well and makes a request to HiveMQ server to get and reserve a empty parking slot. All the connections and request goes over websockets using MQTT Protocol. Multiple client tries to connect to server in separate threads over same socket. The service time of each client is noted to study the queuing delay or waiting time for customers to get their request served.Traffic coming to the server follows the poisson arrival.
 
 ## Code Changes:-
+### Configuration changes to activate websockets:-
+* hivemq-3.1.5/conf/config.xml
+
 ### Plugin added for Server side handling:-
 * Configuration.java 
 * HiveMQStart.java
