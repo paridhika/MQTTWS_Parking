@@ -1,0 +1,509 @@
+2016-09-13 05:17:38,475 INFO  - Starting HiveMQ Server
+2016-09-13 05:17:38,526 INFO  - HiveMQ version: 3.1.5
+2016-09-13 05:17:38,531 INFO  - HiveMQ home directory: /home/paridhika/Downloads/IoT/hivemq-3.1.5
+2016-09-13 05:17:51,950 ERROR - Could not read the properties file /home/paridhika/Downloads/IoT/hivemq-3.1.5/conf/myPlugin.properties
+2016-09-13 05:17:52,041 INFO  - Scheduling callback com.acme.callbacks.SimpleScheduledCallback: 0/5 * * * * ?
+2016-09-13 05:17:52,263 INFO  - Scheduling callback com.acme.callbacks.advanced.ScheduledClearRetainedCallback: 0/40 * * * * ?
+2016-09-13 05:17:52,591 INFO  - Loaded Plugin HiveMQ HelloWorld Plugin - v3.0.0
+2016-09-13 05:17:52,591 INFO  - HiveMQ is starting
+2016-09-13 05:17:52,591 INFO  - Property from property file is: null
+2016-09-13 05:17:52,593 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2016-09-13 05:17:52,678 INFO  - Starting Websocket listener on address 0.0.0.0 and port 8000
+2016-09-13 05:17:52,680 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2016-09-13 05:17:52,680 INFO  - Started Websocket Listener on address 0.0.0.0 and on port 8000
+2016-09-13 05:17:52,681 INFO  - Started HiveMQ in 14176ms
+2016-09-13 05:17:55,008 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:18:00,008 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:18:00,039 INFO  - All retained messages have been cleared!
+2016-09-13 05:18:05,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:18:10,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:18:15,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:18:20,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:18:25,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:18:30,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:18:35,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:18:40,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:18:40,002 INFO  - All retained messages have been cleared!
+2016-09-13 05:18:45,002 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:18:50,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:18:55,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:19:00,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:19:00,004 INFO  - All retained messages have been cleared!
+2016-09-13 05:19:05,002 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:19:10,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:19:15,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:19:20,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:19:25,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:19:30,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:19:32,630 INFO  - No valid license file found. Using evaluation license, restricted to 25 connections.
+2016-09-13 05:19:35,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:19:40,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:19:40,002 INFO  - All retained messages have been cleared!
+2016-09-13 05:19:45,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:19:50,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:19:55,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:20:00,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:20:00,003 INFO  - All retained messages have been cleared!
+2016-09-13 05:20:05,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:20:10,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:20:15,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:20:20,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:20:25,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:20:30,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:20:35,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:20:40,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:20:40,003 INFO  - All retained messages have been cleared!
+2016-09-13 05:20:45,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:20:50,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:20:55,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:21:00,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:21:00,002 INFO  - All retained messages have been cleared!
+2016-09-13 05:21:05,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:21:10,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:21:15,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:21:20,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:21:25,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:21:30,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:21:35,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:21:40,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:21:40,003 INFO  - All retained messages have been cleared!
+2016-09-13 05:21:45,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:21:50,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:21:55,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:22:00,002 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:22:00,003 INFO  - All retained messages have been cleared!
+2016-09-13 05:22:05,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:22:10,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:22:15,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:22:20,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:22:25,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:22:30,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:22:35,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:22:40,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:22:40,001 INFO  - All retained messages have been cleared!
+2016-09-13 05:22:45,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:22:50,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:22:55,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:23:00,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:23:00,002 INFO  - All retained messages have been cleared!
+2016-09-13 05:23:05,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:23:10,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:23:15,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:23:20,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:23:25,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:23:30,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:23:35,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:23:40,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:23:40,001 INFO  - All retained messages have been cleared!
+2016-09-13 05:23:45,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:23:50,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:23:55,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:24:00,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:24:00,003 INFO  - All retained messages have been cleared!
+2016-09-13 05:24:05,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:24:10,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:24:15,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:24:20,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:24:25,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:24:30,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:24:35,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:24:40,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:24:40,001 INFO  - All retained messages have been cleared!
+2016-09-13 05:24:45,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:24:50,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:24:55,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:25:00,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:25:00,003 INFO  - All retained messages have been cleared!
+2016-09-13 05:25:05,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:25:10,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:25:15,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:25:20,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:25:25,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:25:30,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:25:35,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:25:40,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:25:40,002 INFO  - All retained messages have been cleared!
+2016-09-13 05:25:45,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:25:50,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:25:55,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:26:00,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:26:00,001 INFO  - All retained messages have been cleared!
+2016-09-13 05:26:05,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:26:10,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:26:15,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:26:20,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:26:25,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:26:30,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:26:35,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:26:40,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:26:40,002 INFO  - All retained messages have been cleared!
+2016-09-13 05:26:45,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:26:50,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:26:55,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:27:00,002 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:27:00,003 INFO  - All retained messages have been cleared!
+2016-09-13 05:27:05,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:27:10,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:27:15,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:27:20,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:27:25,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:27:30,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:27:35,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:27:40,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:27:40,001 INFO  - All retained messages have been cleared!
+2016-09-13 05:27:45,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:27:50,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:27:55,002 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:28:00,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:28:00,001 INFO  - All retained messages have been cleared!
+2016-09-13 05:28:05,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:28:10,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:28:15,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:28:20,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:28:25,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:28:30,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:28:35,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:28:40,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:28:40,002 INFO  - All retained messages have been cleared!
+2016-09-13 05:28:45,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:28:50,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:28:55,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:29:00,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:29:00,001 INFO  - All retained messages have been cleared!
+2016-09-13 05:29:05,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:29:10,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:29:15,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:29:20,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:29:25,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:29:30,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:29:35,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:29:40,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:29:40,001 INFO  - All retained messages have been cleared!
+2016-09-13 05:29:45,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:29:50,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:29:55,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:30:00,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:30:00,003 INFO  - All retained messages have been cleared!
+2016-09-13 05:30:05,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:30:10,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:30:15,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:30:20,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:30:25,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:30:30,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:30:35,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:30:40,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:30:40,002 INFO  - All retained messages have been cleared!
+2016-09-13 05:30:45,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:30:50,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:30:55,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:31:00,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:31:00,002 INFO  - All retained messages have been cleared!
+2016-09-13 05:31:05,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:31:10,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:31:15,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:31:20,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:31:25,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:31:30,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:31:35,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:31:40,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:31:40,001 INFO  - All retained messages have been cleared!
+2016-09-13 05:31:45,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:31:50,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:31:55,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:32:00,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:32:00,001 INFO  - All retained messages have been cleared!
+2016-09-13 05:32:05,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:32:10,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:32:15,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:32:20,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:32:25,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:32:30,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:32:35,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:32:40,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:32:40,003 INFO  - All retained messages have been cleared!
+2016-09-13 05:32:45,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:32:50,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:32:55,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-13 05:32:59,417 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2016-09-13 05:34:29,125 INFO  - Starting HiveMQ Server
+2016-09-13 05:34:29,129 INFO  - HiveMQ version: 3.1.5
+2016-09-13 05:34:29,130 INFO  - HiveMQ home directory: /home/paridhika/Downloads/IoT/hivemq-3.1.5
+2016-09-13 05:34:33,098 ERROR - Could not read the properties file /home/paridhika/Downloads/IoT/hivemq-3.1.5/conf/myPlugin.properties
+2016-09-13 05:34:33,303 INFO  - Loaded Plugin HiveMQ HelloWorld Plugin - v3.0.0
+2016-09-13 05:34:33,368 INFO  - HiveMQ is starting
+2016-09-13 05:34:33,369 INFO  - Property from property file is: null
+2016-09-13 05:34:33,371 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2016-09-13 05:34:33,381 INFO  - Starting Websocket listener on address 0.0.0.0 and port 8000
+2016-09-13 05:34:33,386 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2016-09-13 05:34:33,386 INFO  - Started Websocket Listener on address 0.0.0.0 and on port 8000
+2016-09-13 05:34:33,387 INFO  - Started HiveMQ in 4259ms
+2016-09-13 05:35:33,397 INFO  - No valid license file found. Using evaluation license, restricted to 25 connections.
+2016-09-13 05:35:33,431 INFO  - Client mosqsub/8327-paridhika- is connecting
+2016-09-13 05:35:33,433 INFO  - Client mosqsub/8327-paridhika- is connecting
+2016-09-13 05:35:33,443 INFO  - Added subscription to devices/mosqsub/8327-paridhika-/sensor for client mosqsub/8327-paridhika-
+2016-09-13 05:35:34,032 INFO  - Client mosqpub/8348-paridhika- is connecting
+2016-09-13 05:35:34,034 INFO  - Client mosqpub/8348-paridhika- is connecting
+2016-09-13 05:35:34,040 INFO  - Added subscription to devices/mosqpub/8348-paridhika-/sensor for client mosqpub/8348-paridhika-
+2016-09-13 05:35:34,196 INFO  - Client mosqpub/8363-paridhika- is connecting
+2016-09-13 05:35:34,197 INFO  - Client mosqpub/8358-paridhika- is connecting
+2016-09-13 05:35:34,202 INFO  - Client mosqpub/8358-paridhika- is connecting
+2016-09-13 05:35:34,202 INFO  - Added subscription to devices/mosqpub/8358-paridhika-/sensor for client mosqpub/8358-paridhika-
+2016-09-13 05:35:34,216 INFO  - Client mosqpub/8360-paridhika- is connecting
+2016-09-13 05:35:34,217 INFO  - Client mosqpub/8355-paridhika- is connecting
+2016-09-13 05:35:34,220 INFO  - Client mosqpub/8363-paridhika- is connecting
+2016-09-13 05:35:34,239 INFO  - Client mosqpub/8348-paridhika- is disconnected
+2016-09-13 05:35:34,243 INFO  - Added subscription to devices/mosqpub/8363-paridhika-/sensor for client mosqpub/8363-paridhika-
+2016-09-13 05:35:34,245 INFO  - Client mosqpub/8360-paridhika- is connecting
+2016-09-13 05:35:34,245 INFO  - Added subscription to devices/mosqpub/8360-paridhika-/sensor for client mosqpub/8360-paridhika-
+2016-09-13 05:35:34,256 INFO  - Client mosqpub/8348-paridhika- sent a message to topic loc/delete: 1,8
+2016-09-13 05:35:34,265 INFO  - Client mosqpub/8361-paridhika- is connecting
+2016-09-13 05:35:34,276 INFO  - Client mosqpub/8355-paridhika- is connecting
+2016-09-13 05:35:34,276 INFO  - Added subscription to devices/mosqpub/8355-paridhika-/sensor for client mosqpub/8355-paridhika-
+2016-09-13 05:35:34,295 INFO  - Client mosqpub/8360-paridhika- is disconnected
+2016-09-13 05:35:34,298 INFO  - Client mosqpub/8360-paridhika- sent a message to topic loc/get: 1,9
+2016-09-13 05:35:34,325 INFO  - Client mosqpub/8361-paridhika- is connecting
+2016-09-13 05:35:34,325 INFO  - Added subscription to devices/mosqpub/8361-paridhika-/sensor for client mosqpub/8361-paridhika-
+2016-09-13 05:35:34,326 INFO  - Client mosqpub/8358-paridhika- is disconnected
+2016-09-13 05:35:34,327 INFO  - Client mosqpub/8358-paridhika- sent a message to topic loc/put: 1,8
+2016-09-13 05:35:34,345 INFO  - Client mosqpub/8355-paridhika- is disconnected
+2016-09-13 05:35:34,351 INFO  - Client mosqpub/8363-paridhika- sent a message to topic loc/delete: 1,6
+2016-09-13 05:35:34,385 INFO  - Client mosqpub/8363-paridhika- is disconnected
+2016-09-13 05:35:34,387 INFO  - Client mosqsub/8372-paridhika- is connecting
+2016-09-13 05:35:34,388 INFO  - Client mosqsub/8372-paridhika- is connecting
+2016-09-13 05:35:34,388 INFO  - Added subscription to devices/mosqsub/8372-paridhika-/sensor for client mosqsub/8372-paridhika-
+2016-09-13 05:35:34,403 INFO  - Client mosqpub/8355-paridhika- sent a message to topic loc/delete: 1,9
+2016-09-13 05:35:34,404 INFO  - Client mosqpub/8361-paridhika- sent a message to topic loc/put: 1,6
+2016-09-13 05:35:34,412 INFO  - Client mosqsub/8327-paridhika- is disconnected
+2016-09-13 05:35:34,412 INFO  - Client mosqpub/8361-paridhika- is disconnected
+2016-09-13 05:35:34,419 INFO  - Client mosqpub/8392-paridhika- is connecting
+2016-09-13 05:35:34,420 INFO  - Client mosqpub/8392-paridhika- is connecting
+2016-09-13 05:35:34,420 INFO  - Added subscription to devices/mosqpub/8392-paridhika-/sensor for client mosqpub/8392-paridhika-
+2016-09-13 05:35:34,426 INFO  - Client mosqpub/8392-paridhika- sent a message to topic loc/get: 1,7
+2016-09-13 05:35:34,427 INFO  - Client mosqpub/8392-paridhika- is disconnected
+2016-09-13 05:35:34,437 INFO  - Client mosqsub/8372-paridhika- is disconnected
+2016-09-13 05:35:34,998 INFO  - Client mosqsub/8396-paridhika- is connecting
+2016-09-13 05:35:34,999 INFO  - Client mosqsub/8396-paridhika- is connecting
+2016-09-13 05:35:35,000 INFO  - Added subscription to devices/mosqsub/8396-paridhika-/sensor for client mosqsub/8396-paridhika-
+2016-09-13 05:35:35,270 INFO  - Client mosqpub/8401-paridhika- is connecting
+2016-09-13 05:35:35,271 INFO  - Client mosqpub/8401-paridhika- is connecting
+2016-09-13 05:35:35,271 INFO  - Added subscription to devices/mosqpub/8401-paridhika-/sensor for client mosqpub/8401-paridhika-
+2016-09-13 05:35:35,281 INFO  - Client mosqpub/8401-paridhika- sent a message to topic loc/get: 1,4
+2016-09-13 05:35:35,283 INFO  - Client mosqpub/8401-paridhika- is disconnected
+2016-09-13 05:35:35,293 INFO  - Client mosqsub/8396-paridhika- is disconnected
+2016-09-13 05:35:35,430 INFO  - Client mosqpub/8406-paridhika- is connecting
+2016-09-13 05:35:35,431 INFO  - Client mosqpub/8406-paridhika- is connecting
+2016-09-13 05:35:35,432 INFO  - Added subscription to devices/mosqpub/8406-paridhika-/sensor for client mosqpub/8406-paridhika-
+2016-09-13 05:35:35,479 INFO  - Client mosqpub/8406-paridhika- sent a message to topic loc/put: 1,5
+2016-09-13 05:35:35,480 INFO  - Client mosqpub/8406-paridhika- is disconnected
+2016-09-13 05:35:35,662 INFO  - Client mosqpub/8412-paridhika- is connecting
+2016-09-13 05:35:35,664 INFO  - Client mosqpub/8412-paridhika- is connecting
+2016-09-13 05:35:35,665 INFO  - Added subscription to devices/mosqpub/8412-paridhika-/sensor for client mosqpub/8412-paridhika-
+2016-09-13 05:35:35,676 INFO  - Client mosqpub/8412-paridhika- sent a message to topic loc/delete: 1,5
+2016-09-13 05:35:35,680 INFO  - Client mosqpub/8412-paridhika- is disconnected
+2016-09-13 05:35:36,837 INFO  - Client mosqpub/8417-paridhika- is connecting
+2016-09-13 05:35:36,838 INFO  - Client mosqpub/8417-paridhika- is connecting
+2016-09-13 05:35:36,838 INFO  - Added subscription to devices/mosqpub/8417-paridhika-/sensor for client mosqpub/8417-paridhika-
+2016-09-13 05:35:36,889 INFO  - Client mosqpub/8417-paridhika- is disconnected
+2016-09-13 05:35:36,890 INFO  - Client mosqpub/8417-paridhika- sent a message to topic loc/delete: 1,4
+2016-09-13 05:35:37,076 INFO  - Client mosqsub/8421-paridhika- is connecting
+2016-09-13 05:35:37,078 INFO  - Client mosqsub/8421-paridhika- is connecting
+2016-09-13 05:35:37,079 INFO  - Added subscription to devices/mosqsub/8421-paridhika-/sensor for client mosqsub/8421-paridhika-
+2016-09-13 05:35:37,161 INFO  - Client mosqpub/8426-paridhika- is connecting
+2016-09-13 05:35:37,167 INFO  - Client mosqpub/8426-paridhika- is connecting
+2016-09-13 05:35:37,167 INFO  - Added subscription to devices/mosqpub/8426-paridhika-/sensor for client mosqpub/8426-paridhika-
+2016-09-13 05:35:37,195 INFO  - Client mosqpub/8426-paridhika- sent a message to topic loc/get: 1,2
+2016-09-13 05:35:37,197 INFO  - Client mosqpub/8426-paridhika- is disconnected
+2016-09-13 05:35:37,336 INFO  - Client mosqpub/8433-paridhika- is connecting
+2016-09-13 05:35:37,352 INFO  - Client mosqsub/8421-paridhika- is disconnected
+2016-09-13 05:35:37,355 INFO  - Client mosqpub/8433-paridhika- is connecting
+2016-09-13 05:35:37,356 INFO  - Added subscription to devices/mosqpub/8433-paridhika-/sensor for client mosqpub/8433-paridhika-
+2016-09-13 05:35:37,401 INFO  - Client mosqpub/8433-paridhika- is disconnected
+2016-09-13 05:35:37,404 INFO  - Client mosqpub/8433-paridhika- sent a message to topic loc/put: 1,3
+2016-09-13 05:35:37,531 INFO  - Client mosqpub/8436-paridhika- is connecting
+2016-09-13 05:35:37,532 INFO  - Client mosqpub/8436-paridhika- is connecting
+2016-09-13 05:35:37,532 INFO  - Added subscription to devices/mosqpub/8436-paridhika-/sensor for client mosqpub/8436-paridhika-
+2016-09-13 05:35:37,613 INFO  - Client mosqpub/8436-paridhika- sent a message to topic loc/delete: 1,3
+2016-09-13 05:35:37,616 INFO  - Client mosqpub/8436-paridhika- is disconnected
+2016-09-13 05:35:37,859 INFO  - Client mosqsub/8440-paridhika- is connecting
+2016-09-13 05:35:37,862 INFO  - Client mosqsub/8440-paridhika- is connecting
+2016-09-13 05:35:37,863 INFO  - Added subscription to devices/mosqsub/8440-paridhika-/sensor for client mosqsub/8440-paridhika-
+2016-09-13 05:35:38,039 INFO  - Client mosqsub/8448-paridhika- is connecting
+2016-09-13 05:35:38,039 INFO  - Client mosqsub/8448-paridhika- is connecting
+2016-09-13 05:35:38,039 INFO  - Added subscription to devices/mosqsub/8448-paridhika-/sensor for client mosqsub/8448-paridhika-
+2016-09-13 05:35:38,127 INFO  - Client mosqpub/8455-paridhika- is connecting
+2016-09-13 05:35:38,130 INFO  - Client mosqpub/8455-paridhika- is connecting
+2016-09-13 05:35:38,131 INFO  - Added subscription to devices/mosqpub/8455-paridhika-/sensor for client mosqpub/8455-paridhika-
+2016-09-13 05:35:38,152 INFO  - Client mosqpub/8457-paridhika- is connecting
+2016-09-13 05:35:38,152 INFO  - Client mosqpub/8457-paridhika- is connecting
+2016-09-13 05:35:38,153 INFO  - Added subscription to devices/mosqpub/8457-paridhika-/sensor for client mosqpub/8457-paridhika-
+2016-09-13 05:35:38,173 INFO  - Client mosqpub/8457-paridhika- is disconnected
+2016-09-13 05:35:38,174 INFO  - Client mosqpub/8455-paridhika- is disconnected
+2016-09-13 05:35:38,174 INFO  - Client mosqpub/8457-paridhika- sent a message to topic loc/delete: 1,7
+2016-09-13 05:35:38,176 INFO  - Client mosqpub/8455-paridhika- sent a message to topic loc/get: 1,0
+2016-09-13 05:35:38,185 INFO  - Client mosqsub/8448-paridhika- is disconnected
+2016-09-13 05:35:38,186 INFO  - Client mosqsub/8440-paridhika- is disconnected
+2016-09-13 05:35:38,224 INFO  - Client mosqpub/8463-paridhika- is connecting
+2016-09-13 05:35:38,225 INFO  - Client mosqpub/8463-paridhika- is connecting
+2016-09-13 05:35:38,225 INFO  - Added subscription to devices/mosqpub/8463-paridhika-/sensor for client mosqpub/8463-paridhika-
+2016-09-13 05:35:38,231 INFO  - Client mosqpub/8463-paridhika- is disconnected
+2016-09-13 05:35:38,231 INFO  - Client mosqpub/8463-paridhika- sent a message to topic loc/get: 1,1
+2016-09-13 05:35:38,292 INFO  - Client mosqpub/8466-paridhika- is connecting
+2016-09-13 05:35:38,294 INFO  - Client mosqpub/8466-paridhika- is connecting
+2016-09-13 05:35:38,295 INFO  - Added subscription to devices/mosqpub/8466-paridhika-/sensor for client mosqpub/8466-paridhika-
+2016-09-13 05:35:38,308 INFO  - Client mosqpub/8466-paridhika- is disconnected
+2016-09-13 05:35:38,308 INFO  - Client mosqpub/8466-paridhika- sent a message to topic loc/delete: 1,2
+2016-09-13 05:35:38,387 INFO  - Client mosqpub/8469-paridhika- is connecting
+2016-09-13 05:35:38,400 INFO  - Client mosqpub/8469-paridhika- is connecting
+2016-09-13 05:35:38,400 INFO  - Added subscription to devices/mosqpub/8469-paridhika-/sensor for client mosqpub/8469-paridhika-
+2016-09-13 05:35:38,419 INFO  - Client mosqpub/8469-paridhika- sent a message to topic loc/delete: 1,1
+2016-09-13 05:35:38,419 INFO  - Client mosqpub/8469-paridhika- is disconnected
+2016-09-13 05:35:38,857 INFO  - Client mosqsub/8473-paridhika- is connecting
+2016-09-13 05:35:38,858 INFO  - Client mosqsub/8473-paridhika- is connecting
+2016-09-13 05:35:38,858 INFO  - Added subscription to devices/mosqsub/8473-paridhika-/sensor for client mosqsub/8473-paridhika-
+2016-09-13 05:35:39,012 INFO  - Client mosqpub/8481-paridhika- is connecting
+2016-09-13 05:35:39,014 INFO  - Client mosqpub/8481-paridhika- is connecting
+2016-09-13 05:35:39,014 INFO  - Added subscription to devices/mosqpub/8481-paridhika-/sensor for client mosqpub/8481-paridhika-
+2016-09-13 05:35:39,023 INFO  - Client mosqpub/8482-paridhika- is connecting
+2016-09-13 05:35:39,030 INFO  - Client mosqpub/8482-paridhika- is connecting
+2016-09-13 05:35:39,030 INFO  - Added subscription to devices/mosqpub/8482-paridhika-/sensor for client mosqpub/8482-paridhika-
+2016-09-13 05:35:39,033 INFO  - Client mosqpub/8481-paridhika- sent a message to topic loc/put: 9,9
+2016-09-13 05:35:39,034 INFO  - Client mosqpub/8481-paridhika- is disconnected
+2016-09-13 05:35:39,060 INFO  - Client mosqpub/8482-paridhika- sent a message to topic loc/get: 9,8
+2016-09-13 05:35:39,061 INFO  - Client mosqpub/8482-paridhika- is disconnected
+2016-09-13 05:35:39,093 INFO  - Client mosqsub/8473-paridhika- is disconnected
+2016-09-13 05:35:39,462 INFO  - Client mosqpub/8488-paridhika- is connecting
+2016-09-13 05:35:39,464 INFO  - Client mosqpub/8488-paridhika- is connecting
+2016-09-13 05:35:39,464 INFO  - Added subscription to devices/mosqpub/8488-paridhika-/sensor for client mosqpub/8488-paridhika-
+2016-09-13 05:35:39,519 INFO  - Client mosqpub/8488-paridhika- sent a message to topic loc/delete: 9,8
+2016-09-13 05:35:39,523 INFO  - Client mosqpub/8488-paridhika- is disconnected
+2016-09-13 05:35:40,035 INFO  - Client mosqsub/8492-paridhika- is connecting
+2016-09-13 05:35:40,035 INFO  - Client mosqsub/8492-paridhika- is connecting
+2016-09-13 05:35:40,035 INFO  - Added subscription to devices/mosqsub/8492-paridhika-/sensor for client mosqsub/8492-paridhika-
+2016-09-13 05:35:40,194 INFO  - Client mosqpub/8497-paridhika- is connecting
+2016-09-13 05:35:40,195 INFO  - Client mosqpub/8497-paridhika- is connecting
+2016-09-13 05:35:40,196 INFO  - Added subscription to devices/mosqpub/8497-paridhika-/sensor for client mosqpub/8497-paridhika-
+2016-09-13 05:35:40,213 INFO  - Client mosqpub/8497-paridhika- sent a message to topic loc/get: 5,8
+2016-09-13 05:35:40,214 INFO  - Client mosqpub/8497-paridhika- is disconnected
+2016-09-13 05:35:40,225 INFO  - Client mosqsub/8492-paridhika- is disconnected
+2016-09-13 05:35:40,580 INFO  - Client mosqpub/8502-paridhika- is connecting
+2016-09-13 05:35:40,585 INFO  - Client mosqpub/8502-paridhika- is connecting
+2016-09-13 05:35:40,586 INFO  - Added subscription to devices/mosqpub/8502-paridhika-/sensor for client mosqpub/8502-paridhika-
+2016-09-13 05:35:40,672 INFO  - Client mosqpub/8502-paridhika- sent a message to topic loc/delete: 1,0
+2016-09-13 05:35:40,672 INFO  - Client mosqpub/8502-paridhika- is disconnected
+2016-09-13 05:35:40,878 INFO  - Client mosqpub/8507-paridhika- is connecting
+2016-09-13 05:35:40,878 INFO  - Client mosqpub/8507-paridhika- is connecting
+2016-09-13 05:35:40,879 INFO  - Added subscription to devices/mosqpub/8507-paridhika-/sensor for client mosqpub/8507-paridhika-
+2016-09-13 05:35:40,945 INFO  - Client mosqpub/8507-paridhika- is disconnected
+2016-09-13 05:35:40,946 INFO  - Client mosqpub/8507-paridhika- sent a message to topic loc/delete: 9,9
+2016-09-13 05:35:41,243 INFO  - Client mosqsub/8511-paridhika- is connecting
+2016-09-13 05:35:41,244 INFO  - Client mosqsub/8511-paridhika- is connecting
+2016-09-13 05:35:41,244 INFO  - Added subscription to devices/mosqsub/8511-paridhika-/sensor for client mosqsub/8511-paridhika-
+2016-09-13 05:35:41,334 INFO  - Client mosqpub/8518-paridhika- is connecting
+2016-09-13 05:35:41,335 INFO  - Client mosqpub/8518-paridhika- is connecting
+2016-09-13 05:35:41,335 INFO  - Added subscription to devices/mosqpub/8518-paridhika-/sensor for client mosqpub/8518-paridhika-
+2016-09-13 05:35:41,362 INFO  - Client mosqpub/8518-paridhika- sent a message to topic loc/delete: 5,8
+2016-09-13 05:35:41,362 INFO  - Client mosqpub/8518-paridhika- is disconnected
+2016-09-13 05:35:41,423 INFO  - Client mosqpub/8521-paridhika- is connecting
+2016-09-13 05:35:41,429 INFO  - Client mosqpub/8521-paridhika- is connecting
+2016-09-13 05:35:41,429 INFO  - Added subscription to devices/mosqpub/8521-paridhika-/sensor for client mosqpub/8521-paridhika-
+2016-09-13 05:35:41,446 INFO  - Client mosqpub/8521-paridhika- is disconnected
+2016-09-13 05:35:41,456 INFO  - Client mosqpub/8521-paridhika- sent a message to topic loc/get: 5,9
+2016-09-13 05:35:41,463 INFO  - Client mosqsub/8511-paridhika- is disconnected
+2016-09-13 05:35:41,639 INFO  - Client mosqpub/8526-paridhika- is connecting
+2016-09-13 05:35:41,644 INFO  - Client mosqpub/8526-paridhika- is connecting
+2016-09-13 05:35:41,644 INFO  - Added subscription to devices/mosqpub/8526-paridhika-/sensor for client mosqpub/8526-paridhika-
+2016-09-13 05:35:41,654 INFO  - Client mosqpub/8526-paridhika- sent a message to topic loc/delete: 5,9
+2016-09-13 05:35:41,655 INFO  - Client mosqpub/8526-paridhika- is disconnected
+2016-09-13 05:35:42,397 INFO  - Client mosqpub/8531-paridhika- is connecting
+2016-09-13 05:35:42,398 INFO  - Client mosqpub/8531-paridhika- is connecting
+2016-09-13 05:35:42,398 INFO  - Added subscription to devices/mosqpub/8531-paridhika-/sensor for client mosqpub/8531-paridhika-
+2016-09-13 05:35:42,470 INFO  - Client mosqpub/8531-paridhika- sent a message to topic loc/put: 3,8
+2016-09-13 05:35:42,470 INFO  - Client mosqpub/8531-paridhika- is disconnected
+2016-09-13 05:35:42,550 INFO  - Client mosqpub/8540-paridhika- is connecting
+2016-09-13 05:35:42,550 INFO  - Client mosqpub/8540-paridhika- is connecting
+2016-09-13 05:35:42,550 INFO  - Added subscription to devices/mosqpub/8540-paridhika-/sensor for client mosqpub/8540-paridhika-
+2016-09-13 05:35:42,563 INFO  - Client mosqpub/8540-paridhika- sent a message to topic loc/put: 3,9
+2016-09-13 05:35:42,567 INFO  - Client mosqpub/8540-paridhika- is disconnected
+2016-09-13 05:35:42,611 INFO  - Client mosqpub/8543-paridhika- is connecting
+2016-09-13 05:35:42,613 INFO  - Client mosqpub/8543-paridhika- is connecting
+2016-09-13 05:35:42,614 INFO  - Added subscription to devices/mosqpub/8543-paridhika-/sensor for client mosqpub/8543-paridhika-
+2016-09-13 05:35:42,636 INFO  - Client mosqpub/8545-paridhika- is connecting
+2016-09-13 05:35:42,638 INFO  - Client mosqpub/8545-paridhika- is connecting
+2016-09-13 05:35:42,638 INFO  - Added subscription to devices/mosqpub/8545-paridhika-/sensor for client mosqpub/8545-paridhika-
+2016-09-13 05:35:42,645 INFO  - Client mosqpub/8543-paridhika- is disconnected
+2016-09-13 05:35:42,646 INFO  - Client mosqpub/8543-paridhika- sent a message to topic loc/delete: 3,9
+2016-09-13 05:35:42,663 INFO  - Client mosqpub/8545-paridhika- sent a message to topic loc/delete: 3,8
+2016-09-13 05:35:42,663 INFO  - Client mosqpub/8545-paridhika- is disconnected
+2016-09-13 05:35:43,450 INFO  - Client mosqsub/8550-paridhika- is connecting
+2016-09-13 05:35:43,451 INFO  - Client mosqsub/8550-paridhika- is connecting
+2016-09-13 05:35:43,451 INFO  - Added subscription to devices/mosqsub/8550-paridhika-/sensor for client mosqsub/8550-paridhika-
+2016-09-13 05:35:43,723 INFO  - Client mosqpub/8555-paridhika- is connecting
+2016-09-13 05:35:43,725 INFO  - Client mosqpub/8555-paridhika- is connecting
+2016-09-13 05:35:43,725 INFO  - Added subscription to devices/mosqpub/8555-paridhika-/sensor for client mosqpub/8555-paridhika-
+2016-09-13 05:35:43,816 INFO  - Client mosqpub/8555-paridhika- sent a message to topic loc/get: 3,4
+2016-09-13 05:35:43,816 INFO  - Client mosqpub/8555-paridhika- is disconnected
+2016-09-13 05:35:43,840 INFO  - Client mosqsub/8550-paridhika- is disconnected
+2016-09-13 05:35:43,860 INFO  - Client mosqpub/8560-paridhika- is connecting
+2016-09-13 05:35:43,860 INFO  - Client mosqpub/8560-paridhika- is connecting
+2016-09-13 05:35:43,861 INFO  - Added subscription to devices/mosqpub/8560-paridhika-/sensor for client mosqpub/8560-paridhika-
+2016-09-13 05:35:43,874 INFO  - Client mosqpub/8560-paridhika- sent a message to topic loc/put: 3,5
+2016-09-13 05:35:43,875 INFO  - Client mosqpub/8560-paridhika- is disconnected
+2016-09-13 05:35:44,280 INFO  - Client mosqpub/8565-paridhika- is connecting
+2016-09-13 05:35:44,281 INFO  - Client mosqpub/8565-paridhika- is connecting
+2016-09-13 05:35:44,281 INFO  - Added subscription to devices/mosqpub/8565-paridhika-/sensor for client mosqpub/8565-paridhika-
+2016-09-13 05:35:44,388 INFO  - Client mosqpub/8565-paridhika- sent a message to topic loc/put: 3,6
+2016-09-13 05:35:44,391 INFO  - Client mosqpub/8565-paridhika- is disconnected
+2016-09-13 05:35:44,721 INFO  - Client mosqpub/8570-paridhika- is connecting
+2016-09-13 05:35:44,722 INFO  - Client mosqpub/8570-paridhika- is connecting
+2016-09-13 05:35:44,722 INFO  - Added subscription to devices/mosqpub/8570-paridhika-/sensor for client mosqpub/8570-paridhika-
+2016-09-13 05:35:44,727 INFO  - Client mosqpub/8570-paridhika- sent a message to topic loc/delete: 3,6
+2016-09-13 05:35:44,733 INFO  - Client mosqpub/8570-paridhika- is disconnected
+2016-09-13 05:35:45,247 INFO  - Client mosqpub/8575-paridhika- is connecting
+2016-09-13 05:35:45,247 INFO  - Client mosqpub/8575-paridhika- is connecting
+2016-09-13 05:35:45,247 INFO  - Added subscription to devices/mosqpub/8575-paridhika-/sensor for client mosqpub/8575-paridhika-
+2016-09-13 05:35:45,305 INFO  - Client mosqpub/8575-paridhika- sent a message to topic loc/delete: 3,4
+2016-09-13 05:35:45,305 INFO  - Client mosqpub/8575-paridhika- is disconnected
+2016-09-13 05:35:46,237 INFO  - Client mosqpub/8580-paridhika- is connecting
+2016-09-13 05:35:46,238 INFO  - Client mosqpub/8580-paridhika- is connecting
+2016-09-13 05:35:46,238 INFO  - Added subscription to devices/mosqpub/8580-paridhika-/sensor for client mosqpub/8580-paridhika-
+2016-09-13 05:35:46,273 INFO  - Client mosqpub/8580-paridhika- is disconnected
+2016-09-13 05:35:46,273 INFO  - Client mosqpub/8580-paridhika- sent a message to topic loc/delete: 3,5
+2016-09-13 05:35:49,753 INFO  - Client mosqpub/8585-paridhika- is connecting
+2016-09-13 05:35:49,753 INFO  - Client mosqpub/8585-paridhika- is connecting
+2016-09-13 05:35:49,754 INFO  - Added subscription to devices/mosqpub/8585-paridhika-/sensor for client mosqpub/8585-paridhika-
+2016-09-13 05:35:49,822 INFO  - Client mosqpub/8585-paridhika- is disconnected
+2016-09-13 05:35:49,822 INFO  - Client mosqpub/8585-paridhika- sent a message to topic loc/put: 3,7
+2016-09-13 05:35:52,267 INFO  - Client mosqpub/8590-paridhika- is connecting
+2016-09-13 05:35:52,268 INFO  - Client mosqpub/8590-paridhika- is connecting
+2016-09-13 05:35:52,268 INFO  - Added subscription to devices/mosqpub/8590-paridhika-/sensor for client mosqpub/8590-paridhika-
+2016-09-13 05:35:52,330 INFO  - Client mosqpub/8590-paridhika- sent a message to topic loc/delete: 3,7
+2016-09-13 05:35:52,331 INFO  - Client mosqpub/8590-paridhika- is disconnected
+2016-09-13 05:51:25,427 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2016-09-13 06:05:04,260 INFO  - Starting HiveMQ Server
+2016-09-13 06:05:04,266 INFO  - HiveMQ version: 3.1.5
+2016-09-13 06:05:04,267 INFO  - HiveMQ home directory: /home/paridhika/Downloads/IoT/hivemq-3.1.5
+2016-09-13 06:05:08,840 ERROR - Could not read the properties file /home/paridhika/Downloads/IoT/hivemq-3.1.5/conf/myPlugin.properties
+2016-09-13 06:05:09,075 INFO  - Loaded Plugin HiveMQ HelloWorld Plugin - v3.0.0
+2016-09-13 06:05:09,075 INFO  - HiveMQ is starting
+2016-09-13 06:05:09,076 INFO  - Property from property file is: null
+2016-09-13 06:05:09,078 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2016-09-13 06:05:09,088 INFO  - Starting Websocket listener on address 0.0.0.0 and port 8000
+2016-09-13 06:05:09,105 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2016-09-13 06:05:09,105 INFO  - Started Websocket Listener on address 0.0.0.0 and on port 8000
+2016-09-13 06:05:09,106 INFO  - Started HiveMQ in 4842ms
+2016-09-13 06:17:02,139 INFO  - No valid license file found. Using evaluation license, restricted to 25 connections.
+2016-09-13 06:22:34,708 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2016-09-13 06:22:43,671 INFO  - Starting HiveMQ Server
+2016-09-13 06:22:43,676 INFO  - HiveMQ version: 3.1.5
+2016-09-13 06:22:43,677 INFO  - HiveMQ home directory: /home/paridhika/Downloads/IoT/hivemq-3.1.5
+2016-09-13 06:22:47,602 ERROR - Could not read the properties file /home/paridhika/Downloads/IoT/hivemq-3.1.5/conf/myPlugin.properties
+2016-09-13 06:22:47,805 INFO  - Loaded Plugin HiveMQ HelloWorld Plugin - v3.0.0
+2016-09-13 06:22:47,805 INFO  - HiveMQ is starting
+2016-09-13 06:22:47,806 INFO  - Property from property file is: null
+2016-09-13 06:22:47,808 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2016-09-13 06:22:47,820 INFO  - Starting Websocket listener on address 0.0.0.0 and port 8000
+2016-09-13 06:22:47,826 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2016-09-13 06:22:47,826 INFO  - Started Websocket Listener on address 0.0.0.0 and on port 8000
+2016-09-13 06:22:47,826 INFO  - Started HiveMQ in 4152ms
+2016-09-13 06:22:58,001 INFO  - No valid license file found. Using evaluation license, restricted to 25 connections.
+2016-09-13 09:36:07,727 INFO  - Shutting down HiveMQ. Please wait, this could take a while...

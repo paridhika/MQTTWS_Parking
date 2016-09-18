@@ -1,0 +1,20 @@
+[Unit]
+Description=HiveMQ Enterprise MQTT Broker
+After=network.target
+
+[Service]
+Group=hivemq
+User=hivemq
+LimitNOFILE=infinity
+StandardOutput=null
+StandardError=null
+Environment="HIVEMQ_HOME=/opt/hivemq" 'JAVA_OPTS= -Djava.net.preferIPv4Stack=true -XX:-UseSplitVerifier -noverify -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/opt/hivemq/heap-dump.hprof'
+WorkingDirectory=/opt/hivemq
+ExecStart=/usr/bin/java -Dhivemq.home=${HIVEMQ_HOME} $JAVA_OPTS -jar ${HIVEMQ_HOME}/bin/hivemq.jar
+KillMode=process
+Restart=always
+KillSignal=15
+SuccessExitStatus=143
+
+[Install]
+WantedBy=multi-user.target

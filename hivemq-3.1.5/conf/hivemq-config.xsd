@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="hivemq" type="hiveMQConfigEntity"/>
+
+  <xs:complexType name="clusterConfigEntity">
+    <xs:all>
+      <xs:element name="enabled" type="xs:boolean" default="false"/>
+      <xs:element name="transport" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+              <xs:element name="tcp" type="clusterTcpTransportEntity"/>
+              <xs:element name="udp" type="clusterUdpTransportEntity"/>
+            </xs:choice>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="discovery" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+              <xs:element name="static" type="clusterStaticDiscoveryEntity"/>
+              <xs:element name="plugin" type="clusterPluginDiscoveryEntity"/>
+              <xs:element name="multicast" type="clusterMulticastDiscoveryEntity"/>
+              <xs:element name="broadcast" type="clusterBroadcastDiscoveryEntity"/>
+            </xs:choice>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="replicates" type="clusterReplicatesEntity" minOccurs="0"/>
+      <xs:element name="failure-detection" type="clusterFailureDetectionEntity" minOccurs="0"/>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="clusterTcpTransportEntity">
+    <xs:complexContent>
+      <xs:extension base="clusterTransportEntity">
+        <xs:all>
+          <xs:element name="client-bind-address" type="xs:string" minOccurs="0"/>
+          <xs:element name="client-bind-port" type="xs:int" default="0" minOccurs="0"/>
+        </xs:all>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="clusterTransportEntity" abstract="true">
+    <xs:all>
+      <xs:element name="bind-port" type="xs:int" default="8000" minOccurs="0"/>
+      <xs:element name="bind-address" type="xs:string" minOccurs="0"/>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="clusterUdpTransportEntity">
+    <xs:complexContent>
+      <xs:extension base="clusterTransportEntity">
+        <xs:all>
+          <xs:element name="multicast-enabled" type="xs:boolean" default="true" minOccurs="0"/>
+          <xs:element name="multicast-port" type="xs:int" default="45588" minOccurs="0"/>
+          <xs:element name="multicast-address" type="xs:string" default="228.8.8.8" minOccurs="0"/>
+        </xs:all>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="clusterStaticDiscoveryEntity">
+    <xs:complexContent>
+      <xs:extension base="clusterDiscoveryEntity">
+        <xs:sequence>
+          <xs:element name="node" type="clusterStaticDiscoveryNodeEntity" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="clusterDiscoveryEntity" abstract="true">
+    <xs:all/>
+  </xs:complexType>
+
+  <xs:complexType name="clusterStaticDiscoveryNodeEntity">
+    <xs:sequence>
+      <xs:element name="host" type="xs:string"/>
+      <xs:element name="port" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="clusterPluginDiscoveryEntity">
+    <xs:complexContent>
+      <xs:extension base="clusterDiscoveryEntity">
+        <xs:sequence>
+          <xs:element name="reload-interval" type="xs:int" default="60" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="clusterMulticastDiscoveryEntity">
+    <xs:complexContent>
+      <xs:extension base="clusterDiscoveryEntity">
+        <xs:all/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="clusterBroadcastDiscoveryEntity">
+    <xs:complexContent>
+      <xs:extension base="clusterDiscoveryEntity">
+        <xs:all>
+          <xs:element name="port" type="xs:int" default="8555" minOccurs="0"/>
+          <xs:element name="broadcast-address" type="xs:string" default="255.255.255.255" minOccurs="0"/>
+          <xs:element name="port-range" type="xs:int" default="0" minOccurs="0"/>
+        </xs:all>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="clusterReplicatesEntity">
+    <xs:all>
+      <xs:element name="retained-messages" type="clusterReplicateRetainedMessageEntity" minOccurs="0"/>
+      <xs:element name="topic-tree" type="clusterReplicateTopicTreeEntity" minOccurs="0"/>
+      <xs:element name="client-session" type="clusterReplicateClientSessionEntity" minOccurs="0"/>
+      <xs:element name="subscriptions" type="clusterReplicateSubscriptionsEntity" minOccurs="0"/>
+      <xs:element name="queued-messages" type="clusterReplicateQueuedMessagesEntity" minOccurs="0"/>
+      <xs:element name="outgoing-message-flow" type="clusterReplicateOutgoingMessageFlowEntity" minOccurs="0"/>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="clusterReplicateRetainedMessageEntity">
+    <xs:complexContent>
+      <xs:extension base="clusterReplicateEntity">
+        <xs:all/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="clusterReplicateEntity" abstract="true">
+    <xs:sequence>
+      <xs:element name="replicate-count" type="xs:int" default="1" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="clusterReplicateTopicTreeEntity">
+    <xs:complexContent>
+      <xs:extension base="clusterReplicateEntity">
+        <xs:all/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="clusterReplicateClientSessionEntity">
+    <xs:complexContent>
+      <xs:extension base="clusterReplicateEntity">
+        <xs:all/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="clusterReplicateSubscriptionsEntity">
+    <xs:complexContent>
+      <xs:extension base="clusterReplicateEntity">
+        <xs:all/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="clusterReplicateQueuedMessagesEntity">
+    <xs:complexContent>
+      <xs:extension base="clusterReplicateEntity">
+        <xs:all/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="clusterReplicateOutgoingMessageFlowEntity">
+    <xs:complexContent>
+      <xs:extension base="clusterReplicateEntity">
+        <xs:sequence>
+          <xs:element name="replication-interval" type="xs:int" default="1000" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="clusterFailureDetectionEntity">
+    <xs:all>
+      <xs:element name="tcp-health-check" type="clusterTcpHealthCheckEntity" minOccurs="0"/>
+      <xs:element name="heartbeat" type="clusterHeartbeatEntity" minOccurs="0"/>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="clusterTcpHealthCheckEntity">
+    <xs:all>
+      <xs:element name="enabled" type="xs:boolean" default="true" minOccurs="0"/>
+      <xs:element name="bind-address" type="xs:string" minOccurs="0"/>
+      <xs:element name="bind-port" type="xs:int" default="0" minOccurs="0"/>
+      <xs:element name="port-range" type="xs:int" default="50" minOccurs="0"/>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="clusterHeartbeatEntity">
+    <xs:all>
+      <xs:element name="enabled" type="xs:boolean" default="true" minOccurs="0"/>
+      <xs:element name="interval" type="xs:int" minOccurs="0"/>
+      <xs:element name="timeout" type="xs:int" minOccurs="0"/>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="generalConfigEntity">
+    <xs:sequence>
+      <xs:element name="update-check-enabled" type="xs:boolean" default="true"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="hiveMQConfigEntity">
+    <xs:all>
+      <xs:element name="listeners">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+              <xs:element name="tcp-listener" type="tcpListenerEntity"/>
+              <xs:element name="websocket-listener" type="websocketListenerEntity"/>
+              <xs:element name="tls-tcp-listener" type="tlsTCPListenerEntity"/>
+              <xs:element name="tls-websocket-listener" type="tlsWebsocketListenerEntity"/>
+            </xs:choice>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="mqtt" type="mqttConfigEntity" minOccurs="0"/>
+      <xs:element name="throttling" type="throttlingEntity" minOccurs="0"/>
+      <xs:element name="general" type="generalConfigEntity" minOccurs="0"/>
+      <xs:element name="internal" type="internalConfigEntity" minOccurs="0"/>
+      <xs:element name="shared-subscriptions" type="sharedSubscriptionsEntity" minOccurs="0"/>
+      <xs:element name="persistence" type="persistenceConfigEntity" minOccurs="0"/>
+      <xs:element name="rest-service" type="restServiceEntity" minOccurs="0"/>
+      <xs:element name="cluster" type="clusterConfigEntity" minOccurs="0"/>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="tcpListenerEntity">
+    <xs:complexContent>
+      <xs:extension base="listenerEntity">
+        <xs:sequence/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="listenerEntity" abstract="true">
+    <xs:sequence>
+      <xs:element name="port" type="xs:int"/>
+      <xs:element name="bind-address" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="websocketListenerEntity">
+    <xs:complexContent>
+      <xs:extension base="listenerEntity">
+        <xs:sequence>
+          <xs:element name="path" type="xs:string"/>
+          <xs:element name="subprotocols" minOccurs="0">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="subprotocol" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="allow-extensions" type="xs:boolean" default="false" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="tlsTCPListenerEntity">
+    <xs:complexContent>
+      <xs:extension base="listenerEntity">
+        <xs:sequence>
+          <xs:element name="tls" type="tlsEntity"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="tlsEntity">
+    <xs:all>
+      <xs:element name="keystore" type="keystoreType"/>
+      <xs:element name="truststore" type="truststoreType" minOccurs="0"/>
+      <xs:element name="handshake-timeout" type="xs:int" default="10000" minOccurs="0"/>
+      <xs:element name="client-authentication-mode" type="clientAuthenticationMode" default="NONE" minOccurs="0"/>
+      <xs:element name="protocols" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="protocol" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="cipher-suites" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="cipher-suite" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="keystoreType">
+    <xs:all>
+      <xs:element name="path" type="xs:string"/>
+      <xs:element name="password" type="xs:string"/>
+      <xs:element name="private-key-password" type="xs:string"/>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="truststoreType">
+    <xs:all>
+      <xs:element name="path" type="xs:string"/>
+      <xs:element name="password" type="xs:string"/>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="tlsWebsocketListenerEntity">
+    <xs:complexContent>
+      <xs:extension base="listenerEntity">
+        <xs:sequence>
+          <xs:element name="path" type="xs:string"/>
+          <xs:element name="subprotocols" minOccurs="0">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="subprotocol" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="allow-extensions" type="xs:boolean" default="false"/>
+          <xs:element name="tls" type="tlsEntity"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="mqttConfigEntity">
+    <xs:all>
+      <xs:element name="max-client-id-length" type="xs:int" default="65535" minOccurs="0"/>
+      <xs:element name="retry-interval" type="xs:int" default="10" minOccurs="0"/>
+      <xs:element name="no-connect-packet-idle-timeout-millis" type="xs:long" default="10000" minOccurs="0"/>
+      <xs:element name="max-queued-messages" type="xs:long" default="1000" minOccurs="0"/>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="throttlingEntity">
+    <xs:all>
+      <xs:element name="max-connections" type="xs:long" default="-1" minOccurs="0"/>
+      <xs:element name="max-message-size" type="xs:int" default="268435456" minOccurs="0"/>
+      <xs:element name="outgoing-limit" type="xs:long" default="0" minOccurs="0"/>
+      <xs:element name="incoming-limit" type="xs:long" default="0" minOccurs="0"/>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="internalConfigEntity">
+    <xs:sequence>
+      <xs:element name="option" type="optionEntity" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="optionEntity">
+    <xs:sequence>
+      <xs:element name="key" type="xs:string"/>
+      <xs:element name="value" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="sharedSubscriptionsEntity">
+    <xs:sequence>
+      <xs:element name="shared-subscription" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="persistenceConfigEntity">
+    <xs:all>
+      <xs:element name="retained-messages" type="retainedMessagesPersistenceConfigEntity" minOccurs="0"/>
+      <xs:element name="client-session" type="clientSessionPersistenceConfigEntity" minOccurs="0"/>
+      <xs:element name="message-flow" type="messageFlowPersistenceConfigEntity" minOccurs="0"/>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="retainedMessagesPersistenceConfigEntity">
+    <xs:complexContent>
+      <xs:extension base="persistenceEntity">
+        <xs:sequence>
+          <xs:element name="mode" type="mode" default="file" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="persistenceEntity" abstract="true">
+    <xs:sequence>
+      <xs:element name="file-persistence-configuration" type="persistenceConfigConfigurationEntity" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="persistenceConfigConfigurationEntity">
+    <xs:all>
+      <xs:element name="jmx-enabled" type="xs:boolean" default="true"/>
+      <xs:element name="garbage-collection-type" type="gc-type" default="delete" minOccurs="0"/>
+      <xs:element name="garbage-collection-deletion-delay" type="xs:int" default="60000"/>
+      <xs:element name="garbage-collection-run-period" type="xs:int" default="30000"/>
+      <xs:element name="garbage-collection-files-interval" type="xs:int" default="1"/>
+      <xs:element name="garbage-collection-min-file-age" type="xs:int" default="2"/>
+      <xs:element name="sync-period" type="xs:int" default="1000"/>
+      <xs:element name="durable-writes" type="xs:boolean" default="false"/>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="clientSessionPersistenceConfigEntity">
+    <xs:all>
+      <xs:element name="general" type="clientSessionGeneralConfigEntity" minOccurs="0"/>
+      <xs:element name="subscriptions" type="clientSessionSubscriptionsConfigEntity" minOccurs="0"/>
+      <xs:element name="queued-messages" type="clientSessionQueuedMessagesConfigEntity" minOccurs="0"/>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="clientSessionGeneralConfigEntity">
+    <xs:complexContent>
+      <xs:extension base="persistenceEntity">
+        <xs:sequence>
+          <xs:element name="mode" type="mode" default="file" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="clientSessionSubscriptionsConfigEntity">
+    <xs:complexContent>
+      <xs:extension base="persistenceEntity">
+        <xs:sequence>
+          <xs:element name="mode" type="mode" default="file" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="clientSessionQueuedMessagesConfigEntity">
+    <xs:complexContent>
+      <xs:extension base="persistenceEntity">
+        <xs:all>
+          <xs:element name="mode" type="mode" default="file" minOccurs="0"/>
+          <xs:element name="max-queued-messages" type="xs:long" default="1000"/>
+          <xs:element name="queued-messages-strategy" type="queued-messages-strategy" default="discard" minOccurs="0"/>
+        </xs:all>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="messageFlowPersistenceConfigEntity">
+    <xs:all>
+      <xs:element name="incoming" type="messageFlowIncomingConfigEntity" minOccurs="0"/>
+      <xs:element name="outgoing" type="messageFlowOutgoingConfigEntity" minOccurs="0"/>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="messageFlowIncomingConfigEntity">
+    <xs:complexContent>
+      <xs:extension base="persistenceEntity">
+        <xs:sequence>
+          <xs:element name="mode" type="mode" default="in-memory" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="messageFlowOutgoingConfigEntity">
+    <xs:complexContent>
+      <xs:extension base="persistenceEntity">
+        <xs:sequence>
+          <xs:element name="mode" type="mode" default="file" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="restServiceEntity">
+    <xs:all>
+      <xs:element name="listeners">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="http-listener" type="httpRestListenerEntity" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="servlet-path" type="xs:string" default="/servlet" minOccurs="0"/>
+      <xs:element name="jax-rs-path" type="xs:string" default="/*" minOccurs="0"/>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="httpRestListenerEntity">
+    <xs:complexContent>
+      <xs:extension base="restListenerEntity">
+        <xs:sequence/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="restListenerEntity" abstract="true">
+    <xs:all>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="port" type="xs:int"/>
+      <xs:element name="bind-address" type="xs:string"/>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="stringTrimAdapter">
+    <xs:complexContent>
+      <xs:extension base="xmlAdapter">
+        <xs:sequence/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="xmlAdapter" abstract="true">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:simpleType name="clientAuthenticationMode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="OPTIONAL"/>
+      <xs:enumeration value="REQUIRED"/>
+      <xs:enumeration value="NONE"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="mode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="in-memory"/>
+      <xs:enumeration value="file"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="gc-type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="delete"/>
+      <xs:enumeration value="rename"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="queued-messages-strategy">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="discard-oldest"/>
+      <xs:enumeration value="discard"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
+

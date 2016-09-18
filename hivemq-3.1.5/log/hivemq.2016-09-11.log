@@ -1,0 +1,85 @@
+2016-09-11 17:03:14,012 INFO  - Starting HiveMQ Server
+2016-09-11 17:03:14,073 INFO  - HiveMQ version: 3.1.5
+2016-09-11 17:03:14,079 INFO  - HiveMQ home directory: /home/paridhika/Downloads/IoT/hivemq-3.1.5
+2016-09-11 17:03:24,328 INFO  - Loaded Plugin HiveMQ Sys Topic Plugin - v3.0.0
+2016-09-11 17:03:24,329 INFO  - Loaded Plugin HiveMQ JMX Metrics Reporting Plugin - v3.0.0
+2016-09-11 17:03:24,364 INFO  - JMX Metrics Reporting started.
+2016-09-11 17:03:24,367 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2016-09-11 17:03:24,423 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2016-09-11 17:03:24,423 INFO  - Started HiveMQ in 10384ms
+2016-09-11 17:08:40,327 INFO  - No valid license file found. Using evaluation license, restricted to 25 connections.
+2016-09-11 17:09:33,326 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2016-09-11 22:36:28,128 INFO  - Starting HiveMQ Server
+2016-09-11 22:36:28,131 INFO  - HiveMQ version: 3.1.5
+2016-09-11 22:36:28,132 INFO  - HiveMQ home directory: /home/paridhika/Downloads/IoT/hivemq-3.1.5
+2016-09-11 22:36:32,462 INFO  - Loaded Plugin HiveMQ Sys Topic Plugin - v3.0.0
+2016-09-11 22:36:32,463 INFO  - Loaded Plugin HiveMQ JMX Metrics Reporting Plugin - v3.0.0
+2016-09-11 22:36:32,488 INFO  - JMX Metrics Reporting started.
+2016-09-11 22:36:32,492 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2016-09-11 22:36:32,588 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2016-09-11 22:36:32,589 INFO  - Started HiveMQ in 4459ms
+2016-09-11 22:36:43,576 INFO  - No valid license file found. Using evaluation license, restricted to 25 connections.
+2016-09-11 23:16:36,962 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2016-09-11 23:17:20,204 INFO  - Starting HiveMQ Server
+2016-09-11 23:17:20,214 INFO  - HiveMQ version: 3.1.5
+2016-09-11 23:17:20,215 INFO  - HiveMQ home directory: /home/paridhika/Downloads/IoT/hivemq-3.1.5
+2016-09-11 23:17:25,415 ERROR - Could not read the properties file /home/paridhika/Downloads/IoT/hivemq-3.1.5/conf/myPlugin.properties
+2016-09-11 23:17:25,424 INFO  - Scheduling callback com.acme.callbacks.SimpleScheduledCallback: 0/5 * * * * ?
+2016-09-11 23:17:25,511 INFO  - Scheduling callback com.acme.callbacks.advanced.ScheduledClearRetainedCallback: 0/40 * * * * ?
+2016-09-11 23:17:25,542 INFO  - Scheduled Callback is doing maintenance!
+2016-09-11 23:17:25,700 INFO  - Loaded Plugin HiveMQ HelloWorld Plugin - v3.0.0
+2016-09-11 23:17:25,701 INFO  - HiveMQ is starting
+2016-09-11 23:17:25,701 INFO  - Property from property file is: null
+2016-09-11 23:17:25,703 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2016-09-11 23:17:25,725 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2016-09-11 23:17:25,726 INFO  - Started HiveMQ in 5513ms
+2016-09-11 23:17:30,003 INFO  - Scheduled Callback is doing maintenance!
+2016-09-11 23:17:35,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-11 23:17:40,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-11 23:17:40,076 INFO  - All retained messages have been cleared!
+2016-09-11 23:17:45,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-11 23:17:50,003 INFO  - Scheduled Callback is doing maintenance!
+2016-09-11 23:17:55,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-11 23:18:00,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-11 23:18:00,002 INFO  - All retained messages have been cleared!
+2016-09-11 23:18:05,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-11 23:18:10,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-11 23:18:15,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-11 23:18:20,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-11 23:18:25,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-11 23:18:30,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-11 23:18:35,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-11 23:18:40,000 INFO  - Scheduled Callback is doing maintenance!
+2016-09-11 23:18:40,001 INFO  - All retained messages have been cleared!
+2016-09-11 23:18:40,166 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2016-09-11 23:21:45,189 INFO  - Starting HiveMQ Server
+2016-09-11 23:21:45,194 INFO  - HiveMQ version: 3.1.5
+2016-09-11 23:21:45,195 INFO  - HiveMQ home directory: /home/paridhika/Downloads/IoT/hivemq-3.1.5
+2016-09-11 23:21:48,851 ERROR - Could not read the properties file /home/paridhika/Downloads/IoT/hivemq-3.1.5/conf/myPlugin.properties
+2016-09-11 23:21:49,025 INFO  - Loaded Plugin HiveMQ HelloWorld Plugin - v3.0.0
+2016-09-11 23:21:49,026 INFO  - HiveMQ is starting
+2016-09-11 23:21:49,026 INFO  - Property from property file is: null
+2016-09-11 23:21:49,030 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2016-09-11 23:21:49,047 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2016-09-11 23:21:49,049 INFO  - Started HiveMQ in 3856ms
+2016-09-11 23:22:05,231 INFO  - No valid license file found. Using evaluation license, restricted to 25 connections.
+2016-09-11 23:22:05,254 INFO  - Client mosqsub/16417-paridhika is connecting
+2016-09-11 23:22:05,256 INFO  - Client mosqsub/16417-paridhika is connecting
+2016-09-11 23:22:05,259 INFO  - Added subscription to devices/mosqsub/16417-paridhika/sensor for client mosqsub/16417-paridhika
+2016-09-11 23:22:25,052 INFO  - Client mosqpub/16424-paridhika is connecting
+2016-09-11 23:22:25,053 INFO  - Client mosqpub/16424-paridhika is connecting
+2016-09-11 23:22:25,054 INFO  - Added subscription to devices/mosqpub/16424-paridhika/sensor for client mosqpub/16424-paridhika
+2016-09-11 23:22:25,095 INFO  - Client mosqpub/16424-paridhika sent a message to topic location: pari
+2016-09-11 23:22:25,100 INFO  - Client mosqpub/16424-paridhika is disconnected
+2016-09-11 23:22:25,116 INFO  - Client mosqsub/16417-paridhika is disconnected
+2016-09-11 23:33:07,914 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2016-09-11 23:46:14,331 INFO  - Starting HiveMQ Server
+2016-09-11 23:46:14,339 INFO  - HiveMQ version: 3.1.5
+2016-09-11 23:46:14,340 INFO  - HiveMQ home directory: /home/paridhika/Downloads/IoT/hivemq-3.1.5
+2016-09-11 23:46:18,199 ERROR - Could not read the properties file /home/paridhika/Downloads/IoT/hivemq-3.1.5/conf/myPlugin.properties
+2016-09-11 23:46:18,351 INFO  - Loaded Plugin HiveMQ HelloWorld Plugin - v3.0.0
+2016-09-11 23:46:18,351 INFO  - HiveMQ is starting
+2016-09-11 23:46:18,352 INFO  - Property from property file is: null
+2016-09-11 23:46:18,357 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2016-09-11 23:46:18,372 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2016-09-11 23:46:18,373 INFO  - Started HiveMQ in 4036ms
