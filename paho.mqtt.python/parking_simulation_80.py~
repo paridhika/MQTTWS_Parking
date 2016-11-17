@@ -40,8 +40,8 @@ class PutClientThread(threading.Thread):
 		filled_slotsdict[location] = time.time() + wait
 		
 	def run(self):
-		f1 = open('put_simulation_service_time.csv', 'wt')
-		f = open('put_simulation_result.csv', 'wt')
+		f1 = open('Results/run1/80/put_simulation_service_time_80_run1.csv', 'wt')
+		f = open('Results/run1/80/put_simulation_result_80_run1.csv', 'wt')
 		writer = csv.writer(f)
 		service = csv.writer(f1)
 		writer.writerow( ('Arrival Rate', 'Service Time','Throughput') )
@@ -51,7 +51,9 @@ class PutClientThread(threading.Thread):
 		for index in range(0,self.count):
 			wait = random.expovariate(self.put_mean)
 			lockobj.acquire()
-			location = empty_slotsset.pop()
+			if len(empty_slotsset) != 0:
+				location = empty_slotsset.pop()
+			else: location = "0,0"
 			self.store_time(location)
 			lockobj.release()
 			createPutClient(sumarray,location);
@@ -86,8 +88,8 @@ class DeleteClientThread(threading.Thread):
 		self.mean_hold = mean_hold
 		self.count = count
 	def run(self):
-		f1 = open('delete_simulation_service_time.csv', 'wt')
-		f = open('delete_simulation_result.csv', 'wt')
+		f1 = open('Results/run1/80/delete_simulation_service_time_80_run1.csv', 'wt')
+		f = open('Results/run1/80/delete_simulation_result_80_run1.csv', 'wt')
 		writer = csv.writer(f)
 		service = csv.writer(f1)
 		writer.writerow( ('Arrival Rate', 'Service Time','Throughput') )
@@ -102,12 +104,15 @@ class DeleteClientThread(threading.Thread):
 			if any(filled_slotsdict):
 				sorted_dict = OrderedDict(sorted(filled_slotsdict.items(), key=lambda t: t[1]))
 				location,kill_time = sorted_dict.items()[0]
+				while kill_time > time.time():
+					pass
 				if kill_time <= time.time():
 					arrival_interval.append(kill_time - arrival_start)
 					delete_mean += kill_time - arrival_start
 					arrival_start = kill_time
 					lockobj.acquire()
-					filled_slotsdict.pop(location)
+					if location in filled_slotsdict:
+						filled_slotsdict.pop(location)
 					empty_slotsset.add(location)
 					lockobj.release()
 					temp_count -= 1
@@ -155,8 +160,8 @@ class GetClientThread(threading.Thread):
 		self.mean_hold = mean_hold
 		self.count = count
 	def run(self):
-		f1 = open('get_simulation_service_time.csv', 'wt')
-		f = open('get_simulation_result.csv', 'wt')
+		f1 = open('Results/run1/80/get_simulation_service_time_80_run1.csv', 'wt')
+		f = open('Results/run1/80/get_simulation_result_80_run1.csv', 'wt')
 		writer = csv.writer(f)
 		service = csv.writer(f1)
 		writer.writerow( ('Arrival Rate', 'Service Time','Throughput') )
@@ -185,18 +190,18 @@ empty_slotsset = set()
 filled_slotsdict = OrderedDict()
 initEmptySet(empty_slotsset)
 lockobj = threading.Lock()
-put_mean = 1
-get_mean = 1
-mean_hold = 5
-count = 10
-#put_thread = PutClientThread(put_mean,mean_hold,count)
-#put_thread.start()
-#put_thread.join()
+put_mean = 9.0
+get_mean = 14.37
+mean_hold = 1
+count = 1000
+put_thread = PutClientThread(put_mean,mean_hold,count)
+put_thread.start()
 get_thread = GetClientThread(get_mean,mean_hold,count)
 get_thread.start()
-get_thread.join()
-delete_thread = DeleteClientThread(mean_hold,count)
+delete_thread = DeleteClientThread(mean_hold,2*count)
 delete_thread.start()
+get_thread.join()
+put_thread.join()
 delete_thread.join()
 
 
