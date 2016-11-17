@@ -30,8 +30,7 @@ File Location:- paho.mqtt.python/parking_simulation.py
 
 ## Installation:-
 ### Running hive-mq server
-
-
+Use following guide to run hivemq server with plugin "http://www.hivemq.com/docs/plugins/latest/#maven-plugin-ides"
 
 ### Running paho client
 Inside paho.mqtt.python/ run $python parking_simulation.py
