@@ -28,7 +28,7 @@ public class Configuration {
 
     private final Properties properties;
     //Paridhika
-    private static int SIZE = 10;
+    private static int SIZE = 100;
 	private static String[][] my_map = new String[SIZE][SIZE];
 
     public String[][] getMap(){

@@ -144,6 +144,7 @@ def createGetClient(sumarray,mean_hold):
 		store_time(location,mean_hold)
 		end = time.time()
 		sumarray.append(end - start);
+		client.loop_stop()
 		client.disconnect()
 
 	client = mqtt.Client(client_id="", clean_session=True, userdata=None, transport="websockets")
@@ -151,7 +152,7 @@ def createGetClient(sumarray,mean_hold):
 	client.on_message = on_message
 	client.connect("localhost", 8000, 60)
 	client.subscribe("loc/get")
-	client.loop_forever()
+	client.loop_start()
 
 class GetClientThread(threading.Thread):
 	def __init__(self,get_mean,mean_hold,count):
@@ -181,7 +182,7 @@ class GetClientThread(threading.Thread):
 		f.close()
 
 def initEmptySet(empty_slotsset):
-	size=10
+	size=100
 	for i in range(size):
 		for j in range(size):
 			empty_slotsset.add(str(i)+","+str(j))
@@ -190,15 +191,15 @@ empty_slotsset = set()
 filled_slotsdict = OrderedDict()
 initEmptySet(empty_slotsset)
 lockobj = threading.Lock()
-put_mean = 9.0
-get_mean = 14.37
+put_mean = 13.95
+get_mean = 13.91
 mean_hold = 1
 count = 1000
 put_thread = PutClientThread(put_mean,mean_hold,count)
 put_thread.start()
 get_thread = GetClientThread(get_mean,mean_hold,count)
 get_thread.start()
-delete_thread = DeleteClientThread(mean_hold,2*count)
+delete_thread = DeleteClientThread(mean_hold,2*count-100)
 delete_thread.start()
 get_thread.join()
 put_thread.join()

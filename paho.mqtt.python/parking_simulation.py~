@@ -51,7 +51,9 @@ class PutClientThread(threading.Thread):
 		for index in range(0,self.count):
 			wait = random.expovariate(self.put_mean)
 			lockobj.acquire()
-			location = empty_slotsset.pop()
+			if len(empty_slotsset) != 0:
+				location = empty_slotsset.pop()
+			else: location = "0,0"
 			self.store_time(location)
 			lockobj.release()
 			createPutClient(sumarray,location);
@@ -102,12 +104,15 @@ class DeleteClientThread(threading.Thread):
 			if any(filled_slotsdict):
 				sorted_dict = OrderedDict(sorted(filled_slotsdict.items(), key=lambda t: t[1]))
 				location,kill_time = sorted_dict.items()[0]
+				while kill_time > time.time():
+					pass
 				if kill_time <= time.time():
 					arrival_interval.append(kill_time - arrival_start)
 					delete_mean += kill_time - arrival_start
 					arrival_start = kill_time
 					lockobj.acquire()
-					filled_slotsdict.pop(location)
+					if location in filled_slotsdict:
+						filled_slotsdict.pop(location)
 					empty_slotsset.add(location)
 					lockobj.release()
 					temp_count -= 1
@@ -185,18 +190,18 @@ empty_slotsset = set()
 filled_slotsdict = OrderedDict()
 initEmptySet(empty_slotsset)
 lockobj = threading.Lock()
-put_mean = 1
-get_mean = 1
-mean_hold = 5
-count = 10
+put_mean = 1000
+get_mean = 1000
+mean_hold = 0.3
+count = 1000
 put_thread = PutClientThread(put_mean,mean_hold,count)
 put_thread.start()
-put_thread.join()
-#get_thread = GetClientThread(get_mean,mean_hold,count)
-#get_thread.start()
-#get_thread.join()
-delete_thread = DeleteClientThread(mean_hold,count)
+get_thread = GetClientThread(get_mean,mean_hold,count)
+get_thread.start()
+delete_thread = DeleteClientThread(mean_hold,2*count-50)
 delete_thread.start()
+get_thread.join()
+put_thread.join()
 delete_thread.join()
 
 

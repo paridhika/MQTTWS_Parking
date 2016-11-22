@@ -21,7 +21,8 @@
 	<mqtt>
 		<max-client-id-length>65535</max-client-id-length>
 		<retry-interval>10</retry-interval>
-		<max-queued-messages>1000</max-queued-messages>
+		<max-queued-messages>-1</max-queued-messages>
+		<no-connect-packet-idle-timeout-millis>1000</no-connect-packet-idle-timeout-millis>
 	</mqtt>
 	<throttling>
 		<max-connections>-1</max-connections>
@@ -29,6 +30,9 @@
 		<outgoing-limit>0</outgoing-limit>
 		<incoming-limit>0</incoming-limit>
 	</throttling>
+	<cluster>
+        <enabled>false</enabled>
+    </cluster>
 	<general>
 		<update-check-enabled>true</update-check-enabled>
 	</general>

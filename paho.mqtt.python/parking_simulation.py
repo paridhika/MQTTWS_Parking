@@ -10,23 +10,30 @@ from Queue import Queue
 from collections import OrderedDict
 from sets import Set
 
-def createPutClient(sumarray,location):
-	start = time.time()
+class createPutClient(threading.Thread):
+	def __init__(self,sumarray,location):
+		threading.Thread.__init__(self)
+		self.sumarray = sumarray
+		self.location = location
+	def run(self):
+		start = time.time()
 	# The callback for when the client receives a CONNACK response from the server.
-#	def on_connect(client, userdata, rc):
-#		print("Connected with result code "+str(rc))
+	def on_connect(client, userdata, rc):
+		print("Put ")
 
-	def on_publish(client, userdata, msg):
-		client.disconnect()
-		end = time.time()
-		sumarray.append(end - start);
+		def on_publish(client, userdata, msg):
+#			client.loop_stop();
+			end = time.time()
+			self.sumarray.append(end - start);
+			client.disconnect()
+			
 
-	client = mqtt.Client(client_id="", clean_session=True, userdata=None, transport="websockets")
-#	client.on_connect = on_connect
-	client.on_publish = on_publish
-	client.connect("localhost", 8000, 60)
-	client.publish(topic="loc/put",payload=location)
-	
+		client = mqtt.Client(client_id="", clean_session=True, userdata=None, transport="websockets")
+		client.on_connect = on_connect
+		client.on_publish = on_publish
+		client.connect("localhost", 8000, 60)
+		client.publish(topic="loc/put",payload=self.location)
+#		client.loop_start();
 	
 class PutClientThread(threading.Thread):
 	def __init__(self,put_mean,mean_hold,count):
@@ -35,27 +42,35 @@ class PutClientThread(threading.Thread):
 		self.mean_hold = mean_hold
 		self.count = count
 	def store_time(self,location):
-		print "put at: " + location
+#		print "put at: " + location
 		wait = random.expovariate(self.mean_hold)
 		filled_slotsdict[location] = time.time() + wait
 		
 	def run(self):
-		f1 = open('put_simulation_service_time.csv', 'wt')
-		f = open('put_simulation_result.csv', 'wt')
+		f1 = open('Results/run1/20/put_simulation_service_time_20_run1.csv', 'wt')
+		f = open('Results/run1/20/put_simulation_result_20_run1.csv', 'wt')
 		writer = csv.writer(f)
 		service = csv.writer(f1)
 		writer.writerow( ('Arrival Rate', 'Service Time','Throughput') )
 		service.writerow( ('Mean', 'Count', 'Service Time') )
 		sumarray = []
+		threads = Queue()
 		sum = 0.0;
 		for index in range(0,self.count):
 			wait = random.expovariate(self.put_mean)
 			lockobj.acquire()
-			location = empty_slotsset.pop()
+			if len(empty_slotsset) != 0:
+				location = empty_slotsset.pop()
+			else: location = "0,0"
 			self.store_time(location)
 			lockobj.release()
-			createPutClient(sumarray,location);
+			thread = createPutClient(sumarray,location);
+			thread.start()
+			threads.put(thread)
 			time.sleep(wait);
+		while not threads.empty():
+			threads.get().join()
+			
 		i = 1
 		for val in sumarray:
 			service.writerow((self.put_mean , i, val))
@@ -64,21 +79,28 @@ class PutClientThread(threading.Thread):
 		writer.writerow((self.put_mean , sum/self.count, (int)(self.count*3600/sum)))
 		f.close()
 
-def createDeleteClient(sumarray,location):
-	start = time.time()
-	# The callback for when the client receives a CONNACK response from the server.
-#	def on_connect(client, userdata, rc):
-#		print("Connected with result code "+str(rc))
-	def on_publish(client, userdata, msg):
-		client.disconnect()
-		end = time.time()
-		sumarray.append(end - start);
-
-	client = mqtt.Client(client_id="", clean_session=True, userdata=None, transport="websockets")
-#	client.on_connect = on_connect
-	client.on_publish = on_publish
-	client.connect("localhost", 8000, 60)
-	client.publish(topic="loc/delete",payload=location)
+class createDeleteClient(threading.Thread):
+	def __init__(self,sumarray,location):
+		threading.Thread.__init__(self)
+		self.sumarray = sumarray
+		self.location = location
+	def run(self):
+		start = time.time()
+		# The callback for when the client receives a CONNACK response from the server.
+		def on_connect(client, userdata, rc):
+			print("Delete ")
+		def on_publish(client, userdata, msg):
+#			client.loop_stop();
+			end = time.time()
+			self.sumarray.append(end - start);
+			client.disconnect()
+			
+		client = mqtt.Client(client_id="", clean_session=True, userdata=None, transport="websockets")
+		client.on_connect = on_connect
+		client.on_publish = on_publish
+		client.connect("localhost", 8000, 60)
+		client.publish(topic="loc/delete",payload=self.location)
+#		client.loop_start();
 	
 class DeleteClientThread(threading.Thread):
 	def __init__(self,mean_hold,count):
@@ -86,13 +108,14 @@ class DeleteClientThread(threading.Thread):
 		self.mean_hold = mean_hold
 		self.count = count
 	def run(self):
-		f1 = open('delete_simulation_service_time.csv', 'wt')
-		f = open('delete_simulation_result.csv', 'wt')
+		f1 = open('Results/run1/20/delete_simulation_service_time_20_run1.csv', 'wt')
+		f = open('Results/run1/20/delete_simulation_result_20_run1.csv', 'wt')
 		writer = csv.writer(f)
 		service = csv.writer(f1)
 		writer.writerow( ('Arrival Rate', 'Service Time','Throughput') )
 		service.writerow( ('Mean', 'Count', 'Service Time') )
 		sumarray = []
+		threads = Queue()
 		arrival_interval = []	#array to store interarrival times of delete processes
 		arrival_start = time.time()
 		sum = 0.0
@@ -102,17 +125,24 @@ class DeleteClientThread(threading.Thread):
 			if any(filled_slotsdict):
 				sorted_dict = OrderedDict(sorted(filled_slotsdict.items(), key=lambda t: t[1]))
 				location,kill_time = sorted_dict.items()[0]
+				while kill_time > time.time():
+					pass
 				if kill_time <= time.time():
 					arrival_interval.append(kill_time - arrival_start)
 					delete_mean += kill_time - arrival_start
 					arrival_start = kill_time
 					lockobj.acquire()
-					filled_slotsdict.pop(location)
+					if location in filled_slotsdict:
+						filled_slotsdict.pop(location)
 					empty_slotsset.add(location)
 					lockobj.release()
 					temp_count -= 1
-					print "delete at: " + location
-					createDeleteClient(sumarray,location)
+	#				print "delete at: " + location
+					thread = createDeleteClient(sumarray,location)
+					thread.start()
+					threads.put(thread)
+		while not threads.empty():
+			threads.get().join()
 		i = 1
 		delete_mean /= self.count
 		for val in sumarray:
@@ -122,31 +152,37 @@ class DeleteClientThread(threading.Thread):
 		writer.writerow((delete_mean , sum/self.count, (int)(self.count*3600/sum)))
 		f.close()
 
-def createGetClient(sumarray,mean_hold):
-	start = time.time()
+class createGetClient(threading.Thread):
+	def __init__(self,sumarray,mean_hold):
+		threading.Thread.__init__(self)
+		self.sumarray = sumarray
+		self.mean_hold = mean_hold
+	def run(self):
+		start = time.time()
 	# The callback for when the client receives a CONNACK response from the server.
-#	def on_connect(client, userdata, rc):
-#		print("Connected with result code "+str(rc))
+		def on_connect(client, userdata, rc):
+			print("Get")
 
-	def store_time(location,mean_hold):
-		print "Get at: " + location
-		wait = random.expovariate(mean_hold)
-		filled_slotsdict[location] = time.time() + wait
+		def store_time(location,mean_hold):
+	#		print "Get at: " + location
+			wait = random.expovariate(mean_hold)
+			filled_slotsdict[location] = time.time() + wait
 
-	# The callback for when a PUBLISH message is received from the server.
-	def on_message(client, userdata, msg):
-		location = str(msg.payload)
-		store_time(location,mean_hold)
-		end = time.time()
-		sumarray.append(end - start);
-		client.disconnect()
+		# The callback for when a PUBLISH message is received from the server.
+		def on_message(client, userdata, msg):
+			location = str(msg.payload)
+			store_time(location,self.mean_hold)
+			end = time.time()
+			self.sumarray.append(end - start);
+			client.loop_stop()
+			client.disconnect()
 
-	client = mqtt.Client(client_id="", clean_session=True, userdata=None, transport="websockets")
-#	client.on_connect = on_connect
-	client.on_message = on_message
-	client.connect("localhost", 8000, 60)
-	client.subscribe("loc/get")
-	client.loop_forever()
+		client = mqtt.Client(client_id="", clean_session=True, userdata=None, transport="websockets")
+		client.on_connect = on_connect
+		client.on_message = on_message
+		client.connect("localhost", 8000, 60)
+		client.subscribe("loc/get")
+		client.loop_forever()
 
 class GetClientThread(threading.Thread):
 	def __init__(self,get_mean,mean_hold,count):
@@ -155,18 +191,24 @@ class GetClientThread(threading.Thread):
 		self.mean_hold = mean_hold
 		self.count = count
 	def run(self):
-		f1 = open('get_simulation_service_time.csv', 'wt')
-		f = open('get_simulation_result.csv', 'wt')
+		f1 = open('Results/run1/20/get_simulation_service_time_20_run1.csv', 'wt')
+		f = open('Results/run1/20/get_simulation_result_20_run1.csv', 'wt')
 		writer = csv.writer(f)
 		service = csv.writer(f1)
 		writer.writerow( ('Arrival Rate', 'Service Time','Throughput') )
 		service.writerow( ('Mean', 'Count', 'Service Time') )
 		sumarray = []
+		threads = Queue()
 		sum = 0.0;
 		for index in range(0,self.count):
 			wait = random.expovariate(self.get_mean)
-			createGetClient(sumarray,self.mean_hold)
+			thread = createGetClient(sumarray,self.mean_hold)
+			thread.start()
+			threads.put(thread)
 			time.sleep(wait);
+		while not threads.empty():
+			threads.get().join()
+			
 		i = 1
 		for val in sumarray:
 			service.writerow((self.get_mean , i, val))
@@ -185,18 +227,21 @@ empty_slotsset = set()
 filled_slotsdict = OrderedDict()
 initEmptySet(empty_slotsset)
 lockobj = threading.Lock()
-put_mean = 1
-get_mean = 1
-mean_hold = 5
-count = 10
-#put_thread = PutClientThread(put_mean,mean_hold,count)
-#put_thread.start()
-#put_thread.join()
+put_mean = 3.5
+get_mean = 3.15
+mean_hold = 1
+count = 100
+put_thread = PutClientThread(put_mean,mean_hold,1)
+put_thread.start()
+put_thread.join()
+put_thread = PutClientThread(put_mean,mean_hold,count)
+put_thread.start()
 get_thread = GetClientThread(get_mean,mean_hold,count)
 get_thread.start()
-get_thread.join()
-delete_thread = DeleteClientThread(mean_hold,count)
+delete_thread = DeleteClientThread(mean_hold,2*count-50)
 delete_thread.start()
+get_thread.join()
+put_thread.join()
 delete_thread.join()
 
 

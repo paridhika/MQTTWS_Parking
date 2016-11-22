@@ -9,7 +9,7 @@ import subprocess
 from Queue import Queue
 from collections import OrderedDict
 from sets import Set
-
+import socket
 def createPutClient(sumarray,location):
 	start = time.time()
 	# The callback for when the client receives a CONNACK response from the server.
@@ -24,9 +24,13 @@ def createPutClient(sumarray,location):
 	client = mqtt.Client(client_id="", clean_session=True, userdata=None, transport="websockets")
 #	client.on_connect = on_connect
 	client.on_publish = on_publish
-	client.connect("localhost", 8000, 60)
-	client.publish(topic="loc/put",payload=location)
-	
+	try: 
+		client.connect_async("localhost", 8000, 60)
+		client.publish(topic="loc/put",payload=location)
+	except socket.error, e:
+		print "exception"
+	except IOError, e:
+		print "exception"
 	
 class PutClientThread(threading.Thread):
 	def __init__(self,put_mean,mean_hold,count):
@@ -79,8 +83,13 @@ def createDeleteClient(sumarray,location):
 	client = mqtt.Client(client_id="", clean_session=True, userdata=None, transport="websockets")
 #	client.on_connect = on_connect
 	client.on_publish = on_publish
-	client.connect("localhost", 8000, 60)
-	client.publish(topic="loc/delete",payload=location)
+	try: 
+		client.connect_async("localhost", 8000, 60)
+		client.publish(topic="loc/put",payload=location)
+	except socket.error, e:
+		print "exception"
+	except IOError, e:
+		print "exception"
 	
 class DeleteClientThread(threading.Thread):
 	def __init__(self,mean_hold,count):
@@ -144,14 +153,21 @@ def createGetClient(sumarray,mean_hold):
 		store_time(location,mean_hold)
 		end = time.time()
 		sumarray.append(end - start);
+		client.loop_stop()
 		client.disconnect()
 
 	client = mqtt.Client(client_id="", clean_session=True, userdata=None, transport="websockets")
 #	client.on_connect = on_connect
 	client.on_message = on_message
-	client.connect("localhost", 8000, 60)
-	client.subscribe("loc/get")
-	client.loop_forever()
+	try: 
+		client.connect_async("localhost", 8000, 60)
+		client.subscribe("loc/get")
+	except socket.error, e:
+		print "exception"
+	except IOError, e:
+		print "exception"	
+	
+	client.loop_start()
 
 class GetClientThread(threading.Thread):
 	def __init__(self,get_mean,mean_hold,count):
@@ -181,7 +197,7 @@ class GetClientThread(threading.Thread):
 		f.close()
 
 def initEmptySet(empty_slotsset):
-	size=10
+	size=100
 	for i in range(size):
 		for j in range(size):
 			empty_slotsset.add(str(i)+","+str(j))
@@ -198,7 +214,7 @@ put_thread = PutClientThread(put_mean,mean_hold,count)
 put_thread.start()
 get_thread = GetClientThread(get_mean,mean_hold,count)
 get_thread.start()
-delete_thread = DeleteClientThread(mean_hold,2*count)
+delete_thread = DeleteClientThread(mean_hold,2*count-50)
 delete_thread.start()
 get_thread.join()
 put_thread.join()

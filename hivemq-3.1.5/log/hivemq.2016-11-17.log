@@ -1,0 +1,1315 @@
+2016-09-17 05:20:22,399 INFO  - Starting HiveMQ Server
+2016-09-17 05:20:22,469 INFO  - HiveMQ version: 3.1.5
+2016-09-17 05:20:22,474 INFO  - HiveMQ home directory: /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5
+2016-09-17 05:20:30,113 INFO  - Loaded Plugin HiveMQ Sys Topic Plugin - v3.0.0
+2016-09-17 05:20:30,114 INFO  - Loaded Plugin HiveMQ JMX Metrics Reporting Plugin - v3.0.0
+2016-09-17 05:20:30,130 INFO  - JMX Metrics Reporting started.
+2016-09-17 05:20:30,131 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2016-09-17 05:20:30,178 INFO  - Starting Websocket listener on address 0.0.0.0 and port 8000
+2016-09-17 05:20:30,180 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2016-09-17 05:20:30,180 INFO  - Started Websocket Listener on address 0.0.0.0 and on port 8000
+2016-09-17 05:20:30,181 INFO  - Started HiveMQ in 7745ms
+2016-09-17 05:20:57,273 INFO  - No valid license file found. Using evaluation license, restricted to 25 connections.
+2016-09-17 05:26:03,258 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2016-09-17 05:51:30,187 INFO  - Starting HiveMQ Server
+2016-09-17 05:51:30,193 INFO  - HiveMQ version: 3.1.5
+2016-09-17 05:51:30,193 INFO  - HiveMQ home directory: /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5
+2016-09-17 05:51:34,851 ERROR - Could not read the properties file /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5/conf/myPlugin.properties
+2016-09-17 05:51:34,859 INFO  - Scheduling callback com.acme.callbacks.SimpleScheduledCallback: 0/5 * * * * ?
+2016-09-17 05:51:34,930 INFO  - Scheduling callback com.acme.callbacks.advanced.ScheduledClearRetainedCallback: 0/40 * * * * ?
+2016-09-17 05:51:35,033 INFO  - Scheduled Callback is doing maintenance!
+2016-09-17 05:51:35,070 INFO  - Loaded Plugin HiveMQ HelloWorld Plugin - v3.0.0
+2016-09-17 05:51:35,071 INFO  - HiveMQ is starting
+2016-09-17 05:51:35,071 INFO  - Property from property file is: null
+2016-09-17 05:51:35,075 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2016-09-17 05:51:35,098 INFO  - Starting Websocket listener on address 0.0.0.0 and port 8000
+2016-09-17 05:51:35,101 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2016-09-17 05:51:35,101 INFO  - Started Websocket Listener on address 0.0.0.0 and on port 8000
+2016-09-17 05:51:35,102 INFO  - Started HiveMQ in 4911ms
+2016-09-17 05:51:40,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-17 05:51:40,063 INFO  - All retained messages have been cleared!
+2016-09-17 05:51:45,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-17 05:51:50,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-17 05:51:55,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-17 05:52:00,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-17 05:52:00,002 INFO  - All retained messages have been cleared!
+2016-09-17 05:52:00,658 INFO  - No valid license file found. Using evaluation license, restricted to 25 connections.
+2016-09-17 05:52:00,714 INFO  - Client clientId-0VOXAreRp5 is connecting
+2016-09-17 05:52:00,715 INFO  - Client clientId-0VOXAreRp5 is connecting
+2016-09-17 05:52:00,716 INFO  - Added subscription to devices/clientId-0VOXAreRp5/sensor for client clientId-0VOXAreRp5
+2016-09-17 05:52:03,237 INFO  - Client clientId-IQonCvo2GK is connecting
+2016-09-17 05:52:03,239 INFO  - Client clientId-IQonCvo2GK is connecting
+2016-09-17 05:52:03,239 INFO  - Added subscription to devices/clientId-IQonCvo2GK/sensor for client clientId-IQonCvo2GK
+2016-09-17 05:52:05,002 INFO  - Scheduled Callback is doing maintenance!
+2016-09-17 05:52:10,001 INFO  - Scheduled Callback is doing maintenance!
+2016-09-17 05:52:12,365 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2016-09-17 05:52:12,475 ERROR - An unexpected error occurred for client with IP 127.0.0.1: java.util.concurrent.RejectedExecutionException: Task com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable@47b403d5 rejected from ce.b@23ee75c5[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 4]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2047)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:823)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1369)
+	at com.codahale.metrics.InstrumentedExecutorService.execute(Unknown Source)
+	at com.google.common.util.concurrent.MoreExecutors$ListeningDecorator.execute(Unknown Source)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at com.google.common.util.concurrent.AbstractListeningExecutorService.submit(Unknown Source)
+	at ce.c.a(Unknown Source)
+	at ck.b.userEventTriggered(Unknown Source)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(Unknown Source)
+	at io.netty.channel.AbstractChannelHandlerContext.access$500(Unknown Source)
+	at io.netty.channel.AbstractChannelHandlerContext$6.run(Unknown Source)
+	at io.netty.util.concurrent.DefaultEventExecutor.run(Unknown Source)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-09-17 05:52:12,580 ERROR - An unexpected error occurred for client with IP 127.0.0.1: java.util.concurrent.RejectedExecutionException: Task com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable@7180b6ac rejected from ce.b@23ee75c5[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 4]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2047)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:823)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1369)
+	at com.codahale.metrics.InstrumentedExecutorService.execute(Unknown Source)
+	at com.google.common.util.concurrent.MoreExecutors$ListeningDecorator.execute(Unknown Source)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at com.google.common.util.concurrent.AbstractListeningExecutorService.submit(Unknown Source)
+	at ce.c.a(Unknown Source)
+	at ck.b.userEventTriggered(Unknown Source)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(Unknown Source)
+	at io.netty.channel.AbstractChannelHandlerContext.access$500(Unknown Source)
+	at io.netty.channel.AbstractChannelHandlerContext$6.run(Unknown Source)
+	at io.netty.util.concurrent.DefaultEventExecutor.run(Unknown Source)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-09-17 05:53:33,934 INFO  - Starting HiveMQ Server
+2016-09-17 05:53:33,938 INFO  - HiveMQ version: 3.1.5
+2016-09-17 05:53:33,939 INFO  - HiveMQ home directory: /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5
+2016-09-17 05:53:37,770 ERROR - Could not read the properties file /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5/conf/myPlugin.properties
+2016-09-17 05:53:37,989 INFO  - Loaded Plugin HiveMQ HelloWorld Plugin - v3.0.0
+2016-09-17 05:53:37,990 INFO  - HiveMQ is starting
+2016-09-17 05:53:37,990 INFO  - Property from property file is: null
+2016-09-17 05:53:37,993 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2016-09-17 05:53:38,004 INFO  - Starting Websocket listener on address 0.0.0.0 and port 8000
+2016-09-17 05:53:38,008 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2016-09-17 05:53:38,008 INFO  - Started Websocket Listener on address 0.0.0.0 and on port 8000
+2016-09-17 05:53:38,008 INFO  - Started HiveMQ in 4072ms
+2016-09-17 05:53:51,605 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2016-09-17 07:24:06,555 INFO  - Starting HiveMQ Server
+2016-09-17 07:24:06,559 INFO  - HiveMQ version: 3.1.5
+2016-09-17 07:24:06,560 INFO  - HiveMQ home directory: /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5
+2016-09-17 07:24:11,981 ERROR - Could not read the properties file /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5/conf/myPlugin.properties
+2016-09-17 07:24:12,198 INFO  - Loaded Plugin HiveMQ HelloWorld Plugin - v3.0.0
+2016-09-17 07:24:12,199 INFO  - HiveMQ is starting
+2016-09-17 07:24:12,199 INFO  - Property from property file is: null
+2016-09-17 07:24:12,207 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2016-09-17 07:24:12,217 INFO  - Starting Websocket listener on address 0.0.0.0 and port 8000
+2016-09-17 07:24:12,222 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2016-09-17 07:24:12,223 INFO  - Started Websocket Listener on address 0.0.0.0 and on port 8000
+2016-09-17 07:24:12,223 INFO  - Started HiveMQ in 5666ms
+2016-09-17 07:24:28,788 INFO  - No valid license file found. Using evaluation license, restricted to 25 connections.
+2016-09-17 07:24:28,830 INFO  - Client clientId-bxfk4LoU9s is connecting
+2016-09-17 07:24:28,833 INFO  - Client clientId-bxfk4LoU9s is connecting
+2016-09-17 07:24:28,834 INFO  - Added subscription to devices/clientId-bxfk4LoU9s/sensor for client clientId-bxfk4LoU9s
+2016-09-17 07:37:12,977 INFO  - Client clientId-fy32XUr9hf is connecting
+2016-09-17 07:37:12,979 INFO  - Client clientId-fy32XUr9hf is connecting
+2016-09-17 07:37:12,979 INFO  - Added subscription to devices/clientId-fy32XUr9hf/sensor for client clientId-fy32XUr9hf
+2016-09-17 08:43:48,488 INFO  - Client clientId-C6cbzZe7IY is connecting
+2016-09-17 08:43:48,490 INFO  - Client clientId-C6cbzZe7IY is connecting
+2016-09-17 08:43:48,490 INFO  - Added subscription to devices/clientId-C6cbzZe7IY/sensor for client clientId-C6cbzZe7IY
+2016-09-17 08:44:25,877 INFO  - Client clientId-C6cbzZe7IY is disconnected
+2016-09-17 08:46:25,723 INFO  - Client clientId-fy32XUr9hf is disconnected
+2016-09-17 08:46:26,038 INFO  - Client clientId-ASr56QMjxS is connecting
+2016-09-17 08:46:26,039 INFO  - Client clientId-ASr56QMjxS is connecting
+2016-09-17 08:46:26,040 INFO  - Added subscription to devices/clientId-ASr56QMjxS/sensor for client clientId-ASr56QMjxS
+2016-09-17 08:56:41,316 INFO  - Client clientId-ASr56QMjxS is disconnected
+2016-09-17 08:56:41,752 INFO  - Client clientId-IOjFIGX71Y is connecting
+2016-09-17 08:56:41,755 INFO  - Client clientId-IOjFIGX71Y is connecting
+2016-09-17 08:56:41,756 INFO  - Added subscription to devices/clientId-IOjFIGX71Y/sensor for client clientId-IOjFIGX71Y
+2016-09-17 08:57:24,200 INFO  - Client clientId-IOjFIGX71Y is disconnected
+2016-09-17 12:09:17,939 INFO  - Client clientId-PxJ9BWxrO8 is connecting
+2016-09-17 12:09:17,943 INFO  - Client clientId-PxJ9BWxrO8 is connecting
+2016-09-17 12:09:17,946 INFO  - Added subscription to devices/clientId-PxJ9BWxrO8/sensor for client clientId-PxJ9BWxrO8
+2016-09-17 12:13:03,784 INFO  - Client clientId-PxJ9BWxrO8 is disconnected
+2016-09-17 12:13:04,270 INFO  - Client clientId-QIkBiaxksZ is connecting
+2016-09-17 12:13:04,271 INFO  - Client clientId-QIkBiaxksZ is connecting
+2016-09-17 12:13:04,272 INFO  - Added subscription to devices/clientId-QIkBiaxksZ/sensor for client clientId-QIkBiaxksZ
+2016-09-17 13:18:06,322 INFO  - Client clientId-QIkBiaxksZ is disconnected
+2016-09-17 13:18:06,839 INFO  - Client clientId-PbLhqYUpUC is connecting
+2016-09-17 13:18:06,840 INFO  - Client clientId-PbLhqYUpUC is connecting
+2016-09-17 13:18:06,841 INFO  - Added subscription to devices/clientId-PbLhqYUpUC/sensor for client clientId-PbLhqYUpUC
+2016-09-17 13:39:04,655 INFO  - Client clientId-PbLhqYUpUC is disconnected
+2016-09-17 13:39:05,536 INFO  - Client clientId-qA5DXUDQol is connecting
+2016-09-17 13:39:05,537 INFO  - Client clientId-qA5DXUDQol is connecting
+2016-09-17 13:39:05,537 INFO  - Added subscription to devices/clientId-qA5DXUDQol/sensor for client clientId-qA5DXUDQol
+2016-09-17 13:40:10,337 INFO  - Client clientId-bxfk4LoU9s is disconnected
+2016-09-17 13:40:10,610 INFO  - Client clientId-K5aLczPjo1 is connecting
+2016-09-17 13:40:10,611 INFO  - Client clientId-K5aLczPjo1 is connecting
+2016-09-17 13:40:10,611 INFO  - Added subscription to devices/clientId-K5aLczPjo1/sensor for client clientId-K5aLczPjo1
+2016-09-17 13:42:18,943 INFO  - Client clientId-qA5DXUDQol is disconnected
+2016-09-17 13:42:19,570 INFO  - Client clientId-GNtaR30B4L is connecting
+2016-09-17 13:42:19,571 INFO  - Client clientId-GNtaR30B4L is connecting
+2016-09-17 13:42:19,572 INFO  - Added subscription to devices/clientId-GNtaR30B4L/sensor for client clientId-GNtaR30B4L
+2016-09-17 13:42:36,607 INFO  - Client clientId-GNtaR30B4L is disconnected
+2016-09-17 13:42:37,107 INFO  - Client clientId-cZndHSpDYA is connecting
+2016-09-17 13:42:37,107 INFO  - Client clientId-cZndHSpDYA is connecting
+2016-09-17 13:42:37,108 INFO  - Added subscription to devices/clientId-cZndHSpDYA/sensor for client clientId-cZndHSpDYA
+2016-09-17 13:42:57,992 INFO  - Client clientId-cZndHSpDYA is disconnected
+2016-09-17 13:42:58,504 INFO  - Client clientId-EELuMcSPw4 is connecting
+2016-09-17 13:42:58,507 INFO  - Client clientId-EELuMcSPw4 is connecting
+2016-09-17 13:42:58,508 INFO  - Added subscription to devices/clientId-EELuMcSPw4/sensor for client clientId-EELuMcSPw4
+2016-09-17 13:51:25,449 INFO  - Client clientId-K5aLczPjo1 is disconnected
+2016-09-17 13:51:25,824 INFO  - Client clientId-DTwSwX5NET is connecting
+2016-09-17 13:51:25,828 INFO  - Client clientId-DTwSwX5NET is connecting
+2016-09-17 13:51:25,829 INFO  - Added subscription to devices/clientId-DTwSwX5NET/sensor for client clientId-DTwSwX5NET
+2016-09-17 13:51:31,296 INFO  - Client clientId-DTwSwX5NET is disconnected
+2016-09-17 13:51:36,003 INFO  - Client clientId-EELuMcSPw4 is disconnected
+2016-09-17 13:51:36,659 INFO  - Client clientId-VdwezsJGxP is connecting
+2016-09-17 13:51:36,660 INFO  - Client clientId-VdwezsJGxP is connecting
+2016-09-17 13:51:36,660 INFO  - Added subscription to devices/clientId-VdwezsJGxP/sensor for client clientId-VdwezsJGxP
+2016-09-17 13:55:17,073 INFO  - Client clientId-VdwezsJGxP is disconnected
+2016-09-17 13:55:17,518 INFO  - Client clientId-xUGoDrVSSo is connecting
+2016-09-17 13:55:17,519 INFO  - Client clientId-xUGoDrVSSo is connecting
+2016-09-17 13:55:17,519 INFO  - Added subscription to devices/clientId-xUGoDrVSSo/sensor for client clientId-xUGoDrVSSo
+2016-09-17 13:55:37,082 INFO  - Client clientId-xUGoDrVSSo is disconnected
+2016-09-17 13:55:37,476 INFO  - Client clientId-3ptSSUrzE5 is connecting
+2016-09-17 13:55:37,477 INFO  - Client clientId-3ptSSUrzE5 is connecting
+2016-09-17 13:55:37,478 INFO  - Added subscription to devices/clientId-3ptSSUrzE5/sensor for client clientId-3ptSSUrzE5
+2016-09-17 14:02:55,818 INFO  - Client clientId-3ptSSUrzE5 is disconnected
+2016-09-17 14:14:30,139 INFO  - Client clientId-iBUEpZfDtk is connecting
+2016-09-17 14:14:30,140 INFO  - Client clientId-iBUEpZfDtk is connecting
+2016-09-17 14:14:30,140 INFO  - Added subscription to devices/clientId-iBUEpZfDtk/sensor for client clientId-iBUEpZfDtk
+2016-09-17 14:14:57,882 INFO  - Client clientId-iBUEpZfDtk is disconnected
+2016-09-17 14:14:58,436 INFO  - Client clientId-ZpTJ1NckqB is connecting
+2016-09-17 14:14:58,437 INFO  - Client clientId-ZpTJ1NckqB is connecting
+2016-09-17 14:14:58,437 INFO  - Added subscription to devices/clientId-ZpTJ1NckqB/sensor for client clientId-ZpTJ1NckqB
+2016-09-17 14:17:41,981 INFO  - Client clientId-ZpTJ1NckqB is disconnected
+2016-09-17 16:00:42,990 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2016-09-17 16:32:25,918 INFO  - Starting HiveMQ Server
+2016-09-17 16:32:25,923 INFO  - HiveMQ version: 3.1.5
+2016-09-17 16:32:25,924 INFO  - HiveMQ home directory: /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5
+2016-09-17 16:32:30,162 ERROR - Could not read the properties file /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5/conf/myPlugin.properties
+2016-09-17 16:32:30,294 INFO  - Loaded Plugin HiveMQ HelloWorld Plugin - v3.0.0
+2016-09-17 16:32:30,294 INFO  - HiveMQ is starting
+2016-09-17 16:32:30,294 INFO  - Property from property file is: null
+2016-09-17 16:32:30,296 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2016-09-17 16:32:30,306 INFO  - Starting Websocket listener on address 0.0.0.0 and port 8000
+2016-09-17 16:32:30,310 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2016-09-17 16:32:30,310 INFO  - Started Websocket Listener on address 0.0.0.0 and on port 8000
+2016-09-17 16:32:30,311 INFO  - Started HiveMQ in 4389ms
+2016-09-17 16:43:08,517 INFO  - No valid license file found. Using evaluation license, restricted to 25 connections.
+2016-09-17 16:43:08,565 INFO  - Client paho/178D80ED8F97F9E2D6 is connecting
+2016-09-17 16:43:08,566 INFO  - Client paho/178D80ED8F97F9E2D6 is connecting
+2016-09-17 16:43:08,571 INFO  - Added subscription to devices/paho/178D80ED8F97F9E2D6/sensor for client paho/178D80ED8F97F9E2D6
+2016-09-17 16:44:17,496 INFO  - Client paho/178D80ED8F97F9E2D6 is disconnected
+2016-09-17 16:44:19,184 INFO  - Client paho/24359FAD361E74D84D is connecting
+2016-09-17 16:44:19,186 INFO  - Client paho/24359FAD361E74D84D is connecting
+2016-09-17 16:44:19,187 INFO  - Added subscription to devices/paho/24359FAD361E74D84D/sensor for client paho/24359FAD361E74D84D
+2016-09-17 16:44:19,188 INFO  - Client paho/24359FAD361E74D84D is disconnected
+2016-09-17 17:15:37,148 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2016-09-17 17:19:23,609 INFO  - Starting HiveMQ Server
+2016-09-17 17:19:23,614 INFO  - HiveMQ version: 3.1.5
+2016-09-17 17:19:23,615 INFO  - HiveMQ home directory: /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5
+2016-09-17 17:19:27,813 ERROR - Could not read the properties file /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5/conf/myPlugin.properties
+2016-09-17 17:19:28,021 INFO  - Loaded Plugin HiveMQ HelloWorld Plugin - v3.0.0
+2016-09-17 17:19:28,022 INFO  - HiveMQ is starting
+2016-09-17 17:19:28,023 INFO  - Property from property file is: null
+2016-09-17 17:19:28,037 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2016-09-17 17:19:28,049 INFO  - Starting Websocket listener on address 0.0.0.0 and port 8000
+2016-09-17 17:19:28,054 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2016-09-17 17:19:28,054 INFO  - Started Websocket Listener on address 0.0.0.0 and on port 8000
+2016-09-17 17:19:28,055 INFO  - Started HiveMQ in 4443ms
+2016-09-17 17:19:29,192 INFO  - No valid license file found. Using evaluation license, restricted to 25 connections.
+2016-09-17 17:19:29,232 INFO  - Client paho/867DD1D2357FE5D2C6 is connecting
+2016-09-17 17:19:29,236 INFO  - Client paho/867DD1D2357FE5D2C6 is disconnected
+2016-09-17 17:21:19,650 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2016-09-17 17:21:30,471 INFO  - Starting HiveMQ Server
+2016-09-17 17:21:30,476 INFO  - HiveMQ version: 3.1.5
+2016-09-17 17:21:30,477 INFO  - HiveMQ home directory: /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5
+2016-09-17 17:21:34,852 ERROR - Could not read the properties file /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5/conf/myPlugin.properties
+2016-09-17 17:21:35,028 INFO  - Loaded Plugin HiveMQ HelloWorld Plugin - v3.0.0
+2016-09-17 17:21:35,029 INFO  - HiveMQ is starting
+2016-09-17 17:21:35,030 INFO  - Property from property file is: null
+2016-09-17 17:21:35,032 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2016-09-17 17:21:35,044 INFO  - Starting Websocket listener on address 0.0.0.0 and port 8000
+2016-09-17 17:21:35,057 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2016-09-17 17:21:35,058 INFO  - Started Websocket Listener on address 0.0.0.0 and on port 8000
+2016-09-17 17:21:35,059 INFO  - Started HiveMQ in 4585ms
+2016-09-17 17:21:37,921 INFO  - No valid license file found. Using evaluation license, restricted to 25 connections.
+2016-09-17 17:21:37,950 INFO  - Client paho/940408546FDD9E0ED1 is connecting
+2016-09-17 17:21:37,951 INFO  - Client paho/940408546FDD9E0ED1 is disconnected
+2016-09-17 17:33:42,627 INFO  - Client paho/103E273622A645D9A9 is connecting
+2016-09-17 17:33:42,628 INFO  - Client paho/103E273622A645D9A9 is disconnected
+2016-09-17 17:37:18,339 INFO  - Client paho/0D6C1E3ED157712204 is connecting
+2016-09-17 17:37:18,341 INFO  - Client paho/0D6C1E3ED157712204 is connecting
+2016-09-17 17:37:18,345 INFO  - Client paho/0D6C1E3ED157712204 is disconnected
+2016-09-17 17:37:18,346 INFO  - Added subscription to devices/paho/0D6C1E3ED157712204/sensor for client paho/0D6C1E3ED157712204
+2016-09-17 17:37:47,848 INFO  - Client paho/F435452C96CF8C2343 is connecting
+2016-09-17 17:37:47,849 INFO  - Client paho/F435452C96CF8C2343 is connecting
+2016-09-17 17:37:47,851 INFO  - Added subscription to devices/paho/F435452C96CF8C2343/sensor for client paho/F435452C96CF8C2343
+2016-09-17 17:37:47,855 INFO  - Client paho/F435452C96CF8C2343 is disconnected
+2016-09-17 17:39:56,287 INFO  - Client paho/7129E6EDD4D0D45817 is connecting
+2016-09-17 17:39:56,288 INFO  - Client paho/7129E6EDD4D0D45817 is connecting
+2016-09-17 17:39:56,288 INFO  - Added subscription to devices/paho/7129E6EDD4D0D45817/sensor for client paho/7129E6EDD4D0D45817
+2016-09-17 17:39:56,294 INFO  - Client paho/7129E6EDD4D0D45817 is disconnected
+2016-09-17 17:41:55,696 INFO  - Client paho/07A83D0A651DE9DE50 is connecting
+2016-09-17 17:41:55,697 INFO  - Client paho/07A83D0A651DE9DE50 is connecting
+2016-09-17 17:41:55,698 INFO  - Added subscription to devices/paho/07A83D0A651DE9DE50/sensor for client paho/07A83D0A651DE9DE50
+2016-09-17 17:41:55,706 INFO  - Client paho/07A83D0A651DE9DE50 is disconnected
+2016-09-17 17:42:23,949 INFO  - Client paho/58E96D4206403C953E is connecting
+2016-09-17 17:42:23,949 INFO  - Client paho/58E96D4206403C953E is connecting
+2016-09-17 17:42:23,950 INFO  - Added subscription to devices/paho/58E96D4206403C953E/sensor for client paho/58E96D4206403C953E
+2016-09-17 17:42:23,954 INFO  - Client paho/58E96D4206403C953E is disconnected
+2016-09-17 17:42:53,743 INFO  - Client paho/0E936D0000D1951DA0 is connecting
+2016-09-17 17:42:53,744 INFO  - Client paho/0E936D0000D1951DA0 is connecting
+2016-09-17 17:42:53,744 INFO  - Added subscription to devices/paho/0E936D0000D1951DA0/sensor for client paho/0E936D0000D1951DA0
+2016-09-17 17:42:53,747 INFO  - Client paho/0E936D0000D1951DA0 is disconnected
+2016-09-17 17:43:22,867 INFO  - Client paho/1A0CC34117C2166D64 is connecting
+2016-09-17 17:43:22,868 INFO  - Client paho/1A0CC34117C2166D64 is connecting
+2016-09-17 17:43:22,868 INFO  - Added subscription to devices/paho/1A0CC34117C2166D64/sensor for client paho/1A0CC34117C2166D64
+2016-09-17 17:43:22,964 INFO  - Client paho/1A0CC34117C2166D64 sent a message to topic loc/put: 0,0
+2016-09-17 17:43:39,798 INFO  - Client paho/1A0CC34117C2166D64 is disconnected
+2016-09-17 17:43:41,815 INFO  - Client paho/A5E0CC73306D496712 is connecting
+2016-09-17 17:43:41,819 INFO  - Client paho/A5E0CC73306D496712 is connecting
+2016-09-17 17:43:41,819 INFO  - Added subscription to devices/paho/A5E0CC73306D496712/sensor for client paho/A5E0CC73306D496712
+2016-09-17 17:43:41,890 INFO  - Client paho/A5E0CC73306D496712 sent a message to topic loc/put: 0,0
+2016-09-17 17:43:56,410 INFO  - Client paho/A5E0CC73306D496712 is disconnected
+2016-09-17 17:43:57,275 INFO  - Client paho/4FD1486D9EDFCE1DC3 is connecting
+2016-09-17 17:43:57,277 INFO  - Client paho/4FD1486D9EDFCE1DC3 is connecting
+2016-09-17 17:43:57,278 INFO  - Added subscription to devices/paho/4FD1486D9EDFCE1DC3/sensor for client paho/4FD1486D9EDFCE1DC3
+2016-09-17 17:43:57,358 INFO  - Client paho/4FD1486D9EDFCE1DC3 sent a message to topic loc/put: 0,0
+2016-09-17 17:44:11,580 INFO  - Client paho/4FD1486D9EDFCE1DC3 is disconnected
+2016-09-17 17:44:13,583 INFO  - Client paho/9247A3870DED9F2C5D is connecting
+2016-09-17 17:44:13,584 INFO  - Client paho/9247A3870DED9F2C5D is connecting
+2016-09-17 17:44:13,584 INFO  - Added subscription to devices/paho/9247A3870DED9F2C5D/sensor for client paho/9247A3870DED9F2C5D
+2016-09-17 17:44:13,587 INFO  - Client paho/9247A3870DED9F2C5D is disconnected
+2016-09-17 17:52:32,045 INFO  - Client paho/C30E964F2D3AD103E9 is connecting
+2016-09-17 17:52:32,046 INFO  - Client paho/C30E964F2D3AD103E9 is connecting
+2016-09-17 17:52:32,046 INFO  - Added subscription to devices/paho/C30E964F2D3AD103E9/sensor for client paho/C30E964F2D3AD103E9
+2016-09-17 17:52:32,088 INFO  - Client paho/C30E964F2D3AD103E9 sent a message to topic loc/put: 0,0
+2016-09-17 17:52:32,089 INFO  - Client paho/C30E964F2D3AD103E9 sent a message to topic loc/delete: 0,0
+2016-09-17 18:03:59,824 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2016-09-17 18:03:59,897 ERROR - An unexpected error occurred for client with IP 127.0.0.1: java.util.concurrent.RejectedExecutionException: Task com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable@536994f rejected from ce.b@23ee75c5[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 46]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2047)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:823)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1369)
+	at com.codahale.metrics.InstrumentedExecutorService.execute(Unknown Source)
+	at com.google.common.util.concurrent.MoreExecutors$ListeningDecorator.execute(Unknown Source)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at com.google.common.util.concurrent.AbstractListeningExecutorService.submit(Unknown Source)
+	at ce.c.a(Unknown Source)
+	at ck.b.userEventTriggered(Unknown Source)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(Unknown Source)
+	at io.netty.channel.AbstractChannelHandlerContext.access$500(Unknown Source)
+	at io.netty.channel.AbstractChannelHandlerContext$6.run(Unknown Source)
+	at io.netty.util.concurrent.DefaultEventExecutor.run(Unknown Source)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-09-17 18:08:07,146 INFO  - Starting HiveMQ Server
+2016-09-17 18:08:07,152 INFO  - HiveMQ version: 3.1.5
+2016-09-17 18:08:07,153 INFO  - HiveMQ home directory: /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5
+2016-09-17 18:08:11,457 ERROR - Could not read the properties file /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5/conf/myPlugin.properties
+2016-09-17 18:08:11,624 INFO  - Loaded Plugin HiveMQ HelloWorld Plugin - v3.0.0
+2016-09-17 18:08:11,625 INFO  - HiveMQ is starting
+2016-09-17 18:08:11,626 INFO  - Property from property file is: null
+2016-09-17 18:08:11,629 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2016-09-17 18:08:11,638 INFO  - Starting Websocket listener on address 0.0.0.0 and port 8000
+2016-09-17 18:08:11,641 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2016-09-17 18:08:11,641 INFO  - Started Websocket Listener on address 0.0.0.0 and on port 8000
+2016-09-17 18:08:11,642 INFO  - Started HiveMQ in 4492ms
+2016-09-17 18:08:12,233 INFO  - No valid license file found. Using evaluation license, restricted to 25 connections.
+2016-09-17 18:08:12,272 INFO  - Client paho/C30E964F2D3AD103E9 is connecting
+2016-09-17 18:08:28,877 INFO  - Client paho/C30E964F2D3AD103E9 is disconnected
+2016-09-17 18:08:31,770 INFO  - Client paho/175D4828D9F88D72C0 is connecting
+2016-09-17 18:08:31,803 INFO  - Client paho/175D4828D9F88D72C0 sent a message to topic loc/delete: 0,0
+2016-09-17 18:08:31,804 INFO  - Client paho/175D4828D9F88D72C0 sent a message to topic loc/put: 0,0
+2016-09-17 18:09:20,541 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2016-09-17 18:09:20,650 ERROR - An unexpected error occurred for client with IP 127.0.0.1: java.util.concurrent.RejectedExecutionException: Task com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable@70fd6487 rejected from ce.b@51751e5f[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 8]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2047)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:823)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1369)
+	at com.codahale.metrics.InstrumentedExecutorService.execute(Unknown Source)
+	at com.google.common.util.concurrent.MoreExecutors$ListeningDecorator.execute(Unknown Source)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at com.google.common.util.concurrent.AbstractListeningExecutorService.submit(Unknown Source)
+	at ce.c.a(Unknown Source)
+	at ck.b.userEventTriggered(Unknown Source)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(Unknown Source)
+	at io.netty.channel.AbstractChannelHandlerContext.access$500(Unknown Source)
+	at io.netty.channel.AbstractChannelHandlerContext$6.run(Unknown Source)
+	at io.netty.util.concurrent.DefaultEventExecutor.run(Unknown Source)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-09-17 18:09:28,347 INFO  - Starting HiveMQ Server
+2016-09-17 18:09:28,351 INFO  - HiveMQ version: 3.1.5
+2016-09-17 18:09:28,352 INFO  - HiveMQ home directory: /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5
+2016-09-17 18:09:32,003 ERROR - Could not read the properties file /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5/conf/myPlugin.properties
+2016-09-17 18:09:32,189 INFO  - Loaded Plugin HiveMQ HelloWorld Plugin - v3.0.0
+2016-09-17 18:09:32,189 INFO  - HiveMQ is starting
+2016-09-17 18:09:32,189 INFO  - Property from property file is: null
+2016-09-17 18:09:32,192 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2016-09-17 18:09:32,203 INFO  - Starting Websocket listener on address 0.0.0.0 and port 8000
+2016-09-17 18:09:32,206 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2016-09-17 18:09:32,206 INFO  - Started Websocket Listener on address 0.0.0.0 and on port 8000
+2016-09-17 18:09:32,207 INFO  - Started HiveMQ in 3857ms
+2016-09-17 18:09:32,601 INFO  - No valid license file found. Using evaluation license, restricted to 25 connections.
+2016-09-17 18:09:32,646 INFO  - Client paho/175D4828D9F88D72C0 is connecting
+2016-09-17 18:09:46,512 INFO  - Client paho/175D4828D9F88D72C0 is disconnected
+2016-09-17 18:09:49,170 INFO  - Client paho/4809AD49ED88A4A6CA is connecting
+2016-09-17 18:09:49,220 INFO  - Client paho/4809AD49ED88A4A6CA is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 18:09:49,221 INFO  - Client paho/4809AD49ED88A4A6CA sent a message to topic loc/put: 0,0
+2016-09-17 18:09:49,221 INFO  - Client paho/4809AD49ED88A4A6CA sent a message to topic loc/delete: 0,0
+2016-09-17 18:29:11,725 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2016-09-17 18:29:11,834 ERROR - An unexpected error occurred for client with IP 127.0.0.1: java.util.concurrent.RejectedExecutionException: Task com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable@4e5a368f rejected from ce.b@51751e5f[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 8]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2047)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:823)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1369)
+	at com.codahale.metrics.InstrumentedExecutorService.execute(Unknown Source)
+	at com.google.common.util.concurrent.MoreExecutors$ListeningDecorator.execute(Unknown Source)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at com.google.common.util.concurrent.AbstractListeningExecutorService.submit(Unknown Source)
+	at ce.c.a(Unknown Source)
+	at ck.b.userEventTriggered(Unknown Source)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(Unknown Source)
+	at io.netty.channel.AbstractChannelHandlerContext.access$500(Unknown Source)
+	at io.netty.channel.AbstractChannelHandlerContext$6.run(Unknown Source)
+	at io.netty.util.concurrent.DefaultEventExecutor.run(Unknown Source)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-09-17 19:02:17,281 INFO  - Starting HiveMQ Server
+2016-09-17 19:02:17,285 INFO  - HiveMQ version: 3.1.5
+2016-09-17 19:02:17,286 INFO  - HiveMQ home directory: /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5
+2016-09-17 19:02:21,530 ERROR - Could not read the properties file /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5/conf/myPlugin.properties
+2016-09-17 19:02:21,756 INFO  - Loaded Plugin HiveMQ HelloWorld Plugin - v3.0.0
+2016-09-17 19:02:21,756 INFO  - HiveMQ is starting
+2016-09-17 19:02:21,757 INFO  - Property from property file is: null
+2016-09-17 19:02:21,760 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2016-09-17 19:02:21,770 INFO  - Starting Websocket listener on address 0.0.0.0 and port 8000
+2016-09-17 19:02:21,774 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2016-09-17 19:02:21,774 INFO  - Started Websocket Listener on address 0.0.0.0 and on port 8000
+2016-09-17 19:02:21,775 INFO  - Started HiveMQ in 4491ms
+2016-09-17 19:02:22,403 INFO  - No valid license file found. Using evaluation license, restricted to 25 connections.
+2016-09-17 19:02:22,471 INFO  - Client paho/4809AD49ED88A4A6CA is connecting
+2016-09-17 19:02:31,633 INFO  - Client paho/4809AD49ED88A4A6CA is disconnected
+2016-09-17 19:02:33,837 INFO  - Client paho/E1558AA9752D74779A is connecting
+2016-09-17 19:02:33,861 INFO  - Client paho/E1558AA9752D74779A is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 19:02:33,862 ERROR - Unhandled Exception in onSubscribeCallback class com.acme.callbacks.SubscribeReceived. Skipping all other handlers
+2016-09-17 19:02:33,863 ERROR - An unhandled exception was thrown by a plugin. Plugins are responsible on their own to handle exceptions.
+2016-09-17 19:02:33,863 INFO  - Client paho/E1558AA9752D74779A sent a message to topic loc/put: 0,0
+2016-09-17 19:02:33,865 INFO  - Client paho/E1558AA9752D74779A sent a message to topic loc/delete: 0,0
+2016-09-17 19:02:33,885 ERROR - Original Exception:
+java.lang.NullPointerException: null
+	at com.acme.callbacks.SubscribeReceived.onSubscribe(SubscribeReceived.java:34)
+	at ck.o$a.b(Unknown Source)
+	at ck.o$a.call(Unknown Source)
+	at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(Unknown Source)
+	at com.google.common.util.concurrent.InterruptibleTask.run(Unknown Source)
+	at com.google.common.util.concurrent.TrustedListenableFutureTask.run(Unknown Source)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-09-17 19:02:51,755 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2016-09-17 19:02:51,863 ERROR - An unexpected error occurred for client with IP 127.0.0.1: java.util.concurrent.RejectedExecutionException: Task com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable@61cbae12 rejected from ce.b@51751e5f[Shutting down, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 8]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2047)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:823)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1369)
+	at com.codahale.metrics.InstrumentedExecutorService.execute(Unknown Source)
+	at com.google.common.util.concurrent.MoreExecutors$ListeningDecorator.execute(Unknown Source)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at com.google.common.util.concurrent.AbstractListeningExecutorService.submit(Unknown Source)
+	at ce.c.a(Unknown Source)
+	at ck.b.userEventTriggered(Unknown Source)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(Unknown Source)
+	at io.netty.channel.AbstractChannelHandlerContext.access$500(Unknown Source)
+	at io.netty.channel.AbstractChannelHandlerContext$6.run(Unknown Source)
+	at io.netty.util.concurrent.DefaultEventExecutor.run(Unknown Source)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-09-17 19:38:31,208 INFO  - Starting HiveMQ Server
+2016-09-17 19:38:31,212 INFO  - HiveMQ version: 3.1.5
+2016-09-17 19:38:31,213 INFO  - HiveMQ home directory: /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5
+2016-09-17 19:38:35,588 ERROR - Could not read the properties file /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5/conf/myPlugin.properties
+2016-09-17 19:38:35,800 INFO  - Loaded Plugin HiveMQ HelloWorld Plugin - v3.0.0
+2016-09-17 19:38:35,801 INFO  - HiveMQ is starting
+2016-09-17 19:38:35,802 INFO  - Property from property file is: null
+2016-09-17 19:38:35,805 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2016-09-17 19:38:35,822 INFO  - Starting Websocket listener on address 0.0.0.0 and port 8000
+2016-09-17 19:38:35,828 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2016-09-17 19:38:35,829 INFO  - Started Websocket Listener on address 0.0.0.0 and on port 8000
+2016-09-17 19:38:35,830 INFO  - Started HiveMQ in 4619ms
+2016-09-17 19:38:36,658 INFO  - No valid license file found. Using evaluation license, restricted to 25 connections.
+2016-09-17 19:38:36,701 INFO  - Client paho/E1558AA9752D74779A is connecting
+2016-09-17 19:38:42,605 INFO  - Client paho/E1558AA9752D74779A is disconnected
+2016-09-17 19:38:44,159 INFO  - Client paho/C2345DAD49D5CEA73E is connecting
+2016-09-17 19:38:44,216 INFO  - Client paho/C2345DAD49D5CEA73E is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 19:38:44,218 INFO  - Client paho/C2345DAD49D5CEA73E sent a message to topic loc/delete: 0,0
+2016-09-17 19:38:44,219 INFO  - Client paho/C2345DAD49D5CEA73E sent a message to topic loc/put: 0,0
+2016-09-17 19:38:58,912 INFO  - Client paho/C2345DAD49D5CEA73E is disconnected
+2016-09-17 20:21:15,827 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2016-09-17 20:22:45,499 INFO  - Starting HiveMQ Server
+2016-09-17 20:22:45,509 INFO  - HiveMQ version: 3.1.5
+2016-09-17 20:22:45,512 INFO  - HiveMQ home directory: /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5
+2016-09-17 20:22:49,747 ERROR - Could not read the properties file /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5/conf/myPlugin.properties
+2016-09-17 20:22:49,871 INFO  - Loaded Plugin HiveMQ HelloWorld Plugin - v3.0.0
+2016-09-17 20:22:49,871 INFO  - HiveMQ is starting
+2016-09-17 20:22:49,872 INFO  - Property from property file is: null
+2016-09-17 20:22:49,873 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2016-09-17 20:22:49,880 INFO  - Starting Websocket listener on address 0.0.0.0 and port 8000
+2016-09-17 20:22:49,884 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2016-09-17 20:22:49,884 INFO  - Started Websocket Listener on address 0.0.0.0 and on port 8000
+2016-09-17 20:22:49,885 INFO  - Started HiveMQ in 4381ms
+2016-09-17 20:23:13,361 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2016-09-17 20:35:00,911 INFO  - Starting HiveMQ Server
+2016-09-17 20:35:00,915 INFO  - HiveMQ version: 3.1.5
+2016-09-17 20:35:00,916 INFO  - HiveMQ home directory: /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5
+2016-09-17 20:35:05,167 ERROR - Could not read the properties file /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5/conf/myPlugin.properties
+2016-09-17 20:35:05,360 INFO  - Loaded Plugin HiveMQ HelloWorld Plugin - v3.0.0
+2016-09-17 20:35:05,360 INFO  - HiveMQ is starting
+2016-09-17 20:35:05,361 INFO  - Property from property file is: null
+2016-09-17 20:35:05,363 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2016-09-17 20:35:05,377 INFO  - Starting Websocket listener on address 0.0.0.0 and port 8000
+2016-09-17 20:35:05,382 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2016-09-17 20:35:05,382 INFO  - Started Websocket Listener on address 0.0.0.0 and on port 8000
+2016-09-17 20:35:05,383 INFO  - Started HiveMQ in 4469ms
+2016-09-17 20:35:15,547 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2016-09-17 20:42:44,568 INFO  - Starting HiveMQ Server
+2016-09-17 20:42:44,574 INFO  - HiveMQ version: 3.1.5
+2016-09-17 20:42:44,575 INFO  - HiveMQ home directory: /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5
+2016-09-17 20:42:48,430 ERROR - Could not read the properties file /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5/conf/myPlugin.properties
+2016-09-17 20:42:48,614 INFO  - Loaded Plugin HiveMQ HelloWorld Plugin - v3.0.0
+2016-09-17 20:42:48,614 INFO  - HiveMQ is starting
+2016-09-17 20:42:48,615 INFO  - Property from property file is: null
+2016-09-17 20:42:48,623 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2016-09-17 20:42:48,632 INFO  - Starting Websocket listener on address 0.0.0.0 and port 8000
+2016-09-17 20:42:48,635 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2016-09-17 20:42:48,635 INFO  - Started Websocket Listener on address 0.0.0.0 and on port 8000
+2016-09-17 20:42:48,636 INFO  - Started HiveMQ in 4064ms
+2016-09-17 20:43:02,155 INFO  - No valid license file found. Using evaluation license, restricted to 25 connections.
+2016-09-17 20:43:02,187 INFO  - Client paho/9F8FD493A5E57869D8 is connecting
+2016-09-17 20:43:02,233 INFO  - Client paho/9F8FD493A5E57869D8 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 20:43:02,238 INFO  - Client paho/9F8FD493A5E57869D8 sent a message to topic loc/delete: 0,0
+2016-09-17 20:43:02,239 INFO  - Client paho/9F8FD493A5E57869D8 sent a message to topic loc/put: 0,0
+2016-09-17 20:43:51,483 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2016-09-17 20:43:51,592 ERROR - An unexpected error occurred for client with IP 127.0.0.1: java.util.concurrent.RejectedExecutionException: Task com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable@5636fda9 rejected from ce.b@7068f7ca[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 6]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2047)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:823)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1369)
+	at com.codahale.metrics.InstrumentedExecutorService.execute(Unknown Source)
+	at com.google.common.util.concurrent.MoreExecutors$ListeningDecorator.execute(Unknown Source)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at com.google.common.util.concurrent.AbstractListeningExecutorService.submit(Unknown Source)
+	at ce.c.a(Unknown Source)
+	at ck.b.userEventTriggered(Unknown Source)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(Unknown Source)
+	at io.netty.channel.AbstractChannelHandlerContext.access$500(Unknown Source)
+	at io.netty.channel.AbstractChannelHandlerContext$6.run(Unknown Source)
+	at io.netty.util.concurrent.DefaultEventExecutor.run(Unknown Source)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-09-17 20:44:08,245 INFO  - Starting HiveMQ Server
+2016-09-17 20:44:08,249 INFO  - HiveMQ version: 3.1.5
+2016-09-17 20:44:08,251 INFO  - HiveMQ home directory: /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5
+2016-09-17 20:44:12,441 ERROR - Could not read the properties file /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5/conf/myPlugin.properties
+2016-09-17 20:44:12,578 INFO  - Loaded Plugin HiveMQ HelloWorld Plugin - v3.0.0
+2016-09-17 20:44:12,579 INFO  - HiveMQ is starting
+2016-09-17 20:44:12,580 INFO  - Property from property file is: null
+2016-09-17 20:44:12,582 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2016-09-17 20:44:12,591 INFO  - Starting Websocket listener on address 0.0.0.0 and port 8000
+2016-09-17 20:44:12,595 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2016-09-17 20:44:12,596 INFO  - Started Websocket Listener on address 0.0.0.0 and on port 8000
+2016-09-17 20:44:12,597 INFO  - Started HiveMQ in 4350ms
+2016-09-17 20:44:14,985 INFO  - No valid license file found. Using evaluation license, restricted to 25 connections.
+2016-09-17 20:44:15,025 INFO  - Client paho/276A46FDDC91D20751 is connecting
+2016-09-17 20:44:15,110 INFO  - Client paho/276A46FDDC91D20751 sent a message to topic loc/put: 0,0
+2016-09-17 20:44:15,111 INFO  - Client paho/276A46FDDC91D20751 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 20:44:15,112 INFO  - Client paho/276A46FDDC91D20751 sent a message to topic loc/delete: 0,0
+2016-09-17 20:45:21,692 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2016-09-17 20:45:21,807 ERROR - An unexpected error occurred for client with IP 127.0.0.1: java.util.concurrent.RejectedExecutionException: Task com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable@62bd04c rejected from ce.b@51751e5f[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 6]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2047)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:823)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1369)
+	at com.codahale.metrics.InstrumentedExecutorService.execute(Unknown Source)
+	at com.google.common.util.concurrent.MoreExecutors$ListeningDecorator.execute(Unknown Source)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at com.google.common.util.concurrent.AbstractListeningExecutorService.submit(Unknown Source)
+	at ce.c.a(Unknown Source)
+	at ck.b.userEventTriggered(Unknown Source)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(Unknown Source)
+	at io.netty.channel.AbstractChannelHandlerContext.access$500(Unknown Source)
+	at io.netty.channel.AbstractChannelHandlerContext$6.run(Unknown Source)
+	at io.netty.util.concurrent.DefaultEventExecutor.run(Unknown Source)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-09-17 20:45:28,340 INFO  - Starting HiveMQ Server
+2016-09-17 20:45:28,345 INFO  - HiveMQ version: 3.1.5
+2016-09-17 20:45:28,346 INFO  - HiveMQ home directory: /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5
+2016-09-17 20:45:32,475 ERROR - Could not read the properties file /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5/conf/myPlugin.properties
+2016-09-17 20:45:32,667 INFO  - Loaded Plugin HiveMQ HelloWorld Plugin - v3.0.0
+2016-09-17 20:45:32,669 INFO  - HiveMQ is starting
+2016-09-17 20:45:32,670 INFO  - Property from property file is: null
+2016-09-17 20:45:32,674 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2016-09-17 20:45:32,688 INFO  - Starting Websocket listener on address 0.0.0.0 and port 8000
+2016-09-17 20:45:32,692 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2016-09-17 20:45:32,693 INFO  - Started Websocket Listener on address 0.0.0.0 and on port 8000
+2016-09-17 20:45:32,697 INFO  - Started HiveMQ in 4354ms
+2016-09-17 20:45:42,202 INFO  - No valid license file found. Using evaluation license, restricted to 25 connections.
+2016-09-17 20:45:42,232 INFO  - Client paho/ED0CAF1FFFD5CD9169 is connecting
+2016-09-17 20:45:42,315 INFO  - Client paho/ED0CAF1FFFD5CD9169 sent a message to topic loc/put: 0,0
+2016-09-17 20:45:42,320 INFO  - Client paho/ED0CAF1FFFD5CD9169 sent a message to topic loc/delete: 0,0
+2016-09-17 20:45:42,325 INFO  - Client paho/ED0CAF1FFFD5CD9169 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 20:46:27,083 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2016-09-17 20:46:27,096 ERROR - An unexpected error occurred for client with IP 127.0.0.1: java.util.concurrent.RejectedExecutionException: Task com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable@6f01c8c5 rejected from ce.b@51751e5f[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 6]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2047)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:823)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1369)
+	at com.codahale.metrics.InstrumentedExecutorService.execute(Unknown Source)
+	at com.google.common.util.concurrent.MoreExecutors$ListeningDecorator.execute(Unknown Source)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at com.google.common.util.concurrent.AbstractListeningExecutorService.submit(Unknown Source)
+	at ce.c.a(Unknown Source)
+	at ck.b.userEventTriggered(Unknown Source)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(Unknown Source)
+	at io.netty.channel.AbstractChannelHandlerContext.access$500(Unknown Source)
+	at io.netty.channel.AbstractChannelHandlerContext$6.run(Unknown Source)
+	at io.netty.util.concurrent.DefaultEventExecutor.run(Unknown Source)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-09-17 20:46:39,385 INFO  - Starting HiveMQ Server
+2016-09-17 20:46:39,389 INFO  - HiveMQ version: 3.1.5
+2016-09-17 20:46:39,390 INFO  - HiveMQ home directory: /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5
+2016-09-17 20:46:43,617 ERROR - Could not read the properties file /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5/conf/myPlugin.properties
+2016-09-17 20:46:43,748 INFO  - Loaded Plugin HiveMQ HelloWorld Plugin - v3.0.0
+2016-09-17 20:46:43,749 INFO  - HiveMQ is starting
+2016-09-17 20:46:43,749 INFO  - Property from property file is: null
+2016-09-17 20:46:43,753 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2016-09-17 20:46:43,765 INFO  - Starting Websocket listener on address 0.0.0.0 and port 8000
+2016-09-17 20:46:43,770 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2016-09-17 20:46:43,771 INFO  - Started Websocket Listener on address 0.0.0.0 and on port 8000
+2016-09-17 20:46:43,772 INFO  - Started HiveMQ in 4385ms
+2016-09-17 20:46:48,796 INFO  - No valid license file found. Using evaluation license, restricted to 25 connections.
+2016-09-17 20:46:48,827 INFO  - Client paho/E9D41CCDC65522F435 is connecting
+2016-09-17 20:46:49,339 INFO  - Client paho/E9D41CCDC65522F435 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 20:46:49,341 INFO  - Client paho/E9D41CCDC65522F435 sent a message to topic loc/delete: 0,0
+2016-09-17 20:46:49,343 INFO  - Client paho/E9D41CCDC65522F435 sent a message to topic loc/put: 0,0
+2016-09-17 20:47:02,015 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2016-09-17 20:47:02,134 ERROR - An unexpected error occurred for client with IP 127.0.0.1: java.util.concurrent.RejectedExecutionException: Task com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable@1ccccd2f rejected from ce.b@4443ef6f[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 6]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2047)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:823)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1369)
+	at com.codahale.metrics.InstrumentedExecutorService.execute(Unknown Source)
+	at com.google.common.util.concurrent.MoreExecutors$ListeningDecorator.execute(Unknown Source)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at com.google.common.util.concurrent.AbstractListeningExecutorService.submit(Unknown Source)
+	at ce.c.a(Unknown Source)
+	at ck.b.userEventTriggered(Unknown Source)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeUserEventTriggered(Unknown Source)
+	at io.netty.channel.AbstractChannelHandlerContext.access$500(Unknown Source)
+	at io.netty.channel.AbstractChannelHandlerContext$6.run(Unknown Source)
+	at io.netty.util.concurrent.DefaultEventExecutor.run(Unknown Source)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-09-17 20:51:11,577 INFO  - Starting HiveMQ Server
+2016-09-17 20:51:11,583 INFO  - HiveMQ version: 3.1.5
+2016-09-17 20:51:11,584 INFO  - HiveMQ home directory: /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5
+2016-09-17 20:51:15,717 ERROR - Could not read the properties file /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5/conf/myPlugin.properties
+2016-09-17 20:51:15,914 INFO  - Loaded Plugin HiveMQ HelloWorld Plugin - v3.0.0
+2016-09-17 20:51:15,915 INFO  - HiveMQ is starting
+2016-09-17 20:51:15,915 INFO  - Property from property file is: null
+2016-09-17 20:51:15,919 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2016-09-17 20:51:15,932 INFO  - Starting Websocket listener on address 0.0.0.0 and port 8000
+2016-09-17 20:51:15,939 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2016-09-17 20:51:15,940 INFO  - Started Websocket Listener on address 0.0.0.0 and on port 8000
+2016-09-17 20:51:15,941 INFO  - Started HiveMQ in 4361ms
+2016-09-17 20:51:22,076 INFO  - No valid license file found. Using evaluation license, restricted to 25 connections.
+2016-09-17 20:51:22,109 INFO  - Client paho/5CDD54E2FDA53DFD24 is connecting
+2016-09-17 20:51:22,155 INFO  - Client paho/5CDD54E2FDA53DFD24 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 20:51:22,156 INFO  - Client paho/5CDD54E2FDA53DFD24 sent a message to topic loc/put: 0,0
+2016-09-17 20:51:22,158 INFO  - Client paho/5CDD54E2FDA53DFD24 sent a message to topic loc/delete: 0,0
+2016-09-17 20:51:25,620 INFO  - Client paho/5CDD54E2FDA53DFD24 is disconnected
+2016-09-17 20:51:59,641 INFO  - Client paho/F180623040519443EE is connecting
+2016-09-17 20:51:59,676 INFO  - Client paho/F180623040519443EE is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 20:51:59,676 INFO  - Client paho/F180623040519443EE sent a message to topic loc/put: 0,0
+2016-09-17 20:52:02,725 INFO  - Client paho/F180623040519443EE is disconnected
+2016-09-17 20:52:05,745 INFO  - Client paho/0DD20A2779884976DD is connecting
+2016-09-17 20:52:05,774 INFO  - Client paho/0DD20A2779884976DD sent a message to topic loc/put: 0,0
+2016-09-17 20:52:05,775 INFO  - Client paho/0DD20A2779884976DD is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 20:52:07,410 INFO  - Client paho/0DD20A2779884976DD is disconnected
+2016-09-17 20:52:17,882 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2016-09-17 21:22:17,517 INFO  - Starting HiveMQ Server
+2016-09-17 21:22:17,522 INFO  - HiveMQ version: 3.1.5
+2016-09-17 21:22:17,524 INFO  - HiveMQ home directory: /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5
+2016-09-17 21:22:21,087 ERROR - Could not read the properties file /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5/conf/myPlugin.properties
+2016-09-17 21:22:21,213 INFO  - Loaded Plugin HiveMQ HelloWorld Plugin - v3.0.0
+2016-09-17 21:22:21,214 INFO  - HiveMQ is starting
+2016-09-17 21:22:21,214 INFO  - Property from property file is: null
+2016-09-17 21:22:21,216 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2016-09-17 21:22:21,222 INFO  - Starting Websocket listener on address 0.0.0.0 and port 8000
+2016-09-17 21:22:21,225 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2016-09-17 21:22:21,225 INFO  - Started Websocket Listener on address 0.0.0.0 and on port 8000
+2016-09-17 21:22:21,226 INFO  - Started HiveMQ in 3706ms
+2016-09-17 21:22:28,103 INFO  - No valid license file found. Using evaluation license, restricted to 25 connections.
+2016-09-17 21:22:28,137 INFO  - Client paho/45489D71DD2686EDAE is connecting
+2016-09-17 21:22:28,138 INFO  - Client paho/45489D71DD2686EDAE is disconnected
+2016-09-17 21:22:28,346 INFO  - Client paho/364E8ED8FFA8D0FFFD is connecting
+2016-09-17 21:22:28,348 INFO  - Client paho/364E8ED8FFA8D0FFFD is disconnected
+2016-09-17 21:22:29,765 INFO  - Client paho/4C8D127CE70A077403 is connecting
+2016-09-17 21:22:29,770 INFO  - Client paho/4C8D127CE70A077403 is disconnected
+2016-09-17 21:22:31,159 INFO  - Client paho/F717E9FCFA67D6E067 is connecting
+2016-09-17 21:22:31,160 INFO  - Client paho/F717E9FCFA67D6E067 is disconnected
+2016-09-17 21:22:31,195 INFO  - Client paho/9E5DD38CECE21CADA8 is connecting
+2016-09-17 21:22:31,196 INFO  - Client paho/9E5DD38CECE21CADA8 is disconnected
+2016-09-17 21:22:31,774 INFO  - Client paho/2A8F395523D7EF709A is connecting
+2016-09-17 21:22:31,774 INFO  - Client paho/2A8F395523D7EF709A is disconnected
+2016-09-17 21:22:32,032 INFO  - Client paho/7A8A5D4DE525A6D3DD is connecting
+2016-09-17 21:22:32,033 INFO  - Client paho/7A8A5D4DE525A6D3DD is disconnected
+2016-09-17 21:22:32,540 INFO  - Client paho/9CE133D50CD3641CDA is connecting
+2016-09-17 21:22:32,541 INFO  - Client paho/9CE133D50CD3641CDA is disconnected
+2016-09-17 21:22:32,798 INFO  - Client paho/2C8E25C662E87884A1 is connecting
+2016-09-17 21:22:32,799 INFO  - Client paho/2C8E25C662E87884A1 is disconnected
+2016-09-17 21:22:33,201 INFO  - Client paho/FEC23278FF8D080EEC is connecting
+2016-09-17 21:22:33,202 INFO  - Client paho/FEC23278FF8D080EEC is disconnected
+2016-09-17 21:23:32,651 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2016-09-17 21:37:15,888 INFO  - Starting HiveMQ Server
+2016-09-17 21:37:15,895 INFO  - HiveMQ version: 3.1.5
+2016-09-17 21:37:15,897 INFO  - HiveMQ home directory: /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5
+2016-09-17 21:37:19,977 ERROR - Could not read the properties file /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5/conf/myPlugin.properties
+2016-09-17 21:37:20,116 INFO  - Loaded Plugin HiveMQ HelloWorld Plugin - v3.0.0
+2016-09-17 21:37:20,116 INFO  - HiveMQ is starting
+2016-09-17 21:37:20,117 INFO  - Property from property file is: null
+2016-09-17 21:37:20,119 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2016-09-17 21:37:20,127 INFO  - Starting Websocket listener on address 0.0.0.0 and port 8000
+2016-09-17 21:37:20,132 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2016-09-17 21:37:20,132 INFO  - Started Websocket Listener on address 0.0.0.0 and on port 8000
+2016-09-17 21:37:20,133 INFO  - Started HiveMQ in 4241ms
+2016-09-17 21:37:23,852 INFO  - No valid license file found. Using evaluation license, restricted to 25 connections.
+2016-09-17 21:37:23,932 INFO  - Client paho/79D8A8DD7872C1F52C is connecting
+2016-09-17 21:37:23,938 INFO  - Client paho/676EC3056E1E5D4646 is connecting
+2016-09-17 21:37:23,939 INFO  - Client paho/79D8A8DD7872C1F52C is disconnected
+2016-09-17 21:37:23,941 INFO  - Client paho/676EC3056E1E5D4646 is disconnected
+2016-09-17 21:37:27,074 INFO  - Client paho/9A2A87FD05F0E7ED90 is connecting
+2016-09-17 21:37:27,083 INFO  - Client paho/8482D994998D753983 is connecting
+2016-09-17 21:37:27,083 INFO  - Client paho/8482D994998D753983 is disconnected
+2016-09-17 21:37:27,086 INFO  - Client paho/9A2A87FD05F0E7ED90 is disconnected
+2016-09-17 21:37:30,546 INFO  - Client paho/64A217ADACDD264D18 is connecting
+2016-09-17 21:37:30,550 INFO  - Client paho/64A217ADACDD264D18 is disconnected
+2016-09-17 21:37:30,555 INFO  - Client paho/F5D6D2F09EF379D007 is disconnected
+2016-09-17 21:37:30,556 INFO  - Client paho/F5D6D2F09EF379D007 is connecting
+2016-09-17 21:37:31,764 INFO  - Client paho/A70E1150802ACCFCD3 is connecting
+2016-09-17 21:37:31,782 INFO  - Client paho/A70E1150802ACCFCD3 is disconnected
+2016-09-17 21:37:31,785 INFO  - Client paho/03D6E49D619D7F1CE9 is connecting
+2016-09-17 21:37:31,786 INFO  - Client paho/03D6E49D619D7F1CE9 is disconnected
+2016-09-17 21:37:33,879 INFO  - Client paho/C1444DC1D97D6644D8 is connecting
+2016-09-17 21:37:33,892 INFO  - Client paho/C1444DC1D97D6644D8 is disconnected
+2016-09-17 21:37:33,896 INFO  - Client paho/D596DF2D74E71E2DD8 is connecting
+2016-09-17 21:37:33,904 INFO  - Client paho/D596DF2D74E71E2DD8 is disconnected
+2016-09-17 21:37:37,826 INFO  - Client paho/A5D13F1D4AD5D7F96F is connecting
+2016-09-17 21:37:37,880 INFO  - Client paho/A5D13F1D4AD5D7F96F sent a message to topic loc/put: 1,5
+2016-09-17 21:37:37,987 INFO  - Client paho/A5D13F1D4AD5D7F96F is disconnected
+2016-09-17 21:37:39,607 INFO  - Client paho/DF50EAFDFE9A44C1FD is connecting
+2016-09-17 21:37:39,608 INFO  - Client paho/DF50EAFDFE9A44C1FD is disconnected
+2016-09-17 21:37:40,600 INFO  - Client paho/8A56FE2F6F1898D3D1 is connecting
+2016-09-17 21:37:40,601 INFO  - Client paho/355444561F68FD2D65 is connecting
+2016-09-17 21:37:40,603 INFO  - Client paho/355444561F68FD2D65 is disconnected
+2016-09-17 21:37:40,604 INFO  - Client paho/8A56FE2F6F1898D3D1 is disconnected
+2016-09-17 21:37:41,362 INFO  - Client paho/2713885496DED9ADEC is connecting
+2016-09-17 21:37:41,363 INFO  - Client paho/2713885496DED9ADEC is disconnected
+2016-09-17 21:37:41,366 INFO  - Client paho/2710640705074743A3 is connecting
+2016-09-17 21:37:41,367 INFO  - Client paho/2710640705074743A3 is disconnected
+2016-09-17 21:37:42,519 INFO  - Client paho/D2A6E2DA422F42178D is connecting
+2016-09-17 21:37:42,519 INFO  - Client paho/D2A6E2DA422F42178D is disconnected
+2016-09-17 21:37:42,522 INFO  - Client paho/34EE3F8099CC5D14AC is connecting
+2016-09-17 21:37:42,523 INFO  - Client paho/34EE3F8099CC5D14AC is disconnected
+2016-09-17 21:37:43,152 INFO  - Client paho/D7E1D1E1DAF6006823 is connecting
+2016-09-17 21:37:43,157 INFO  - Client paho/D7E1D1E1DAF6006823 is disconnected
+2016-09-17 21:37:44,516 INFO  - Client paho/77320D4423DD4EFD7F is connecting
+2016-09-17 21:37:44,518 INFO  - Client paho/77320D4423DD4EFD7F is disconnected
+2016-09-17 21:48:50,972 INFO  - Client paho/3E39848511ADAFADDC is disconnected
+2016-09-17 21:48:50,976 INFO  - Client paho/13D739A84407177686 is connecting
+2016-09-17 21:48:50,977 INFO  - Client paho/A4FA406FD5C47C0D91 is connecting
+2016-09-17 21:48:50,978 INFO  - Client paho/A4FA406FD5C47C0D91 is disconnected
+2016-09-17 21:48:50,978 INFO  - Client paho/3E39848511ADAFADDC is connecting
+2016-09-17 21:48:50,984 INFO  - Client paho/13D739A84407177686 is disconnected
+2016-09-17 21:48:52,894 INFO  - Client paho/71438ECD41991E5489 is connecting
+2016-09-17 21:48:52,946 INFO  - Client paho/71438ECD41991E5489 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 21:48:52,984 INFO  - Client paho/71438ECD41991E5489 is disconnected
+2016-09-17 21:48:54,320 INFO  - Client paho/6DDDF3CDA701DA6EEC is connecting
+2016-09-17 21:48:54,321 INFO  - Client paho/D1FE94AD3858731A82 is connecting
+2016-09-17 21:48:54,322 INFO  - Client paho/6DDDF3CDA701DA6EEC is disconnected
+2016-09-17 21:48:54,324 INFO  - Client paho/D1FE94AD3858731A82 is disconnected
+2016-09-17 21:48:54,325 INFO  - Client paho/F6C9447FFFF8E38DF6 is disconnected
+2016-09-17 21:48:54,325 INFO  - Client paho/F6C9447FFFF8E38DF6 is connecting
+2016-09-17 21:48:56,670 INFO  - Client paho/D3652D88DD57328D14 is connecting
+2016-09-17 21:48:56,670 INFO  - Client paho/D3652D88DD57328D14 is disconnected
+2016-09-17 21:48:56,670 INFO  - Client paho/6411C0925E82AA7E53 is connecting
+2016-09-17 21:48:56,670 INFO  - Client paho/6411C0925E82AA7E53 is disconnected
+2016-09-17 21:48:56,677 INFO  - Client paho/510051A8D88765D760 is disconnected
+2016-09-17 21:48:56,677 INFO  - Client paho/510051A8D88765D760 is connecting
+2016-09-17 21:48:59,508 INFO  - Client paho/D9E2E96FFAAC4A6DFC is connecting
+2016-09-17 21:48:59,509 INFO  - Client paho/D9E2E96FFAAC4A6DFC is disconnected
+2016-09-17 21:48:59,510 INFO  - Client paho/468D764F02AEE4A071 is connecting
+2016-09-17 21:48:59,510 INFO  - Client paho/468D764F02AEE4A071 is disconnected
+2016-09-17 21:48:59,517 INFO  - Client paho/1CF88AC0D7F832856E is connecting
+2016-09-17 21:48:59,517 INFO  - Client paho/1CF88AC0D7F832856E is disconnected
+2016-09-17 21:49:00,410 INFO  - Client paho/5217A5094522A33F89 is disconnected
+2016-09-17 21:49:00,410 INFO  - Client paho/5217A5094522A33F89 is connecting
+2016-09-17 21:49:00,412 INFO  - Client paho/85D56D90368E26A712 is disconnected
+2016-09-17 21:49:00,413 INFO  - Client paho/85D56D90368E26A712 is connecting
+2016-09-17 21:49:01,678 INFO  - Client paho/97F0CFE616AD448750 is connecting
+2016-09-17 21:49:01,733 INFO  - Client paho/97F0CFE616AD448750 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 21:49:01,771 INFO  - Client paho/97F0CFE616AD448750 is disconnected
+2016-09-17 21:49:03,808 INFO  - Client paho/79A6C156DA0889E99F is disconnected
+2016-09-17 21:49:03,808 INFO  - Client paho/79A6C156DA0889E99F is connecting
+2016-09-17 21:49:03,809 INFO  - Client paho/C021CAA1DD34EA1DDF is disconnected
+2016-09-17 21:49:03,809 INFO  - Client paho/C021CAA1DD34EA1DDF is connecting
+2016-09-17 21:49:03,811 INFO  - Client paho/E82C3CC59EC3ACADAD is disconnected
+2016-09-17 21:49:03,811 INFO  - Client paho/E82C3CC59EC3ACADAD is connecting
+2016-09-17 21:49:04,610 INFO  - Client paho/93816827D6F0C6EF44 is connecting
+2016-09-17 21:49:04,612 INFO  - Client paho/93816827D6F0C6EF44 is disconnected
+2016-09-17 21:49:04,958 INFO  - Client paho/1DCE7F7D023C86FCDF is connecting
+2016-09-17 21:49:04,958 INFO  - Client paho/1DCE7F7D023C86FCDF is disconnected
+2016-09-17 21:49:04,963 INFO  - Client paho/68A1A381C3887D3CE5 is connecting
+2016-09-17 21:49:04,963 INFO  - Client paho/68A1A381C3887D3CE5 is disconnected
+2016-09-17 21:49:07,058 INFO  - Client paho/37F1CFA6D2E0E71139 is connecting
+2016-09-17 21:49:07,137 INFO  - Client paho/37F1CFA6D2E0E71139 is disconnected
+2016-09-17 21:49:10,364 INFO  - Client paho/ECA38A53A98DC1A53E is connecting
+2016-09-17 21:49:10,373 INFO  - Client paho/5C3670AC8A484253DC is disconnected
+2016-09-17 21:49:10,373 INFO  - Client paho/5C3670AC8A484253DC is connecting
+2016-09-17 21:49:10,374 INFO  - Client paho/221A18D2ADAA395FEE is connecting
+2016-09-17 21:49:10,375 INFO  - Client paho/221A18D2ADAA395FEE is disconnected
+2016-09-17 21:49:10,376 INFO  - Client paho/ECA38A53A98DC1A53E is disconnected
+2016-09-17 21:49:10,832 INFO  - Client paho/19E20CC143DD53CD08 is disconnected
+2016-09-17 21:49:10,833 INFO  - Client paho/19E20CC143DD53CD08 is connecting
+2016-09-17 21:49:12,241 INFO  - Client paho/36F6302393F2E321A1 is connecting
+2016-09-17 21:49:12,286 INFO  - Client paho/36F6302393F2E321A1 sent a message to topic loc/put: 1,0
+2016-09-17 21:49:12,334 INFO  - Client paho/36F6302393F2E321A1 is disconnected
+2016-09-17 21:49:12,702 INFO  - Client paho/D6550FF94315E97A24 is connecting
+2016-09-17 21:49:12,702 INFO  - Client paho/D6550FF94315E97A24 is disconnected
+2016-09-17 21:49:12,710 INFO  - Client paho/44D798598478C4A78C is connecting
+2016-09-17 21:49:12,762 INFO  - Client paho/44D798598478C4A78C sent a message to topic loc/put: 1,1
+2016-09-17 21:49:12,803 INFO  - Client paho/44D798598478C4A78C is disconnected
+2016-09-17 21:52:02,578 INFO  - Client paho/0FC18F6264A2E368A0 is connecting
+2016-09-17 21:52:02,580 INFO  - Client paho/376DFDCF991CDFCCFF is connecting
+2016-09-17 21:52:02,595 INFO  - Client paho/7EEF28026D376A9241 is connecting
+2016-09-17 21:52:02,597 INFO  - Client paho/0FC18F6264A2E368A0 is disconnected
+2016-09-17 21:52:02,598 INFO  - Client paho/376DFDCF991CDFCCFF is disconnected
+2016-09-17 21:52:02,599 INFO  - Client paho/7EEF28026D376A9241 is disconnected
+2016-09-17 21:52:02,915 INFO  - Client paho/476392981672F5FD5D is connecting
+2016-09-17 21:52:02,916 INFO  - Client paho/476392981672F5FD5D is disconnected
+2016-09-17 21:52:03,028 INFO  - Client paho/63FCE1EFC7325D619D is connecting
+2016-09-17 21:52:03,028 INFO  - Client paho/63FCE1EFC7325D619D is disconnected
+2016-09-17 21:52:05,600 INFO  - Client paho/1DA9AD5D27A529D7D1 is disconnected
+2016-09-17 21:52:05,601 INFO  - Client paho/1DA9AD5D27A529D7D1 is connecting
+2016-09-17 21:52:06,429 INFO  - Client paho/84CC1999E1EE4F8634 is connecting
+2016-09-17 21:52:06,430 INFO  - Client paho/84CC1999E1EE4F8634 is disconnected
+2016-09-17 21:52:06,562 INFO  - Client paho/D25949A1F04EDD01FC is connecting
+2016-09-17 21:52:06,598 INFO  - Client paho/D25949A1F04EDD01FC sent a message to topic loc/put: 1,6
+2016-09-17 21:52:06,617 INFO  - Client paho/D25949A1F04EDD01FC is disconnected
+2016-09-17 21:52:09,854 INFO  - Client paho/FE267E9639E1441308 is connecting
+2016-09-17 21:52:09,930 INFO  - Client paho/FE267E9639E1441308 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 21:52:09,965 INFO  - Client paho/FE267E9639E1441308 is disconnected
+2016-09-17 21:52:10,438 INFO  - Client paho/F724F530D89AE1461D is connecting
+2016-09-17 21:52:10,489 INFO  - Client paho/F724F530D89AE1461D sent a message to topic loc/put: 1,7
+2016-09-17 21:52:10,526 INFO  - Client paho/F724F530D89AE1461D is disconnected
+2016-09-17 21:52:10,530 INFO  - Client paho/C0AC58AD3347CC07C8 is connecting
+2016-09-17 21:52:10,530 INFO  - Client paho/C0AC58AD3347CC07C8 is disconnected
+2016-09-17 21:52:12,382 INFO  - Client paho/CF1FF163FD28E37EA4 is disconnected
+2016-09-17 21:52:12,382 INFO  - Client paho/C45799EDF8DF0F1ED9 is disconnected
+2016-09-17 21:52:12,382 INFO  - Client paho/CF1FF163FD28E37EA4 is connecting
+2016-09-17 21:52:12,383 INFO  - Client paho/C45799EDF8DF0F1ED9 is connecting
+2016-09-17 21:52:12,387 INFO  - Client paho/E6775744DCC55D38C8 is connecting
+2016-09-17 21:52:12,387 INFO  - Client paho/E6775744DCC55D38C8 is disconnected
+2016-09-17 21:52:13,635 INFO  - Client paho/7AD7A19FA5AAD6147D is connecting
+2016-09-17 21:52:13,636 INFO  - Client paho/7AD7A19FA5AAD6147D is disconnected
+2016-09-17 21:52:13,719 INFO  - Client paho/49CD626FDFAF1C527F is disconnected
+2016-09-17 21:52:13,719 INFO  - Client paho/49CD626FDFAF1C527F is connecting
+2016-09-17 21:52:13,735 INFO  - Client paho/2CD6932938E9A5AD92 is disconnected
+2016-09-17 21:52:13,735 INFO  - Client paho/2CD6932938E9A5AD92 is connecting
+2016-09-17 21:52:14,205 INFO  - Client paho/FD60D596ADED682012 is connecting
+2016-09-17 21:52:14,205 INFO  - Client paho/FD60D596ADED682012 is disconnected
+2016-09-17 21:52:15,009 INFO  - Client paho/6C1A74E5420810DD68 is connecting
+2016-09-17 21:52:15,010 INFO  - Client paho/6C1A74E5420810DD68 is disconnected
+2016-09-17 21:52:15,119 INFO  - Client paho/082DF6CADD38183071 is connecting
+2016-09-17 21:52:15,124 INFO  - Client paho/082DF6CADD38183071 sent a message to topic loc/put: 1,3
+2016-09-17 21:52:15,127 INFO  - Client paho/082DF6CADD38183071 is disconnected
+2016-09-17 21:52:15,616 INFO  - Client paho/9A54C907DD6374CF36 is disconnected
+2016-09-17 21:52:15,616 INFO  - Client paho/9A54C907DD6374CF36 is connecting
+2016-09-17 21:52:15,624 INFO  - Client paho/0D941C494DE3E6C0C7 is connecting
+2016-09-17 21:52:15,624 INFO  - Client paho/0D941C494DE3E6C0C7 is disconnected
+2016-09-17 21:52:16,251 INFO  - Client paho/041AADFD53E91DAF37 is connecting
+2016-09-17 21:52:16,252 INFO  - Client paho/041AADFD53E91DAF37 is disconnected
+2016-09-17 21:54:53,416 INFO  - Client paho/51750C0130877DE1E4 is connecting
+2016-09-17 21:54:53,417 INFO  - Client paho/51750C0130877DE1E4 is disconnected
+2016-09-17 21:54:54,421 INFO  - Client paho/C88097DDDD6A9CE538 is connecting
+2016-09-17 21:54:54,423 INFO  - Client paho/C88097DDDD6A9CE538 is disconnected
+2016-09-17 21:54:55,719 INFO  - Client paho/739134CA5A443D3679 is connecting
+2016-09-17 21:54:55,720 INFO  - Client paho/739134CA5A443D3679 is disconnected
+2016-09-17 21:54:58,626 INFO  - Client paho/C8865D8FE2899DCC31 is connecting
+2016-09-17 21:54:58,626 INFO  - Client paho/C8865D8FE2899DCC31 is disconnected
+2016-09-17 21:54:58,634 INFO  - Client paho/67A625183D0F4AEAAF is connecting
+2016-09-17 21:54:58,634 INFO  - Client paho/67A625183D0F4AEAAF is disconnected
+2016-09-17 21:54:58,823 INFO  - Client paho/C0D0CD02043F4AAEE2 is connecting
+2016-09-17 21:54:58,823 INFO  - Client paho/C0D0CD02043F4AAEE2 is disconnected
+2016-09-17 21:54:58,849 INFO  - Client paho/1AE2D771DDC1A44DCD is disconnected
+2016-09-17 21:54:58,849 INFO  - Client paho/1AE2D771DDC1A44DCD is connecting
+2016-09-17 21:54:59,623 INFO  - Client paho/43EDC0D1DED7DFDFC5 is connecting
+2016-09-17 21:54:59,623 INFO  - Client paho/43EDC0D1DED7DFDFC5 is disconnected
+2016-09-17 21:55:00,402 INFO  - Client paho/8E6D767970DED3EADD is connecting
+2016-09-17 21:55:00,403 INFO  - Client paho/8E6D767970DED3EADD is disconnected
+2016-09-17 21:55:01,032 INFO  - Client paho/A6FD1E8C5A0DD349AC is connecting
+2016-09-17 21:55:01,033 INFO  - Client paho/A6FD1E8C5A0DD349AC is disconnected
+2016-09-17 21:56:20,915 INFO  - Client paho/3900F0915D404FF8AF is connecting
+2016-09-17 21:56:20,915 INFO  - Client paho/3900F0915D404FF8AF is disconnected
+2016-09-17 21:56:21,624 INFO  - Client paho/D2004213C7F6D8D004 is connecting
+2016-09-17 21:56:21,624 INFO  - Client paho/D2004213C7F6D8D004 is disconnected
+2016-09-17 21:56:24,278 INFO  - Client paho/CDC861AD13355E62A5 is connecting
+2016-09-17 21:56:24,279 INFO  - Client paho/CDC861AD13355E62A5 is disconnected
+2016-09-17 21:56:24,844 INFO  - Client paho/ECF7494989251A9A81 is connecting
+2016-09-17 21:56:24,845 INFO  - Client paho/ECF7494989251A9A81 is disconnected
+2016-09-17 21:56:26,711 INFO  - Client paho/5A340DC9002843F67C is connecting
+2016-09-17 21:56:26,712 INFO  - Client paho/5A340DC9002843F67C is disconnected
+2016-09-17 21:56:26,822 INFO  - Client paho/F26D8AEC12A015DC4A is connecting
+2016-09-17 21:56:26,823 INFO  - Client paho/F26D8AEC12A015DC4A is disconnected
+2016-09-17 21:56:27,384 INFO  - Client paho/DC4819C095ED5FFDE0 is connecting
+2016-09-17 21:56:27,384 INFO  - Client paho/DC4819C095ED5FFDE0 is disconnected
+2016-09-17 21:57:43,640 INFO  - Client paho/9E785D2FFD87787EDF is connecting
+2016-09-17 21:57:43,641 INFO  - Client paho/9E785D2FFD87787EDF is disconnected
+2016-09-17 21:57:44,067 INFO  - Client paho/7CDDA87CD46972FF33 is connecting
+2016-09-17 21:57:44,068 INFO  - Client paho/7CDDA87CD46972FF33 is disconnected
+2016-09-17 21:57:44,074 INFO  - Client paho/8157550200AAC1384D is connecting
+2016-09-17 21:57:44,075 INFO  - Client paho/8157550200AAC1384D is disconnected
+2016-09-17 21:57:45,596 INFO  - Client paho/7453EE6E88803EE4DF is connecting
+2016-09-17 21:57:45,598 INFO  - Client paho/7453EE6E88803EE4DF is disconnected
+2016-09-17 21:57:46,150 INFO  - Client paho/E934A52D2DC6A8D46D is connecting
+2016-09-17 21:57:46,150 INFO  - Client paho/E934A52D2DC6A8D46D is disconnected
+2016-09-17 21:57:47,726 INFO  - Client paho/1899342EC64AD17DF3 is connecting
+2016-09-17 21:57:47,727 INFO  - Client paho/1899342EC64AD17DF3 is disconnected
+2016-09-17 21:57:48,173 INFO  - Client paho/FF8DDE5CD2A6FFDA58 is connecting
+2016-09-17 21:57:48,173 INFO  - Client paho/FF8DDE5CD2A6FFDA58 is disconnected
+2016-09-17 21:57:48,222 INFO  - Client paho/3E96F88A1178D474D9 is connecting
+2016-09-17 21:57:48,222 INFO  - Client paho/3E96F88A1178D474D9 is disconnected
+2016-09-17 21:57:53,487 INFO  - Client paho/2C92F52A070D7DF7EA is connecting
+2016-09-17 21:57:53,487 INFO  - Client paho/2C92F52A070D7DF7EA is disconnected
+2016-09-17 21:57:54,501 INFO  - Client paho/A47DDF30E6D1CDD0C3 is connecting
+2016-09-17 21:57:54,501 INFO  - Client paho/A47DDF30E6D1CDD0C3 is disconnected
+2016-09-17 21:58:27,405 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2016-09-17 21:59:05,774 INFO  - Starting HiveMQ Server
+2016-09-17 21:59:05,779 INFO  - HiveMQ version: 3.1.5
+2016-09-17 21:59:05,780 INFO  - HiveMQ home directory: /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5
+2016-09-17 21:59:09,953 ERROR - Could not read the properties file /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5/conf/myPlugin.properties
+2016-09-17 21:59:10,131 INFO  - Loaded Plugin HiveMQ HelloWorld Plugin - v3.0.0
+2016-09-17 21:59:10,132 INFO  - HiveMQ is starting
+2016-09-17 21:59:10,132 INFO  - Property from property file is: null
+2016-09-17 21:59:10,135 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2016-09-17 21:59:10,144 INFO  - Starting Websocket listener on address 0.0.0.0 and port 8000
+2016-09-17 21:59:10,149 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2016-09-17 21:59:10,149 INFO  - Started Websocket Listener on address 0.0.0.0 and on port 8000
+2016-09-17 21:59:10,149 INFO  - Started HiveMQ in 4373ms
+2016-09-17 21:59:17,241 INFO  - No valid license file found. Using evaluation license, restricted to 25 connections.
+2016-09-17 21:59:17,273 INFO  - Client paho/A57A80080D0AE0D749 is connecting
+2016-09-17 21:59:17,275 INFO  - Client paho/A57A80080D0AE0D749 is disconnected
+2016-09-17 21:59:19,818 INFO  - Client paho/4D8D83EC1374039D69 is connecting
+2016-09-17 21:59:19,820 INFO  - Client paho/4D8D83EC1374039D69 is disconnected
+2016-09-17 21:59:20,662 INFO  - Client paho/D8C6F556225316E1E0 is connecting
+2016-09-17 21:59:20,664 INFO  - Client paho/D8C6F556225316E1E0 is disconnected
+2016-09-17 21:59:21,177 INFO  - Client paho/157558EA295550DFF6 is connecting
+2016-09-17 21:59:21,180 INFO  - Client paho/157558EA295550DFF6 is disconnected
+2016-09-17 21:59:23,344 INFO  - Client paho/8DCFD2EAA6121D2F9D is connecting
+2016-09-17 21:59:23,345 INFO  - Client paho/8DCFD2EAA6121D2F9D is disconnected
+2016-09-17 21:59:23,735 INFO  - Client paho/2D17684ED7D9162F2A is connecting
+2016-09-17 21:59:23,735 INFO  - Client paho/2D17684ED7D9162F2A is disconnected
+2016-09-17 21:59:24,683 INFO  - Client paho/DAFF10AEFD82412FFC is disconnected
+2016-09-17 21:59:24,684 INFO  - Client paho/DAFF10AEFD82412FFC is connecting
+2016-09-17 21:59:29,143 INFO  - Client paho/7F4F55DD1DDA8CFC39 is connecting
+2016-09-17 21:59:29,145 INFO  - Client paho/7F4F55DD1DDA8CFC39 is disconnected
+2016-09-17 21:59:29,380 INFO  - Client paho/2D3C313A09537DDF84 is connecting
+2016-09-17 21:59:29,381 INFO  - Client paho/2D3C313A09537DDF84 is disconnected
+2016-09-17 21:59:30,497 INFO  - Client paho/6485339D8CD5C2D91D is connecting
+2016-09-17 21:59:30,499 INFO  - Client paho/6485339D8CD5C2D91D is disconnected
+2016-09-17 22:00:25,052 INFO  - Client paho/F26D4EDFD307CE1925 is disconnected
+2016-09-17 22:00:25,053 INFO  - Client paho/F26D4EDFD307CE1925 is connecting
+2016-09-17 22:00:25,750 INFO  - Client paho/6E9DFF6713F1D2DDE1 is connecting
+2016-09-17 22:00:25,752 INFO  - Client paho/6E9DFF6713F1D2DDE1 is disconnected
+2016-09-17 22:00:26,780 INFO  - Client paho/CD6306F2AA2C5C0D31 is connecting
+2016-09-17 22:00:26,782 INFO  - Client paho/CD6306F2AA2C5C0D31 is disconnected
+2016-09-17 22:00:26,794 INFO  - Client paho/5C0D0536F8AF216C40 is disconnected
+2016-09-17 22:00:26,793 INFO  - Client paho/5C0D0536F8AF216C40 is connecting
+2016-09-17 22:00:27,849 INFO  - Client paho/850216D45DF3C6F0D1 is connecting
+2016-09-17 22:00:27,852 INFO  - Client paho/850216D45DF3C6F0D1 is disconnected
+2016-09-17 22:00:28,448 INFO  - Client paho/EA57CAF590A3180D77 is connecting
+2016-09-17 22:00:28,449 INFO  - Client paho/EA57CAF590A3180D77 is disconnected
+2016-09-17 22:00:29,116 INFO  - Client paho/6E847F276EE4D6F7D9 is connecting
+2016-09-17 22:00:29,117 INFO  - Client paho/6E847F276EE4D6F7D9 is disconnected
+2016-09-17 22:00:30,371 INFO  - Client paho/66C6844A1D78E2C36C is connecting
+2016-09-17 22:00:30,373 INFO  - Client paho/66C6844A1D78E2C36C is disconnected
+2016-09-17 22:00:31,375 INFO  - Client paho/635416E67803FA1A58 is connecting
+2016-09-17 22:00:31,376 INFO  - Client paho/635416E67803FA1A58 is disconnected
+2016-09-17 22:00:31,561 INFO  - Client paho/571EF94DD340D2809D is disconnected
+2016-09-17 22:00:31,561 INFO  - Client paho/571EF94DD340D2809D is connecting
+2016-09-17 22:01:01,628 INFO  - Client paho/E39F953F0D8823E668 is connecting
+2016-09-17 22:01:01,645 INFO  - Client paho/E39F953F0D8823E668 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:01:01,699 INFO  - Client paho/E39F953F0D8823E668 is disconnected
+2016-09-17 22:01:56,885 INFO  - Client paho/9F36A5E3FC73A75A69 is connecting
+2016-09-17 22:01:56,930 INFO  - Client paho/9F36A5E3FC73A75A69 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:01:56,989 INFO  - Client paho/9F36A5E3FC73A75A69 is disconnected
+2016-09-17 22:03:40,098 INFO  - Client paho/353DAE965E22445394 is connecting
+2016-09-17 22:03:40,114 INFO  - Client paho/353DAE965E22445394 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:03:40,155 INFO  - Client paho/353DAE965E22445394 is disconnected
+2016-09-17 22:05:47,821 INFO  - Client paho/898248A527546CF7A4 is connecting
+2016-09-17 22:05:47,858 INFO  - Client paho/898248A527546CF7A4 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:05:47,911 INFO  - Client paho/898248A527546CF7A4 is disconnected
+2016-09-17 22:07:51,596 INFO  - Client paho/2306E660D2995D7546 is connecting
+2016-09-17 22:07:51,618 INFO  - Client paho/2306E660D2995D7546 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:07:51,659 INFO  - Client paho/2306E660D2995D7546 is disconnected
+2016-09-17 22:07:53,950 INFO  - Client paho/4884DAE65D4316DAA2 is connecting
+2016-09-17 22:07:53,970 INFO  - Client paho/4884DAE65D4316DAA2 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:07:54,018 INFO  - Client paho/4884DAE65D4316DAA2 is disconnected
+2016-09-17 22:07:54,201 INFO  - Client paho/DFF20354A926E70547 is connecting
+2016-09-17 22:07:54,286 INFO  - Client paho/DFF20354A926E70547 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:07:54,307 INFO  - Client paho/DFF20354A926E70547 is disconnected
+2016-09-17 22:07:56,655 INFO  - Client paho/4302F31F669ED70D5D is connecting
+2016-09-17 22:07:56,715 INFO  - Client paho/4302F31F669ED70D5D is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:07:56,769 INFO  - Client paho/4302F31F669ED70D5D is disconnected
+2016-09-17 22:07:57,367 INFO  - Client paho/08488EFF08575D0DDE is connecting
+2016-09-17 22:07:57,375 INFO  - Client paho/08488EFF08575D0DDE is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:07:57,416 INFO  - Client paho/08488EFF08575D0DDE is disconnected
+2016-09-17 22:07:57,656 INFO  - Client paho/198EC36DDD5D557096 is connecting
+2016-09-17 22:07:57,677 INFO  - Client paho/198EC36DDD5D557096 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:07:57,696 INFO  - Client paho/198EC36DDD5D557096 is disconnected
+2016-09-17 22:07:58,024 INFO  - Client paho/C2D6FEDD0294505D84 is connecting
+2016-09-17 22:07:58,102 INFO  - Client paho/C2D6FEDD0294505D84 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:07:58,136 INFO  - Client paho/C2D6FEDD0294505D84 is disconnected
+2016-09-17 22:07:58,374 INFO  - Client paho/CF08A25F6164F8D723 is connecting
+2016-09-17 22:07:58,380 INFO  - Client paho/CF08A25F6164F8D723 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:07:58,488 INFO  - Client paho/CF08A25F6164F8D723 is disconnected
+2016-09-17 22:07:58,998 INFO  - Client paho/26F1994FFC6DDA6A1A is connecting
+2016-09-17 22:07:59,031 INFO  - Client paho/26F1994FFC6DDA6A1A is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:07:59,042 INFO  - Client paho/26F1994FFC6DDA6A1A is disconnected
+2016-09-17 22:08:00,868 INFO  - Client paho/DE91805579DD561074 is connecting
+2016-09-17 22:08:00,897 INFO  - Client paho/DE91805579DD561074 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:08:00,947 INFO  - Client paho/DE91805579DD561074 is disconnected
+2016-09-17 22:11:08,799 INFO  - Shutting down HiveMQ. Please wait, this could take a while...
+2016-09-17 22:11:16,576 INFO  - Starting HiveMQ Server
+2016-09-17 22:11:16,581 INFO  - HiveMQ version: 3.1.5
+2016-09-17 22:11:16,582 INFO  - HiveMQ home directory: /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5
+2016-09-17 22:11:20,193 ERROR - Could not read the properties file /home/paridhika/Downloads/IoT/websocket/hiveMQ/hivemq-3.1.5/conf/myPlugin.properties
+2016-09-17 22:11:20,361 INFO  - Loaded Plugin HiveMQ HelloWorld Plugin - v3.0.0
+2016-09-17 22:11:20,365 INFO  - HiveMQ is starting
+2016-09-17 22:11:20,365 INFO  - Property from property file is: null
+2016-09-17 22:11:20,368 INFO  - Starting TCP listener on address 0.0.0.0 and port 1883
+2016-09-17 22:11:20,380 INFO  - Starting Websocket listener on address 0.0.0.0 and port 8000
+2016-09-17 22:11:20,388 INFO  - Started TCP Listener on address 0.0.0.0 and on port 1883
+2016-09-17 22:11:20,388 INFO  - Started Websocket Listener on address 0.0.0.0 and on port 8000
+2016-09-17 22:11:20,389 INFO  - Started HiveMQ in 3810ms
+2016-09-17 22:11:38,668 INFO  - No valid license file found. Using evaluation license, restricted to 25 connections.
+2016-09-17 22:11:41,011 INFO  - Client paho/AA7446D5A217A183CD is connecting
+2016-09-17 22:11:41,012 INFO  - Client paho/AA7446D5A217A183CD is disconnected
+2016-09-17 22:11:41,019 INFO  - Client paho/1E48C97383622A34E3 is connecting
+2016-09-17 22:11:41,025 INFO  - Client paho/8F6887D18F08DD9F7F is connecting
+2016-09-17 22:11:41,026 INFO  - Client paho/8F6887D18F08DD9F7F is disconnected
+2016-09-17 22:11:41,061 INFO  - Client paho/1E48C97383622A34E3 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:11:41,392 INFO  - Client paho/1E48C97383622A34E3 is disconnected
+2016-09-17 22:11:41,759 INFO  - Client paho/D73224D5EA2D889E40 is connecting
+2016-09-17 22:11:41,771 INFO  - Client paho/11FF0552178392F558 is disconnected
+2016-09-17 22:11:41,776 INFO  - Client paho/11FF0552178392F558 is connecting
+2016-09-17 22:11:41,783 INFO  - Client paho/D73224D5EA2D889E40 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:11:41,967 INFO  - Client paho/D73224D5EA2D889E40 is disconnected
+2016-09-17 22:11:41,969 INFO  - Client paho/1774D6675D4D8DE2DC is connecting
+2016-09-17 22:11:41,969 INFO  - Client paho/1774D6675D4D8DE2DC is disconnected
+2016-09-17 22:11:41,982 INFO  - Client paho/3980431FF6DD417882 is connecting
+2016-09-17 22:11:41,982 INFO  - Client paho/3980431FF6DD417882 is disconnected
+2016-09-17 22:11:43,183 INFO  - Client paho/E9CCE540AED2C1DC05 is connecting
+2016-09-17 22:11:43,188 INFO  - Client paho/E9CCE540AED2C1DC05 is disconnected
+2016-09-17 22:11:43,198 INFO  - Client paho/A86F61D0876DE50EFE is disconnected
+2016-09-17 22:11:43,198 INFO  - Client paho/A86F61D0876DE50EFE is connecting
+2016-09-17 22:11:43,839 INFO  - Client paho/27CC6451D3079C4690 is connecting
+2016-09-17 22:11:43,844 INFO  - Client paho/AD337A42D43A96D9E5 is connecting
+2016-09-17 22:11:43,845 INFO  - Client paho/AD337A42D43A96D9E5 is disconnected
+2016-09-17 22:11:43,864 INFO  - Client paho/27CC6451D3079C4690 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:11:44,181 INFO  - Client paho/27CC6451D3079C4690 is disconnected
+2016-09-17 22:11:44,510 INFO  - Client paho/75D441D20A943CFDE0 is connecting
+2016-09-17 22:11:44,511 INFO  - Client paho/75D441D20A943CFDE0 is disconnected
+2016-09-17 22:11:44,514 INFO  - Client paho/5630E468D19D898DCA is disconnected
+2016-09-17 22:11:44,515 INFO  - Client paho/5630E468D19D898DCA is connecting
+2016-09-17 22:11:44,854 INFO  - Client paho/6569D5191303A1DFDE is disconnected
+2016-09-17 22:11:44,853 INFO  - Client paho/6569D5191303A1DFDE is connecting
+2016-09-17 22:11:45,430 INFO  - Client paho/CD25FDAE9DCDD1AAD4 is connecting
+2016-09-17 22:11:45,572 INFO  - Client paho/CD25FDAE9DCDD1AAD4 sent a message to topic loc/put: 1,4
+2016-09-17 22:11:45,677 INFO  - Client paho/CD25FDAE9DCDD1AAD4 is disconnected
+2016-09-17 22:11:45,741 INFO  - Client paho/27677AA5A421E0ED4F is connecting
+2016-09-17 22:11:45,747 INFO  - Client paho/D5992F7A3D21D15C78 is connecting
+2016-09-17 22:11:45,764 INFO  - Client paho/27677AA5A421E0ED4F is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:11:45,770 INFO  - Client paho/D5992F7A3D21D15C78 is disconnected
+2016-09-17 22:11:45,959 INFO  - Client paho/27677AA5A421E0ED4F is disconnected
+2016-09-17 22:11:47,963 INFO  - Client paho/DD3A496D6D9A0C1622 is connecting
+2016-09-17 22:11:47,964 INFO  - Client paho/DD3A496D6D9A0C1622 is disconnected
+2016-09-17 22:11:47,965 INFO  - Client paho/1CD937921C8E2FD14D is connecting
+2016-09-17 22:11:47,967 INFO  - Client paho/8F8C5DD7D8D4EEFFD9 is disconnected
+2016-09-17 22:11:47,967 INFO  - Client paho/8F8C5DD7D8D4EEFFD9 is connecting
+2016-09-17 22:11:47,986 INFO  - Client paho/1CD937921C8E2FD14D is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:11:48,870 INFO  - Client paho/1CD937921C8E2FD14D is disconnected
+2016-09-17 22:11:49,118 INFO  - Client paho/C18FF176E2AA8F561D is disconnected
+2016-09-17 22:11:49,119 INFO  - Client paho/C18FF176E2AA8F561D is connecting
+2016-09-17 22:11:49,316 INFO  - Client paho/2789AF495F1AA12FE9 is connecting
+2016-09-17 22:11:49,320 INFO  - Client paho/E8CA6EA1F63AA6FF03 is disconnected
+2016-09-17 22:11:49,320 INFO  - Client paho/E8CA6EA1F63AA6FF03 is connecting
+2016-09-17 22:11:49,347 INFO  - Client paho/2789AF495F1AA12FE9 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:11:49,727 INFO  - Client paho/2789AF495F1AA12FE9 is disconnected
+2016-09-17 22:11:51,352 INFO  - Client paho/5C2D3D8C08DE229517 is connecting
+2016-09-17 22:11:51,353 INFO  - Client paho/4118847E87D7D7305E is connecting
+2016-09-17 22:11:51,357 INFO  - Client paho/27A6387D5CCFDF5499 is disconnected
+2016-09-17 22:11:51,358 INFO  - Client paho/27A6387D5CCFDF5499 is connecting
+2016-09-17 22:11:51,366 INFO  - Client paho/5C2D3D8C08DE229517 is disconnected
+2016-09-17 22:11:51,386 INFO  - Client paho/4118847E87D7D7305E is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:11:51,714 INFO  - Client paho/4118847E87D7D7305E is disconnected
+2016-09-17 22:11:51,717 INFO  - Client paho/E22A4DC20E1DA96952 is connecting
+2016-09-17 22:11:51,721 INFO  - Client paho/5CF93562489E927ED1 is disconnected
+2016-09-17 22:11:51,721 INFO  - Client paho/5CF93562489E927ED1 is connecting
+2016-09-17 22:11:51,867 INFO  - Client paho/E22A4DC20E1DA96952 sent a message to topic loc/put: 1,3
+2016-09-17 22:11:51,885 INFO  - Client paho/E22A4DC20E1DA96952 is disconnected
+2016-09-17 22:11:52,304 INFO  - Client paho/412EF0E648AE6FE343 is connecting
+2016-09-17 22:11:52,304 INFO  - Client paho/0C7DDA3D0901F87C75 is connecting
+2016-09-17 22:11:52,308 INFO  - Client paho/412EF0E648AE6FE343 is disconnected
+2016-09-17 22:11:52,310 INFO  - Client paho/FD6208D95082FD198D is disconnected
+2016-09-17 22:11:52,310 INFO  - Client paho/FD6208D95082FD198D is connecting
+2016-09-17 22:11:52,319 INFO  - Client paho/0C7DDA3D0901F87C75 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:11:52,893 INFO  - Client paho/0C7DDA3D0901F87C75 is disconnected
+2016-09-17 22:11:52,899 INFO  - Client paho/6CF60435C661FD50D2 is connecting
+2016-09-17 22:11:52,905 INFO  - Client paho/6CF60435C661FD50D2 is disconnected
+2016-09-17 22:11:53,729 INFO  - Client paho/5DD8E84DEA7DE5D880 is connecting
+2016-09-17 22:11:53,732 INFO  - Client paho/EDA9071AF8720517AF is disconnected
+2016-09-17 22:11:53,732 INFO  - Client paho/EDA9071AF8720517AF is connecting
+2016-09-17 22:11:53,762 INFO  - Client paho/5DD8E84DEA7DE5D880 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:11:54,239 INFO  - Client paho/5DD8E84DEA7DE5D880 is disconnected
+2016-09-17 22:11:54,248 INFO  - Client paho/70722A6AD4FCF1259E is connecting
+2016-09-17 22:11:54,249 INFO  - Client paho/70722A6AD4FCF1259E is disconnected
+2016-09-17 22:11:55,990 INFO  - Client paho/EF17CCE18FD2720AEC is connecting
+2016-09-17 22:11:55,990 INFO  - Client paho/E2FEF3391200E63D2C is connecting
+2016-09-17 22:11:55,990 INFO  - Client paho/E2FEF3391200E63D2C is disconnected
+2016-09-17 22:11:55,995 INFO  - Client paho/9EE1D46F0655AD1FD6 is connecting
+2016-09-17 22:11:55,995 INFO  - Client paho/9EE1D46F0655AD1FD6 is disconnected
+2016-09-17 22:11:56,062 INFO  - Client paho/EF17CCE18FD2720AEC is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:11:56,494 INFO  - Client paho/EF17CCE18FD2720AEC is disconnected
+2016-09-17 22:11:56,502 INFO  - Client paho/3C94CA3D75CC1D2CD1 is connecting
+2016-09-17 22:11:56,502 INFO  - Client paho/3C94CA3D75CC1D2CD1 is disconnected
+2016-09-17 22:11:56,535 INFO  - Client paho/DD01C7C7E279854ADD is disconnected
+2016-09-17 22:11:56,535 INFO  - Client paho/DD01C7C7E279854ADD is connecting
+2016-09-17 22:16:02,921 INFO  - Client paho/4DC4D0CFE479220EA0 is connecting
+2016-09-17 22:16:02,923 INFO  - Client paho/4DC4D0CFE479220EA0 is disconnected
+2016-09-17 22:16:02,923 INFO  - Client paho/0AC7DDC493FEC1C0D8 is connecting
+2016-09-17 22:16:02,923 INFO  - Client paho/0AC7DDC493FEC1C0D8 is disconnected
+2016-09-17 22:16:03,018 INFO  - Client paho/5E87C87D72AE0ACC33 is connecting
+2016-09-17 22:16:03,036 INFO  - Client paho/5E87C87D72AE0ACC33 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:16:03,273 INFO  - Client paho/5E87C87D72AE0ACC33 is disconnected
+2016-09-17 22:16:04,718 INFO  - Client paho/C8C02A8776D31EC22A is connecting
+2016-09-17 22:16:04,724 INFO  - Client paho/6D389F4CC2FFD6EFEC is disconnected
+2016-09-17 22:16:04,724 INFO  - Client paho/6D389F4CC2FFD6EFEC is connecting
+2016-09-17 22:16:04,727 INFO  - Client paho/60DD437D35D1C331C9 is disconnected
+2016-09-17 22:16:04,727 INFO  - Client paho/60DD437D35D1C331C9 is connecting
+2016-09-17 22:16:04,744 INFO  - Client paho/C8C02A8776D31EC22A is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:16:05,104 INFO  - Client paho/C8C02A8776D31EC22A is disconnected
+2016-09-17 22:16:06,065 INFO  - Client paho/9A994360C850C8A505 is disconnected
+2016-09-17 22:16:06,069 INFO  - Client paho/9A994360C850C8A505 is connecting
+2016-09-17 22:16:06,075 INFO  - Client paho/2C18547A7D38860157 is connecting
+2016-09-17 22:16:06,075 INFO  - Client paho/2C18547A7D38860157 is disconnected
+2016-09-17 22:16:06,740 INFO  - Client paho/46EDD7679A445711DC is connecting
+2016-09-17 22:16:06,742 INFO  - Client paho/274FA77D7FC93D9935 is connecting
+2016-09-17 22:16:06,743 INFO  - Client paho/46EDD7679A445711DC is disconnected
+2016-09-17 22:16:06,745 INFO  - Client paho/3DAF2D28A8DDD3A46F is connecting
+2016-09-17 22:16:06,745 INFO  - Client paho/3DAF2D28A8DDD3A46F is disconnected
+2016-09-17 22:16:06,768 INFO  - Client paho/274FA77D7FC93D9935 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:16:07,611 INFO  - Client paho/274FA77D7FC93D9935 is disconnected
+2016-09-17 22:16:07,614 INFO  - Client paho/D6A2887A725F4D7D14 is connecting
+2016-09-17 22:16:07,614 INFO  - Client paho/D6A2887A725F4D7D14 is disconnected
+2016-09-17 22:16:07,617 INFO  - Client paho/DD1CA395D7F9C77252 is connecting
+2016-09-17 22:16:07,617 INFO  - Client paho/DD1CA395D7F9C77252 is disconnected
+2016-09-17 22:16:07,879 INFO  - Client paho/49418A32CD11F675A9 is connecting
+2016-09-17 22:16:07,879 INFO  - Client paho/49418A32CD11F675A9 is disconnected
+2016-09-17 22:16:08,035 INFO  - Client paho/54C0F46C5E7D2542DE is connecting
+2016-09-17 22:16:08,035 INFO  - Client paho/54C0F46C5E7D2542DE is disconnected
+2016-09-17 22:16:09,468 INFO  - Client paho/8CA0527AEE070D2371 is connecting
+2016-09-17 22:16:09,468 INFO  - Client paho/8CA0527AEE070D2371 is disconnected
+2016-09-17 22:16:10,533 INFO  - Client paho/D1A82EDCFAC3D06A97 is connecting
+2016-09-17 22:16:10,534 INFO  - Client paho/348D44D403A025102F is connecting
+2016-09-17 22:16:10,610 INFO  - Client paho/D1A82EDCFAC3D06A97 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:16:10,625 INFO  - Client paho/348D44D403A025102F sent a message to topic loc/put: 1,5
+2016-09-17 22:16:10,719 INFO  - Client paho/348D44D403A025102F is disconnected
+2016-09-17 22:16:11,159 INFO  - Client paho/D1A82EDCFAC3D06A97 is disconnected
+2016-09-17 22:16:11,377 INFO  - Client paho/15196D70C59817E1D2 is disconnected
+2016-09-17 22:16:11,377 INFO  - Client paho/15196D70C59817E1D2 is connecting
+2016-09-17 22:16:13,936 INFO  - Client paho/7E63694DC57118ACC7 is connecting
+2016-09-17 22:16:13,939 INFO  - Client paho/792698A1A7D9A3C0D1 is connecting
+2016-09-17 22:16:13,942 INFO  - Client paho/519D328210E0D60C58 is disconnected
+2016-09-17 22:16:13,943 INFO  - Client paho/519D328210E0D60C58 is connecting
+2016-09-17 22:16:14,002 INFO  - Client paho/7E63694DC57118ACC7 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:16:14,002 INFO  - Client paho/792698A1A7D9A3C0D1 sent a message to topic loc/put: 1,2
+2016-09-17 22:16:14,004 INFO  - Client paho/792698A1A7D9A3C0D1 is disconnected
+2016-09-17 22:16:14,202 INFO  - Client paho/7E63694DC57118ACC7 is disconnected
+2016-09-17 22:16:16,151 INFO  - Client paho/E772A9D8DC77D29F75 is connecting
+2016-09-17 22:16:16,151 INFO  - Client paho/4FEAED586ADDCAA805 is connecting
+2016-09-17 22:16:16,151 INFO  - Client paho/E772A9D8DC77D29F75 is disconnected
+2016-09-17 22:16:16,153 INFO  - Client paho/0F9ED87921D1D25827 is disconnected
+2016-09-17 22:16:16,154 INFO  - Client paho/0F9ED87921D1D25827 is connecting
+2016-09-17 22:16:16,218 INFO  - Client paho/4FEAED586ADDCAA805 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:16:16,861 INFO  - Client paho/4FEAED586ADDCAA805 is disconnected
+2016-09-17 22:16:16,864 INFO  - Client paho/D77E3EF83C3A8DE2C2 is connecting
+2016-09-17 22:16:16,864 INFO  - Client paho/D77E3EF83C3A8DE2C2 is disconnected
+2016-09-17 22:16:19,327 INFO  - Client paho/34509D5CA21868D246 is connecting
+2016-09-17 22:16:19,329 INFO  - Client paho/30489971050FF00809 is connecting
+2016-09-17 22:16:19,331 INFO  - Client paho/30489971050FF00809 is disconnected
+2016-09-17 22:16:19,354 INFO  - Client paho/34509D5CA21868D246 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:16:19,453 INFO  - Client paho/34509D5CA21868D246 is disconnected
+2016-09-17 22:16:19,511 INFO  - Client paho/DE9866260CDD1C7184 is connecting
+2016-09-17 22:16:19,522 INFO  - Client paho/DE9866260CDD1C7184 is disconnected
+2016-09-17 22:16:19,524 INFO  - Client paho/DE9866260CDD1C7184 sent a message to topic loc/delete: 1,8
+2016-09-17 22:16:21,264 INFO  - Client paho/0DF82DA1ECE173A76F is connecting
+2016-09-17 22:16:21,266 INFO  - Client paho/4848D1FDE9131D308C is connecting
+2016-09-17 22:16:21,269 INFO  - Client paho/4848D1FDE9131D308C is disconnected
+2016-09-17 22:16:21,274 INFO  - Client paho/0DF82DA1ECE173A76F is disconnected
+2016-09-17 22:16:22,871 INFO  - Client paho/A869ADC108168F9C59 is connecting
+2016-09-17 22:16:22,872 INFO  - Client paho/1F58683C9E476D03CE is connecting
+2016-09-17 22:16:22,873 INFO  - Client paho/1F58683C9E476D03CE is disconnected
+2016-09-17 22:16:22,875 INFO  - Client paho/51DC0F9C381A838E7E is disconnected
+2016-09-17 22:16:22,875 INFO  - Client paho/51DC0F9C381A838E7E is connecting
+2016-09-17 22:16:22,890 INFO  - Client paho/A869ADC108168F9C59 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:16:23,379 INFO  - Client paho/A869ADC108168F9C59 is disconnected
+2016-09-17 22:16:23,610 INFO  - Client paho/2457EC8D3F0FA59D66 is connecting
+2016-09-17 22:16:23,610 INFO  - Client paho/2457EC8D3F0FA59D66 is disconnected
+2016-09-17 22:16:26,705 INFO  - Client paho/E02DEE06E6264DE0EF is connecting
+2016-09-17 22:16:26,734 INFO  - Client paho/E02DEE06E6264DE0EF is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:16:27,566 INFO  - Client paho/E02DEE06E6264DE0EF is disconnected
+2016-09-17 22:16:28,567 INFO  - Client paho/D6F85DD03A30D2D14E is connecting
+2016-09-17 22:16:28,570 INFO  - Client paho/FF3250D34308176D35 is connecting
+2016-09-17 22:16:28,570 INFO  - Client paho/FF3250D34308176D35 is disconnected
+2016-09-17 22:16:28,656 INFO  - Client paho/D6F85DD03A30D2D14E is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:16:28,919 INFO  - Client paho/D6F85DD03A30D2D14E is disconnected
+2016-09-17 22:16:30,110 INFO  - Client paho/ED3D67D69A9A39D12A is connecting
+2016-09-17 22:16:30,111 INFO  - Client paho/ED3D67D69A9A39D12A is disconnected
+2016-09-17 22:18:41,564 INFO  - Client paho/6304794F5598D71C16 is connecting
+2016-09-17 22:18:41,564 INFO  - Client paho/8DF50D7DE457C3217D is connecting
+2016-09-17 22:18:41,566 INFO  - Client paho/136DD58209941D52D7 is connecting
+2016-09-17 22:18:41,598 INFO  - Client paho/8DF50D7DE457C3217D is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:18:41,644 INFO  - Client paho/8DF50D7DE457C3217D is disconnected
+2016-09-17 22:18:41,686 INFO  - Client paho/07130D27C9902DFEDF is connecting
+2016-09-17 22:18:41,688 INFO  - Client paho/07130D27C9902DFEDF is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:18:41,708 INFO  - Client paho/07130D27C9902DFEDF is disconnected
+2016-09-17 22:18:41,848 INFO  - Client paho/97DA4074D12A01FD95 is connecting
+2016-09-17 22:18:41,855 INFO  - Client paho/97DA4074D12A01FD95 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:18:41,874 INFO  - Client paho/97DA4074D12A01FD95 is disconnected
+2016-09-17 22:18:42,514 INFO  - Client paho/DA4933EAD1E7708AA6 is connecting
+2016-09-17 22:18:42,516 INFO  - Client paho/DA4933EAD1E7708AA6 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:18:42,533 INFO  - Client paho/DA4933EAD1E7708AA6 is disconnected
+2016-09-17 22:18:44,804 INFO  - Client paho/88749A81C2D4EDD43A is connecting
+2016-09-17 22:18:44,818 INFO  - Client paho/88749A81C2D4EDD43A is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:18:44,862 INFO  - Client paho/88749A81C2D4EDD43A is disconnected
+2016-09-17 22:18:47,708 INFO  - Client paho/FC9C44DDDD76545C89 is connecting
+2016-09-17 22:18:47,741 INFO  - Client paho/FC9C44DDDD76545C89 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:18:47,786 INFO  - Client paho/FC9C44DDDD76545C89 is disconnected
+2016-09-17 22:18:49,160 INFO  - Client paho/A4143527965A78D9FD is connecting
+2016-09-17 22:18:49,207 INFO  - Client paho/A4143527965A78D9FD is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:18:49,251 INFO  - Client paho/A4143527965A78D9FD is disconnected
+2016-09-17 22:18:52,771 INFO  - Client paho/F46AA773F952D2521F is connecting
+2016-09-17 22:18:52,802 INFO  - Client paho/F46AA773F952D2521F is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:18:52,840 INFO  - Client paho/F46AA773F952D2521F is disconnected
+2016-09-17 22:18:57,530 INFO  - Client paho/6C51A810D986D94394 is connecting
+2016-09-17 22:18:57,547 INFO  - Client paho/6C51A810D986D94394 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:18:57,588 INFO  - Client paho/6C51A810D986D94394 is disconnected
+2016-09-17 22:18:57,892 INFO  - Client paho/D67F99CCED8FAD05E7 is connecting
+2016-09-17 22:18:57,907 INFO  - Client paho/D67F99CCED8FAD05E7 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:18:57,917 INFO  - Client paho/D67F99CCED8FAD05E7 is disconnected
+2016-09-17 22:19:43,993 INFO  - Client paho/A5F2CA555A7F283AD8 is disconnected
+2016-09-17 22:19:43,994 INFO  - Client paho/A5F2CA555A7F283AD8 is connecting
+2016-09-17 22:19:43,999 INFO  - Client paho/79DFF1DD32C20A07C4 is connecting
+2016-09-17 22:19:44,003 INFO  - Client paho/79DFF1DD32C20A07C4 is disconnected
+2016-09-17 22:19:44,005 INFO  - Client paho/C89E2162D480FCD87A is connecting
+2016-09-17 22:19:44,035 INFO  - Client paho/C89E2162D480FCD87A is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:19:44,123 INFO  - Client paho/C89E2162D480FCD87A is disconnected
+2016-09-17 22:19:45,941 INFO  - Client paho/915C8452E853920D8D is connecting
+2016-09-17 22:19:45,946 INFO  - Client paho/6CA7AD43E4F58DF9A1 is connecting
+2016-09-17 22:19:45,946 INFO  - Client paho/6CA7AD43E4F58DF9A1 is disconnected
+2016-09-17 22:19:45,947 INFO  - Client paho/79FFCFD979A3ECC691 is connecting
+2016-09-17 22:19:45,947 INFO  - Client paho/79FFCFD979A3ECC691 is disconnected
+2016-09-17 22:19:46,012 INFO  - Client paho/915C8452E853920D8D is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:19:46,053 INFO  - Client paho/252038422CC7F2AD3A is disconnected
+2016-09-17 22:19:46,053 INFO  - Client paho/252038422CC7F2AD3A is connecting
+2016-09-17 22:19:46,268 INFO  - Client paho/915C8452E853920D8D is disconnected
+2016-09-17 22:19:46,923 INFO  - Client paho/3D849E7212A63C0369 is connecting
+2016-09-17 22:19:46,923 INFO  - Client paho/0EF96F4F9497D90EC8 is connecting
+2016-09-17 22:19:46,924 INFO  - Client paho/0EF96F4F9497D90EC8 is disconnected
+2016-09-17 22:19:46,924 INFO  - Client paho/3D849E7212A63C0369 is disconnected
+2016-09-17 22:19:47,875 INFO  - Client paho/EC6E4C4E1203097EA0 is connecting
+2016-09-17 22:19:47,876 INFO  - Client paho/EC6E4C4E1203097EA0 is disconnected
+2016-09-17 22:19:47,877 INFO  - Client paho/1772E64535D0D82C16 is disconnected
+2016-09-17 22:19:47,878 INFO  - Client paho/1772E64535D0D82C16 is connecting
+2016-09-17 22:19:47,882 INFO  - Client paho/43CDD087D5C2398A62 is connecting
+2016-09-17 22:19:47,961 INFO  - Client paho/43CDD087D5C2398A62 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:19:48,172 INFO  - Client paho/43CDD087D5C2398A62 is disconnected
+2016-09-17 22:19:48,209 INFO  - Client paho/219FE1A0E9F05039A9 is connecting
+2016-09-17 22:19:48,209 INFO  - Client paho/219FE1A0E9F05039A9 is disconnected
+2016-09-17 22:19:48,876 INFO  - Client paho/4D47E081645ECDDA2E is connecting
+2016-09-17 22:19:48,878 INFO  - Client paho/20C1A06D4D963781D8 is connecting
+2016-09-17 22:19:48,879 INFO  - Client paho/20C1A06D4D963781D8 is disconnected
+2016-09-17 22:19:48,882 INFO  - Client paho/4D47E081645ECDDA2E is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:19:49,186 INFO  - Client paho/4D47E081645ECDDA2E is disconnected
+2016-09-17 22:19:49,606 INFO  - Client paho/D87E2AD593D976DCD2 is connecting
+2016-09-17 22:19:49,606 INFO  - Client paho/D87E2AD593D976DCD2 is disconnected
+2016-09-17 22:19:50,766 INFO  - Client paho/C16280A68014F6CAD7 is connecting
+2016-09-17 22:19:50,766 INFO  - Client paho/C86882F367FA688A9D is connecting
+2016-09-17 22:19:50,767 INFO  - Client paho/C86882F367FA688A9D is disconnected
+2016-09-17 22:19:50,768 INFO  - Client paho/89C6905C72A9F0667E is connecting
+2016-09-17 22:19:50,773 INFO  - Client paho/89C6905C72A9F0667E is disconnected
+2016-09-17 22:19:50,860 INFO  - Client paho/C16280A68014F6CAD7 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:19:51,154 INFO  - Client paho/C16280A68014F6CAD7 is disconnected
+2016-09-17 22:19:54,308 INFO  - Client paho/6251AA68C21451F36C is connecting
+2016-09-17 22:19:54,311 INFO  - Client paho/405D2D70D76347E0E0 is disconnected
+2016-09-17 22:19:54,311 INFO  - Client paho/D9FF9C3C5745C0E298 is connecting
+2016-09-17 22:19:54,311 INFO  - Client paho/D9FF9C3C5745C0E298 is disconnected
+2016-09-17 22:19:54,311 INFO  - Client paho/405D2D70D76347E0E0 is connecting
+2016-09-17 22:19:54,352 INFO  - Client paho/6251AA68C21451F36C is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:19:54,582 INFO  - Client paho/6251AA68C21451F36C is disconnected
+2016-09-17 22:19:54,585 INFO  - Client paho/753A95ED850FFDD089 is disconnected
+2016-09-17 22:19:54,585 INFO  - Client paho/753A95ED850FFDD089 is connecting
+2016-09-17 22:19:54,599 INFO  - Client paho/53F6DA36F4CD159C22 is connecting
+2016-09-17 22:19:54,599 INFO  - Client paho/53F6DA36F4CD159C22 is disconnected
+2016-09-17 22:19:54,601 INFO  - Client paho/C1A64A98C552F7DE3C is connecting
+2016-09-17 22:19:54,603 INFO  - Client paho/C1A64A98C552F7DE3C is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:19:54,826 INFO  - Client paho/C1A64A98C552F7DE3C is disconnected
+2016-09-17 22:19:55,333 INFO  - Client paho/D1948F4ED5C3C8CF8E is connecting
+2016-09-17 22:19:55,334 INFO  - Client paho/075F49E85C0272F1DD is connecting
+2016-09-17 22:19:55,335 INFO  - Client paho/075F49E85C0272F1DD is disconnected
+2016-09-17 22:19:55,368 INFO  - Client paho/D1948F4ED5C3C8CF8E is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:19:55,587 INFO  - Client paho/D1948F4ED5C3C8CF8E is disconnected
+2016-09-17 22:19:55,837 INFO  - Client paho/71AAD8CC45336D08D2 is connecting
+2016-09-17 22:19:55,841 INFO  - Client paho/71AAD8CC45336D08D2 is disconnected
+2016-09-17 22:19:55,843 INFO  - Client paho/7D2985A780FC2F808D is connecting
+2016-09-17 22:19:55,843 INFO  - Client paho/7D2985A780FC2F808D is disconnected
+2016-09-17 22:19:58,276 INFO  - Client paho/DC7535904FCF079664 is connecting
+2016-09-17 22:19:58,278 INFO  - Client paho/9CA4D68D2D3066E5D4 is connecting
+2016-09-17 22:19:58,282 INFO  - Client paho/C2CFA1EE9686206CC9 is disconnected
+2016-09-17 22:19:58,282 INFO  - Client paho/C2CFA1EE9686206CC9 is connecting
+2016-09-17 22:19:58,374 INFO  - Client paho/DC7535904FCF079664 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:19:58,374 INFO  - Client paho/9CA4D68D2D3066E5D4 sent a message to topic loc/put: 1,3
+2016-09-17 22:19:58,381 INFO  - Client paho/9CA4D68D2D3066E5D4 is disconnected
+2016-09-17 22:19:58,472 INFO  - Client paho/DC7535904FCF079664 is disconnected
+2016-09-17 22:19:58,474 INFO  - Client paho/1CD260EA690503D94E is connecting
+2016-09-17 22:19:58,481 INFO  - Client paho/1CD260EA690503D94E is disconnected
+2016-09-17 22:19:58,567 INFO  - Client paho/167891E02F92184929 is connecting
+2016-09-17 22:19:58,567 INFO  - Client paho/167891E02F92184929 is disconnected
+2016-09-17 22:20:00,095 INFO  - Client paho/CE3910172E287D9F9E is connecting
+2016-09-17 22:20:00,095 INFO  - Client paho/CE3910172E287D9F9E is disconnected
+2016-09-17 22:20:00,096 INFO  - Client paho/EA62103E7560173EDD is connecting
+2016-09-17 22:20:00,096 INFO  - Client paho/EA62103E7560173EDD is disconnected
+2016-09-17 22:20:00,460 INFO  - Client paho/A94029F3A5DDD2D2D1 is connecting
+2016-09-17 22:20:00,502 INFO  - Client paho/A94029F3A5DDD2D2D1 is now subscribed to the topics: [Topic{topic='loc/get', qoS=AT_MOST_ONCE}].
+2016-09-17 22:20:00,738 INFO  - Client paho/A94029F3A5DDD2D2D1 is disconnected
+2016-09-17 22:20:01,006 INFO  - Client paho/22CD8EE4A74A28E98D is connecting
+2016-09-17 22:20:01,006 INFO  - Client paho/22CD8EE4A74A28E98D is disconnected
+2016-09-17 22:20:01,012 INFO  - Client paho/9262886E259FEF5CD1 is disconnected
+2016-09-17 22:20:01,013 INFO  - Client paho/9262886E259FEF5CD1 is connecting
+2016-09-17 22:20:02,553 INFO  - Client paho/968AA0407912D30D1E is connecting
+2016-09-17 22:20:02,553 INFO  - Client paho/968AA0407912D30D1E is disconnected
+2016-09-17 22:20:11,600 INFO  - Client paho/6304794F5598D71C16 is disconnected
+2016-09-17 22:20:11,602 INFO  - Client paho/136DD58209941D52D7 is disconnected

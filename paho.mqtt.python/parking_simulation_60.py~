@@ -13,8 +13,8 @@ from sets import Set
 def createPutClient(sumarray,location):
 	start = time.time()
 	# The callback for when the client receives a CONNACK response from the server.
-#	def on_connect(client, userdata, rc):
-#		print("Connected with result code "+str(rc))
+	def on_connect(client, userdata, rc):
+		print("Connected with result code "+str(rc))
 
 	def on_publish(client, userdata, msg):
 		client.disconnect()
@@ -22,7 +22,7 @@ def createPutClient(sumarray,location):
 		sumarray.append(end - start);
 
 	client = mqtt.Client(client_id="", clean_session=True, userdata=None, transport="websockets")
-#	client.on_connect = on_connect
+	client.on_connect = on_connect
 	client.on_publish = on_publish
 	client.connect("localhost", 8000, 60)
 	client.publish(topic="loc/put",payload=location)
@@ -69,15 +69,15 @@ class PutClientThread(threading.Thread):
 def createDeleteClient(sumarray,location):
 	start = time.time()
 	# The callback for when the client receives a CONNACK response from the server.
-#	def on_connect(client, userdata, rc):
-#		print("Connected with result code "+str(rc))
+	def on_connect(client, userdata, rc):
+		print("Connected with result code "+str(rc))
 	def on_publish(client, userdata, msg):
 		client.disconnect()
 		end = time.time()
 		sumarray.append(end - start);
 
 	client = mqtt.Client(client_id="", clean_session=True, userdata=None, transport="websockets")
-#	client.on_connect = on_connect
+	client.on_connect = on_connect
 	client.on_publish = on_publish
 	client.connect("localhost", 8000, 60)
 	client.publish(topic="loc/delete",payload=location)
@@ -130,8 +130,8 @@ class DeleteClientThread(threading.Thread):
 def createGetClient(sumarray,mean_hold):
 	start = time.time()
 	# The callback for when the client receives a CONNACK response from the server.
-#	def on_connect(client, userdata, rc):
-#		print("Connected with result code "+str(rc))
+	def on_connect(client, userdata, rc):
+		print("Connected with result code "+str(rc))
 
 	def store_time(location,mean_hold):
 		print "Get at: " + location
@@ -144,14 +144,15 @@ def createGetClient(sumarray,mean_hold):
 		store_time(location,mean_hold)
 		end = time.time()
 		sumarray.append(end - start);
+		client.loop_stop()
 		client.disconnect()
 
 	client = mqtt.Client(client_id="", clean_session=True, userdata=None, transport="websockets")
-#	client.on_connect = on_connect
+	client.on_connect = on_connect
 	client.on_message = on_message
 	client.connect("localhost", 8000, 60)
 	client.subscribe("loc/get")
-	client.loop_forever()
+	client.loop_start()
 
 class GetClientThread(threading.Thread):
 	def __init__(self,get_mean,mean_hold,count):
@@ -181,7 +182,7 @@ class GetClientThread(threading.Thread):
 		f.close()
 
 def initEmptySet(empty_slotsset):
-	size=10
+	size=100
 	for i in range(size):
 		for j in range(size):
 			empty_slotsset.add(str(i)+","+str(j))
@@ -190,15 +191,15 @@ empty_slotsset = set()
 filled_slotsdict = OrderedDict()
 initEmptySet(empty_slotsset)
 lockobj = threading.Lock()
-put_mean = 9.95
-get_mean = 10.48
+put_mean = 10.4
+get_mean = 10.44
 mean_hold = 1
 count = 1000
 put_thread = PutClientThread(put_mean,mean_hold,count)
 put_thread.start()
 get_thread = GetClientThread(get_mean,mean_hold,count)
 get_thread.start()
-delete_thread = DeleteClientThread(mean_hold,2*count)
+delete_thread = DeleteClientThread(mean_hold,2*count-50)
 delete_thread.start()
 get_thread.join()
 put_thread.join()
