@@ -25,7 +25,7 @@ def createPutClient(sumarray,location):
 #	client.on_connect = on_connect
 	client.on_publish = on_publish
 	try: 
-		client.connect_async("localhost", 8000, 60)
+		client.connect("localhost", 8000, 60)
 		client.publish(topic="loc/put",payload=location)
 	except socket.error, e:
 		print "exception"
@@ -84,7 +84,7 @@ def createDeleteClient(sumarray,location):
 #	client.on_connect = on_connect
 	client.on_publish = on_publish
 	try: 
-		client.connect_async("localhost", 8000, 60)
+		client.connect("localhost", 8000, 60)
 		client.publish(topic="loc/put",payload=location)
 	except socket.error, e:
 		print "exception"
@@ -160,7 +160,7 @@ def createGetClient(sumarray,mean_hold):
 #	client.on_connect = on_connect
 	client.on_message = on_message
 	try: 
-		client.connect_async("localhost", 8000, 60)
+		client.connect("localhost", 8000, 60)
 		client.subscribe("loc/get")
 	except socket.error, e:
 		print "exception"
@@ -206,15 +206,15 @@ empty_slotsset = set()
 filled_slotsdict = OrderedDict()
 initEmptySet(empty_slotsset)
 lockobj = threading.Lock()
-put_mean = 3.5
-get_mean = 3.15
+put_mean = 3.479999
+get_mean = 3.479999
 mean_hold = 1
 count = 1000
 put_thread = PutClientThread(put_mean,mean_hold,count)
 put_thread.start()
 get_thread = GetClientThread(get_mean,mean_hold,count)
 get_thread.start()
-delete_thread = DeleteClientThread(mean_hold,2*count-50)
+delete_thread = DeleteClientThread(mean_hold,2*count)
 delete_thread.start()
 get_thread.join()
 put_thread.join()
